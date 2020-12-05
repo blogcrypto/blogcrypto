@@ -24,5 +24,6 @@ document.addEventListener('DOMContentLoaded', () => {
 
 
 // import cyrillicToTranslit from 'cyrillic-to-translit-js';
-// const str = 'Лучшие биржи криптовалют';
+// const str = 'Руководство пользователя приложения BlogCrypto Portfolio';
+// const str = 'BlogCrypto\'s Portfolio App User Guide';
 // console.log(cyrillicToTranslit().transform(str.toLowerCase(), '-'));
