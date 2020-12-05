@@ -1,0 +1,126 @@
+extends ../../pug/layouts/default
+
+block page-vars
+    -
+        var meta = {
+            lang: 'ru',
+            title: 'Курс криптовалюты на сегодня | Биткоин к рублю, доллару, евро',
+            h1: 'Курс криптовалют',
+            description: 'Курс криптовалюты bitcoin, ethereum, iota, trx, xem, neo, waves, xmr, zcash к рублю, доллару, евро и другим фиатным валютам и криптовалютам.',
+            keywords: 'bitcoin курс, биткоин голд курс, bitcoin sv, биткоин в грн, стратис криптовалюта курс, bitcoin cash курс',
+            type: 'website',
+            url: PROJECT_URL + 'ru/market',
+            image: PROJECT_URL + 'public/images/main.jpg'
+        }
+        var navBar = {
+            currentUrl: 'market',
+            list: [
+                {
+                    value: 'categories',
+                    title: 'Категории',
+                    url: '/ru/categories'
+                },
+                {
+                    value: 'market',
+                    title: 'Курс криптовалют',
+                    url: '/ru/market'
+                },
+                {
+                    value: 'portfolio',
+                    title: 'Портфолио',
+                    url: '/ru/portfolio'
+                },
+            ]
+        }
+        var local = {
+            currency: 'Валюта',
+            perPage: 'Показать'
+        }
+
+block main
+    section.mb-4
+        .container
+            h1.mb-4.mt-5.display-6 Курс криптовалют
+
+            .row.align-items-end
+                .col-sm.col-md-4.col-lg-3.mb-4
+                    .row
+                        .col-6.mb-2.mb-sm-0
+                            label(for="inputCurrency")= local.currency
+                            .select
+                                select#inputCurrency.form-control.js-market-currency
+                                    option(value="usd", data-dec="2", data-symbol="$", data-symbol-start, selected) USD
+                                    option(value="eur", data-dec="2", data-symbol="€", data-symbol-start) EUR
+                                    option(value="rub", data-dec="2", data-symbol="₽") RUB
+                                    option(value="uah", data-dec="2", data-symbol="₴") UAH
+                                    option(value="btc", data-symbol="₿") BTC
+                                    option(value="eth", data-symbol="Ξ") ETH
+
+                        .col-6.mb-2.mb-sm-0
+                            label(for="inputPerPage")= local.perPage
+                            .select
+                                select#inputPerPage.form-control.js-market-per-page
+                                    option(value="20") 20
+                                    option(value="50", selected) 50
+                                    option(value="100") 100
+
+                .col-sm-auto.col-md-8.col-lg-9.mb-2
+                    //-nav(aria-label="...")
+                        ul.pagination.justify-content-sm-end
+                            li.page-item
+                                a.page-link(href="#") 1
+                            li.page-item.disabled
+                                span.page-link ...
+                            li.page-item.d-none.d-md-block
+                                a.page-link(href="#") 21
+                            li.page-item
+                                a.page-link(href="#") 22
+                            li.page-item.active(aria-current="page")
+                                span.page-link  23
+                                span.sr-only (current)
+                            li.page-item
+                                a.page-link(href="#") 24
+                            li.page-item.d-none.d-md-block
+                                a.page-link(href="#") 25
+                            li.page-item.disabled
+                                span.page-link ...
+                            li.page-item
+                                a.page-link(href="#") 59
+
+                    nav(aria-label="...")
+                        ul.pagination.justify-content-sm-end
+                            li.page-item.active(aria-current="page")
+                                span.page-link  1
+                                    span.sr-only (current)
+                            li.page-item.d-none.d-md-block
+                                a.page-link(href="#") 2
+                            li.page-item
+                                a.page-link(href="#") 3
+                            li.page-item
+                                a.page-link(href="#") 4
+                            li.page-item.d-none.d-md-block
+                                a.page-link(href="#") 5
+                            li.page-item.disabled
+                                span.page-link ...
+                            li.page-item
+                                a.page-link(href="#") 59
+
+            .market.table-nowrap.table-responsive-xl.js-market
+
+            nav.mt-4(aria-label="...")
+                ul.pagination.justify-content-sm-end
+                    li.page-item.active(aria-current="page")
+                        span.page-link  1
+                            span.sr-only (current)
+                    li.page-item.d-none.d-md-block
+                        a.page-link(href="#") 2
+                    li.page-item
+                        a.page-link(href="#") 3
+                    li.page-item
+                        a.page-link(href="#") 4
+                    li.page-item.d-none.d-md-block
+                        a.page-link(href="#") 5
+                    li.page-item.disabled
+                        span.page-link ...
+                    li.page-item
+                        a.page-link(href="#") 59
