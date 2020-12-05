@@ -1,0 +1,6 @@
+mixin category(url, img, alt, title, desc)
+    a.card.card-overlay(href= url)
+        img.card-img(src= img, alt= alt, style="object-fit: cover; height: 200px")
+        .card-img-overlay
+            h2.card-title= title
+            p.card-text= desc

@@ -1,0 +1,71 @@
+extends ../../pug/layouts/default
+
+block page-vars
+    -
+        var meta = {
+            lang: 'ru',
+            title: 'Сколько стоит биткоин | Цена bitcoin',
+            h1: '1 Биткоин в рублях',
+            description: 'Цены криптовалют. Цена биткоина, эфириум, трон, xrp, eos в рублях, долларах, евро, гривнах и других криптовалютах на сегодня.',
+            keywords: 'биткоин сегодня, биткоин цена сейчас, цена криптовалюты на сегодня в рублях, сколько стоит bitcoin, bitcoin price',
+            type: 'website',
+            url: PROJECT_URL + 'ru',
+            image: PROJECT_URL + 'public/images/main.jpg'
+        }
+        var navBar = {
+            currentUrl: '',
+            list: [
+                {
+                    value: 'categories',
+                    title: 'Категории',
+                    url: '/ru/categories'
+                },
+                {
+                    value: 'market',
+                    title: 'Курс криптовалют',
+                    url: '/ru/market'
+                },
+                {
+                    value: 'portfolio',
+                    title: 'Портфолио',
+                    url: '/ru/portfolio'
+                },
+            ]
+        }
+        var local = {
+            marketCap: 'Курс криптовалют',
+            showAll: 'Смотреть все'
+        }
+
+block main
+    .container
+        .text-md-right
+            .d-inline-flex.align-items-baseline.justify-content-md-end.mb-4.mt-5.alert.alert-primary
+                h1.display-6.mr-3= meta.h1
+                .display-4.font-weight-normal.mr-1.text-nowrap.js-btc-price
+                span.display-6 ₽
+        //-section.mb-4
+            h1.mb-4.mt-5.display-6 Популярные статьи
+            .row
+                .col-sm-6.col-lg-4.col-xl-3.mb-4(style="display: flex")
+                    +card('Как купить биткоин?', 'kak-kupit-bitkoin-content', '../public/images/test2.jpg', '')
+
+                .col-sm-6.col-lg-4.col-xl-3.mb-4(style="display: flex")
+                    +card('Как купить биткоин?', 'kak-kupit-bitkoin-content', '../public/images/test2.jpg', '')
+
+
+    section.mb-5
+        .container
+            h2.mb-4.display-6= local.marketCap
+            .market.table-nowrap.table-responsive-xl.js-market(data-per-page="10", data-currency="rub", data-decimal="2", data-symbol="₽", data-symbol-position="end")
+            .mt-4
+                a.btn.btn-primary.btn-lg.active(href="/ru/market", role="button", aria-pressed="true")= local.showAll
+
+        //-section
+            h2.mb-4.display-6 Последние статьи
+            .row
+                .col-sm-6.col-lg-4.col-xl-3.mb-4(style="display: flex")
+                    +card('Как купить биткоин?', 'ru/kak-kupit-bitkoin-content', '../public/images/test2.jpg', '')
+
+                .col-sm-6.col-lg-4.col-xl-3.mb-4(style="display: flex")
+                    +card('Как купить биткоин?', 'ru/kak-kupit-bitkoin-content', '../public/images/test2.jpg', '')

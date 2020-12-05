@@ -1,0 +1,81 @@
+extends ../../../pug/layouts/default
+
+block page-vars
+    -
+        var meta = {
+            lang: 'ru',
+            title: 'Список бирж криптовалют | Биткоин биржи',
+            h1: 'Лучшие биржи криптовалют',
+            description: 'Самые актуальные централизованные и децентрализованные криптобиржи. Топ криптовалютных бирж на русском языке с выводом в рублях. ',
+            keywords: 'криптобиржа, blockchain биржа, блокчейн биржи, bitcoin биржа, биржа крипты, биржа криптовалют без верификации',
+            type: 'article', //- website, article, audio, video
+            url: PROJECT_URL + 'ru/articles/luchshie-birzhi-kriptovalyut',
+            image: PROJECT_URL + 'public/images/exchanges/exchanges-main.jpg'
+        }
+        var navBar = {
+            currentUrl: 'categories',
+            list: [
+                {
+                    value: 'categories',
+                    title: 'Категории',
+                    url: '/ru/categories'
+                },
+                {
+                    value: 'market',
+                    title: 'Курс криптовалют',
+                    url: '/ru/market'
+                },
+                {
+                    value: 'portfolio',
+                    title: 'Портфолио',
+                    url: '/ru/portfolio'
+                },
+            ]
+        }
+        var breadcrumbsList = [
+            {
+                title: 'Категории',
+                url: '/ru/categories'
+            },
+            // {
+            //     title: 'Статьи',
+            //     url: '/ru/articles'
+            // },
+            {
+                title: meta.h1,
+                url: ''
+            }
+        ]
+
+block main
+    section.mb-4
+        .container
+            h1.mb-2.mt-5.display-6= meta.h1
+
+            +breadcrumbs(breadcrumbsList, meta.lang)
+
+            .row
+                .col-lg-9.col-xl-8.mb-4
+
+                    .row.align-items-center
+                        .col.pb-2
+
+                            +date(meta.lang, '22.10.2020')
+
+                        .col-auto.pb-2
+
+                            +share(meta.lang)
+
+                    .mb-5
+                        picture
+                            source(data-srcset="/public/images/exchanges/exchanges-main.jpg 2x, /public/images/exchanges/exchanges-main_sm.jpg 1x", media="(max-width: 768px)")
+                            source(data-srcset="/public/images/exchanges/exchanges-main@2x.jpg 2x, /public/images/exchanges/exchanges-main.jpg 1x")
+                            img.lazy(data-src="/public/images/exchanges/exchanges-main.jpg", alt="Cryptocurrencies Exchanges")
+
+                    div !{require('../../../components/content/ru/luchshie-birzhi-kriptovalyut-content.md')}
+
+                .col-lg-3.offset-xl-1
+                    include ../../../components/aside/ru/aside-1
+
+block scripts
+    script(src="https://yastatic.net/share2/share.js")

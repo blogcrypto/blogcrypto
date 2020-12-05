@@ -1,0 +1,9 @@
+@import 'variables.css';
+@import 'layout.css';
+@import 'form.css';
+@import 'list.css';
+@import 'card.css';
+@import 'select.css';
+@import 'pagination.css';
+@import '../components/search/search.css';
+

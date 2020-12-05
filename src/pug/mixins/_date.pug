@@ -1,0 +1,11 @@
+mixin date(lang, date)
+    .d-flex.align-items-center
+        img.mr-1(src="/public/icons/calendar.svg", alt="Date", style="width:1em;height:1em")
+
+        if lang === 'ru'
+            .text-secondary= date
+
+        else
+            - var arr = date.split('.')
+
+            .text-secondary= [arr[1], arr[0], arr[2]].join('.')

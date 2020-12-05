@@ -1,0 +1,51 @@
+extends ../pug/layouts/default
+
+block page-vars
+    -
+        var meta = {
+            lang: 'en',
+            title: 'Crypto portfolio | Cryptocurrency tracker app',
+            h1: 'Cryptocurrency portfolio',
+            description: 'Free bitcoin portfolio app. Track your coins from all wallets. Registration and sending of personal data is not required, which ensures complete anonymity of your savings.',
+            keywords: 'portfolio dashboard, crypto portfolio tracker, blockfolio alternative, coin tracker app, crypto portfolio manager',
+            type: 'website', //- website, article, audio, video
+            url: PROJECT_URL + 'portfolio',
+            image: PROJECT_URL + 'public/images/main.jpg'
+        }
+        var navBar = {
+            currentUrl: 'portfolio',
+            list: [
+                {
+                    value: 'categories',
+                    title: 'Categories',
+                    url: '/categories'
+                },
+                {
+                    value: 'market',
+                    title: 'Market',
+                    url: '/market'
+                },
+                {
+                    value: 'portfolio',
+                    title: 'Portfolio',
+                    url: '/portfolio'
+                },
+            ]
+        }
+        var local = {
+        }
+
+block main
+    section.mb-4
+        .container
+            .row.align-items-baseline
+                .col-sm
+                    h1.mb-4.mt-5.display-6= meta.h1
+                .col-sm-auto
+                    .h5.font-weight-normal
+                        span Show&nbsp;
+                        a(href="https://blogcrypto.github.io/portfolio/", target="_blank", rel="noopener noreferrer") demo
+            #root
+
+block scripts
+    script(src="https://cdn.jsdelivr.net/gh/blogcrypto/portfolio/dist/main.bundle.js")

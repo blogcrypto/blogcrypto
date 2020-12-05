@@ -1,0 +1,92 @@
+.gsc-wrapper {
+    margin-top: 20px;
+}
+
+.gsc-input {
+    background: none !important;
+    height: 35px !important;
+}
+
+.gsc-search-button {
+    height: 37px !important;
+}
+
+.gscb_a {
+    line-height: 30px !important;
+}
+
+.gsc-input-box {
+    padding-top: 0 !important;
+    padding-bottom: 0 !important;
+}
+
+.gsib_a {
+    padding-top: 0 !important;
+    padding-bottom: 0 !important;
+}
+
+.gsc-search-button-v2 {
+    padding: 10px 34px !important;
+}
+
+.gsc-control-cse {
+    padding: 0 !important;
+}
+
+.gsc-control-cse,
+.gsc-control-cse .gsc-table-result {
+    font-size: inherit !important;
+}
+
+a.gs-title {
+    color: var(--bs-blue) !important;
+}
+
+a.gs-title:hover {
+    text-decoration: underline;
+}
+
+.gs-snippet {
+    font-size: 80%;
+}
+
+a.gs-title b,
+.gs-snippet b {
+    background: yellow !important;
+}
+
+.gcsc-more-maybe-branding-root {
+    display: none !important;
+}
+
+.gsc-url-top {
+    display: none !important;
+}
+
+.gsc-result {
+    border: none !important;
+    border-bottom: 1px solid var(--bs-light) !important;
+}
+
+.gsc-result-info {
+    padding: 8px 4px 6px 4px !important;
+}
+
+.gs-no-results-result .gs-snippet,
+.gs-error-result .gs-snippet {
+    border: none !important;
+    background: none !important;
+    font-size: 1.5rem;
+    margin-left: 0 !important;
+    margin-right: 0 !important;
+    padding-left: 0 !important;
+    padding-right: 0 !important;
+}
+
+.gsc-adBlock,
+.gcsc-find-more-on-google-root,
+.gcsc-branding {
+    display: none !important;
+}
+
+
