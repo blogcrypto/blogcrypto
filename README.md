@@ -25,3 +25,7 @@
 ### Production
 
 `$ yarn build` - production
+
+## Git
+
+    git push origin --tags
