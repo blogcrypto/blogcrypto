@@ -1,0 +1,65 @@
+ul:not([class]),
+ol:not([class]) {
+    padding-left: 0;
+    list-style-type: none;
+}
+
+ul:not([class]) > li,
+ol:not([class]) > li {
+    position: relative;
+    padding: 0;
+}
+
+ul:not([class]) > li,
+li > ul:not([class]) > li {
+    padding: 0 0 0 1rem;
+    margin-top: .25rem
+}
+
+ul:not([class]) > li::before {
+    content: "";
+    position: absolute;
+    border-radius: 50%;
+    width: 0.375rem;
+    height: 0.375rem;
+    color: currentColor;
+    background-color: #777;
+    top: 0.65em;
+    left: 0;
+}
+
+ul:not([class]) > li > ul:not([class]) > li::before {
+    background-color: transparent;
+    border: 1px solid #777;
+}
+
+ol:not([class]) {
+    counter-reset: list 0
+}
+
+ol:not([class]) > li::before {
+    content: counter(list, decimal) ".";
+    counter-increment: list;
+    position: absolute;
+    left: 0;
+    color: currentColor;
+    font-weight: bolder;
+    letter-spacing: -0.05rem;
+}
+
+ol:not([class]) > li {
+    padding: 0 0 0 1.2rem;
+}
+
+ol:not([class]) > li > ol:not([class]) {
+    counter-reset: list2 0;
+}
+
+ol:not([class]) > li > ol:not([class]) > li::before {
+    content: counter(list, decimal) "." counter(list2, decimal) ".";
+    counter-increment: list2;
+}
+
+ol:not([class]) > li > ol:not([class]) > li {
+    padding: 0 0 0 2em;
+}

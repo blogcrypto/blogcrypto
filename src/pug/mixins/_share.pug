@@ -1,0 +1,20 @@
+mixin share(lang)
+
+    if lang === 'ru'
+        .ya-share2(
+            data-curtain,
+            data-shape="round",
+            data-lang="ru",
+            data-limit="0",
+            data-more-button-type="short",
+            data-services="telegram,vkontakte,facebook,odnoklassniki,twitter,viber,whatsapp,skype,lj,moimir"
+        )
+    else
+       .ya-share2(
+           data-curtain,
+           data-shape="round",
+           data-lang="en",
+           data-limit="0",
+           data-more-button-type="short",
+           data-services="facebook,telegram,twitter,viber,whatsapp,skype,tumblr,evernote,linkedin,blogger,delicious,digg,reddit,pocket,qzone,renren,sinaWeibo,surfingbird,tencentWeibo"
+       )

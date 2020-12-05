@@ -1,0 +1,52 @@
+extends ../../pug/layouts/default
+
+block page-vars
+    -
+        var meta = {
+            lang: 'ru',
+            title: 'Портфолио криптовалют | Трекер криптовалюты со всех кошельков',
+            h1: 'Крипто портфолио',
+            description: 'Бесплатное приложение для отслеживания криптовалютных инвестиций находящихся на любых биржах и кошельках. Не требуется регистрация и отправка личных данных, что обеспечивает полную анонимность ваших сбережений.',
+            keywords: 'приватное портфолио криптовалют, бесплатное приложения для отслеживания крипты, трекер криптовалют без регистрации',
+            type: 'website', //- website, article, audio, video
+            url: PROJECT_URL + 'ru/portfolio',
+            image: PROJECT_URL + 'public/images/main.jpg'
+        }
+        var navBar = {
+            currentUrl: 'portfolio',
+            list: [
+                {
+                    value: 'categories',
+                    title: 'Категории',
+                    url: '/ru/categories'
+                },
+                {
+                    value: 'market',
+                    title: 'Курс криптовалют',
+                    url: '/ru/market'
+                },
+                {
+                    value: 'portfolio',
+                    title: 'Портфолио',
+                    url: '/ru/portfolio'
+                },
+            ]
+        }
+        var local = {
+        }
+
+block main
+    section.mb-4
+        .container
+            .row.align-items-baseline
+                .col-sm
+                    h1.mb-4.mt-5.display-6= meta.h1
+                .col-sm-auto
+                    .h5.font-weight-normal
+                        span Показать&nbsp;
+                        a(href="https://blogcrypto.github.io/portfolio/", target="_blank", rel="noopener noreferrer") демо
+
+            #root
+
+block scripts
+    script(src="https://cdn.jsdelivr.net/gh/blogcrypto/portfolio/dist/main.bundle.js")

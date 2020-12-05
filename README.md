@@ -1,16 +1,27 @@
-### Hi there 👋
+# Blogcrypto
 
-<!--
-**blogcrypto/blogcrypto** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
 
-Here are some ideas to get you started:
+### Packages
 
-- 🔭 I’m currently working on ...
-- 🌱 I’m currently learning ...
-- 👯 I’m looking to collaborate on ...
-- 🤔 I’m looking for help with ...
-- 💬 Ask me about ...
-- 📫 How to reach me: ...
-- 😄 Pronouns: ...
-- ⚡ Fun fact: ...
--->
+#### Package.json
+
+    "homepage": "https://blogcrypto.info/",
+    "config": {
+          "projectName": "Blog Crypto"
+      },
+
+#### Upgrade all packages
+
+`$ yarn upgrade-interactive [--latest]`
+
+
+### Development
+
+`$ yarn` - install packages
+
+`$ yarn start` - start development server
+
+
+### Production
+
+`$ yarn build` - production

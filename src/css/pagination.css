@@ -1,0 +1,9 @@
+.page-item {
+    text-align: center;
+}
+
+@media (min-width: 576px) {
+    .page-item {
+        min-width: 2.655em;
+    }
+}

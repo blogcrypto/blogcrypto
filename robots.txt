@@ -1,0 +1,25 @@
+User-agent: *
+Disallow: /
+
+Allow: /*.html
+Allow: /ru/*.html
+Allow: /robots.txt
+Allow: /public/favicon
+
+Disallow: /404.html
+Disallow: /search.html
+
+User-agent: GoogleBot
+Allow: /dist/css/*.css
+Allow: /dist/js/*.js
+Allow: /public/images
+
+User-agent: Yandex
+Allow: /dist/css/*.css
+Allow: /dist/js/*.js
+Allow: /public/images
+Clean-Param: utm_source&utm_medium&utm_campaign
+Crawl-Delay: 0.5
+
+Sitemap: https://blogcrypto.info/sitemap.xml
+Host: https://blogcrypto.info

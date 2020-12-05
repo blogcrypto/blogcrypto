@@ -1,0 +1,8 @@
+mixin card(url, title, img, alt)
+    a.card(href= url)
+        .card-img-top
+            picture
+                source(data-srcset=img.x2 + " 2x, " + img.x1 + " 1x")
+                img.lazy(data-src= img.x1, alt= alt, style="object-fit: cover; height: 200px")
+        .card-body
+            h5.card-title= title
