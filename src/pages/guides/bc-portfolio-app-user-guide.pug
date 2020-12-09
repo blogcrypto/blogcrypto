@@ -4,13 +4,13 @@ block page-vars
     -
         var meta = {
             lang: 'en',
-            title: 'Cryptocurrency exchanges list | Crypto trading platform',
-            h1: 'Best bitcoin trading platform',
-            description: 'Top crypto exchanges list. Decentralized and centralized cryptocurrency exchange. Convert cryptocurrency trading platform.',
-            keywords: 'crypto exchange, top crypto exchanges, digital currency exchange,  crypto currency rate, best bitcoin trading app list',
+            title: 'BC Portfolio app user guide',
+            h1: 'BC Portfolio app user guide',
+            description: 'Detailed instructions for working with the BC Portfolio cryptocurrency portfolio.',
+            keywords: 'BC Portfolio Crypto Portfolio Guide, Crypto Portfolio Guide, About BC Portfolio App',
             type: 'article', //- website, article, audio, video
-            url: PROJECT_URL + 'articles/best-bitcoin-trading-platform',
-            image: PROJECT_URL + 'public/images/exchanges/exchanges-main.jpg'
+            url: PROJECT_URL + 'articles/bc-portfolio-app-user-guide',
+            image: PROJECT_URL + 'public/images/portfolio/portfolio.jpg'
         }
         var navBar = {
             currentUrl: 'categories',
@@ -60,7 +60,7 @@ block main
                     .row.align-items-center
                         .col.pb-2
 
-                            +date(meta.lang, '22.10.2020')
+                            +date(meta.lang, '09.12.2020')
 
                         .col-auto.pb-2
 
@@ -68,11 +68,11 @@ block main
 
                     .mb-5
                         picture
-                            source(data-srcset="/public/images/exchanges/exchanges-main.jpg 2x, /public/images/exchanges/exchanges-main_sm.jpg 1x", media="(max-width: 768px)")
-                            source(data-srcset="/public/images/exchanges/exchanges-main@2x.jpg 2x, /public/images/exchanges/exchanges-main.jpg 1x")
-                            img.lazy(data-src="/public/images/exchanges/exchanges-main.jpg", alt="Cryptocurrencies Exchanges")
+                            source(data-srcset="/public/images/portfolio/portfolio.jpg 2x, /public/images/portfolio/portfolio_sm.jpg 1x", media="(max-width: 768px)")
+                            source(data-srcset="/public/images/portfolio/portfolio@2x.jpg 2x, /public/images/portfolio/portfolio.jpg 1x")
+                            img.lazy(data-src="/public/images/portfolio/portfolio.jpg", alt="BC Portfolio App")
 
-                    div !{require('../../components/content/en/best-bitcoin-trading-platform.md')}
+                    div !{require('../../components/content/en/bc-portfolio-app-user-guide.md')}
 
                 .col-lg-3.offset-xl-1
                     include ../../components/aside/en/aside-1
