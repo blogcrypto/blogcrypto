@@ -4,13 +4,13 @@ block page-vars
     -
         var meta = {
             lang: 'ru',
-            title: 'Список бирж криптовалют | Биткоин биржи',
-            h1: 'Лучшие биржи криптовалют',
-            description: 'Самые актуальные централизованные и децентрализованные криптобиржи. Топ криптовалютных бирж на русском языке с выводом в рублях.',
-            keywords: 'криптобиржа, blockchain биржа, блокчейн биржи, bitcoin биржа, биржа крипты, биржа криптовалют без верификации',
+            title: 'BC Portfolio | Подробное руководство',
+            h1: 'Руководство пользователя BC Portfolio',
+            description: 'Подробная инструкция по работе с криптовалютным портфолио BC Portfolio.',
+            keywords: 'инструкция по крипто портфолио BC Portfolio, руководство по криптовалютному портфолио, о приложении BC Portfolio',
             type: 'article', //- website, article, audio, video
-            url: PROJECT_URL + 'ru/articles/luchshie-birzhi-kriptovalyut',
-            image: PROJECT_URL + 'public/images/exchanges/exchanges-main.jpg'
+            url: PROJECT_URL + 'ru/articles/rukovodstvo-polzovatelya-bc-portfolio',
+            image: PROJECT_URL + 'public/images/portfolio/portfolio.jpg'
         }
         var navBar = {
             currentUrl: 'categories',
@@ -38,8 +38,8 @@ block page-vars
                 url: '/ru/categories'
             },
             // {
-            //     title: 'Статьи',
-            //     url: '/ru/articles'
+            //     title: 'Руководства',
+            //     url: '/ru/guides'
             // },
             {
                 title: meta.h1,
@@ -60,7 +60,7 @@ block main
                     .row.align-items-center
                         .col.pb-2
 
-                            +date(meta.lang, '22.10.2020')
+                            +date(meta.lang, '08.12.2020')
 
                         .col-auto.pb-2
 
@@ -68,11 +68,11 @@ block main
 
                     .mb-5
                         picture
-                            source(data-srcset="/public/images/exchanges/exchanges-main.jpg 2x, /public/images/exchanges/exchanges-main_sm.jpg 1x", media="(max-width: 768px)")
-                            source(data-srcset="/public/images/exchanges/exchanges-main@2x.jpg 2x, /public/images/exchanges/exchanges-main.jpg 1x")
-                            img.lazy(data-src="/public/images/exchanges/exchanges-main.jpg", alt="Cryptocurrencies Exchanges")
+                            source(data-srcset="/public/images/portfolio/portfolio.jpg 2x, /public/images/portfolio/portfolio_sm.jpg 1x", media="(max-width: 768px)")
+                            source(data-srcset="/public/images/portfolio/portfolio@2x.jpg 2x, /public/images/portfolio/portfolio.jpg 1x")
+                            img.lazy(data-src="/public/images/portfolio/portfolio.jpg", alt="Приложение BC Portfolio")
 
-                    div !{require('../../../components/content/ru/luchshie-birzhi-kriptovalyut.md')}
+                    div !{require('../../../components/content/ru/rukovodstvo-polzovatelya-bc-portfolio.md')}
 
                 .col-lg-3.offset-xl-1
                     include ../../../components/aside/ru/aside-1
