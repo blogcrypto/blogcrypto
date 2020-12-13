@@ -5,7 +5,7 @@ block page-vars
         var meta = {
             lang: 'en',
             title: 'Cryptocurrency price | BTC in usd',
-            h1: '1 BTC in usd',
+            h1: '1 BTC in\u00A0usd',
             description: 'Coins market. Top 10 cryptocurrency prices. Price of bitcoin today. Bitcoin cash, xrp, ada, price today in usd and euro. Ethereum rate today.',
             keywords: 'cryptocurrency prices today, bitcoin cash price, bitcoin market cap, bitcoin rate, eth price usd, bitcoin cost',
             type: 'website',
@@ -30,6 +30,11 @@ block page-vars
                     title: 'Portfolio',
                     url: '/portfolio'
                 },
+                {
+                    value: 'about',
+                    title: 'About',
+                    url: '/about'
+                },
             ]
         }
         var local = {
@@ -41,7 +46,7 @@ block main
     .container
         .text-md-right
             .d-inline-flex.align-items-baseline.mb-4.mt-5.alert.alert-primary
-                h1.display-6.mr-3= meta.h1
+                h1.display-6.mr-1.mr-sm-3= meta.h1
 
                 .display-4.font-weight-normal.mr-1.text-nowrap.js-btc-price
                 span.display-6 $

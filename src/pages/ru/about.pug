@@ -1,0 +1,78 @@
+extends ../../pug/layouts/default
+
+block page-vars
+    -
+        var meta = {
+            lang: 'ru',
+            title: 'О нас | Blog Crypto',
+            h1: 'О нас',
+            description: '',
+            keywords: '',
+            type: 'website', //- website, article, audio, video
+            url: PROJECT_URL + 'ru/about',
+            image: PROJECT_URL + 'public/images/main.jpg'
+        }
+        var navBar = {
+            currentUrl: 'about',
+            list: [
+                {
+                    value: 'categories',
+                    title: 'Категории',
+                    url: '/ru/categories'
+                },
+                {
+                    value: 'market',
+                    title: 'Курс криптовалют',
+                    url: '/ru/market'
+                },
+                {
+                    value: 'portfolio',
+                    title: 'Портфолио',
+                    url: '/ru/portfolio'
+                },
+                {
+                    value: 'about',
+                    title: 'О нас',
+                    url: '/about'
+                },
+            ]
+        }
+
+block main
+    section.mb-4
+        .container
+            h1.mb-2.mt-5.display-6= meta.h1
+
+            div Blog Crypto – информационный ресурс и набор сервисов по тематике: криптовалюты и блокчейн технологии.
+
+            .row
+                .col-sm-9.col-md-8.col.col-lg-7.col-xl-6
+                    h2#contacts Контакты
+                    form
+                        .mb-3
+                            label.form-label(for="inputName") Ваше имя
+                            input#inputName.form-control(type="text")
+
+                        .mb-3
+                            label.form-label(for="inputEmail") Ваш email
+                            input#inputEmail.form-control(type="email")
+
+                        .mb-3
+                            label.form-label(for="inputTheme") Тема сообщения
+                            select#inputTheme.form-select(aria-label="Default select example", aria-describedby="themeHelp")
+                                option(selected) Без темы
+                                option(value="1") Отзыв или предложение
+                                option(value="2") Предложение о сотрудничестве
+                                option(value="3") Сообщение об ошибке
+                            #themeHelp.form-text Выберите тему вашего сообщения
+
+                        .mb-3
+                            label.form-label(for="inputMessage") Ваше сообщение
+                            textarea#inputMessage.form-control(rows="4")
+
+                        .mb-3
+                            label.form-label(for="formFile") Добавить файл (не обязательно)
+                            input.form-control#formFile(type="file", aria-describedby="fileHelp", multiple)
+                            #fileHelp.form-text Максимальный размер файла 10Mb
+
+                        button.btn.btn-primary.px-5(type="submit") Отправить
