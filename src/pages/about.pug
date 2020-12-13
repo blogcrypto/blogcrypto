@@ -1,0 +1,78 @@
+extends ../pug/layouts/default
+
+block page-vars
+    -
+        var meta = {
+            lang: 'en',
+            title: 'About | Blog Crypto',
+            h1: 'About',
+            description: '',
+            keywords: '',
+            type: 'website', //- website, article, audio, video
+            url: PROJECT_URL + 'about',
+            image: PROJECT_URL + 'public/images/main.jpg'
+        }
+        var navBar = {
+            currentUrl: 'about',
+            list: [
+                {
+                    value: 'categories',
+                    title: 'Categories',
+                    url: '/categories'
+                },
+                {
+                    value: 'market',
+                    title: 'Market',
+                    url: '/market'
+                },
+                {
+                    value: 'portfolio',
+                    title: 'Portfolio',
+                    url: '/portfolio'
+                },
+                {
+                    value: 'about',
+                    title: 'About',
+                    url: '/about'
+                },
+            ]
+        }
+
+block main
+    section.mb-4
+        .container
+            h1.mb-2.mt-5.display-6= meta.h1
+
+            div Blog Crypto is an information resource and a set of services on the topic: cryptocurrencies and blockchain technologies.
+
+            .row
+                .col-sm-9.col-md-8.col.col-lg-7.col-xl-6
+                    h2#contacts Contacts
+                    form
+                        .mb-3
+                            label.form-label(for="inputName") Your name
+                            input#inputName.form-control(type="text")
+
+                        .mb-3
+                            label.form-label(for="inputEmail") Your email
+                            input#inputEmail.form-control(type="email")
+
+                        .mb-3
+                            label.form-label(for="inputTheme") Message subject
+                            select#inputTheme.form-select(aria-label="Default select example", aria-describedby="themeHelp")
+                                option(selected) Common
+                                option(value="1") Feedback or suggestion
+                                option(value="2") Cooperation proposal
+                                option(value="3") Bug report
+                            #themeHelp.form-text Please select a subject for your message
+
+                        .mb-3
+                            label.form-label(for="inputMessage") Your message
+                            textarea#inputMessage.form-control(rows="4")
+
+                        .mb-3
+                            label.form-label(for="formFile") Add file (optional)
+                            input.form-control#formFile(type="file", aria-describedby="fileHelp", multiple)
+                            #fileHelp.form-text Max file size 10Mb
+
+                        button.btn.btn-primary.px-5(type="submit") Sent
