@@ -1,0 +1,86 @@
+extends ../../../pug/layouts/default
+
+block page-vars
+    -
+        var meta = {
+            lang: 'ru',
+            title: 'BC Portfolio | Подробное руководство Blog Crypto Portfolio',
+            h1: 'Руководство пользователя BC Portfolio',
+            description: 'Пошаговая инструкция по работе с криптовалютным портфолио BC Portfolio. Подробное руководство по приложению Blog Crypto Portfolio.',
+            keywords: 'инструкция по крипто портфолио BC Portfolio, руководство по криптовалютному портфолио, о приложении BC Portfolio',
+            type: 'article', //- website, article, audio, video
+            url: PROJECT_URL + 'ru/guides/rukovodstvo-polzovatelya-bc-portfolio',
+            image: PROJECT_URL + 'public/images/portfolio/portfolio.jpg'
+        }
+        var navBar = {
+            currentUrl: 'categories',
+            list: [
+                {
+                    value: 'categories',
+                    title: 'Категории',
+                    url: '/ru/categories'
+                },
+                {
+                    value: 'market',
+                    title: 'Курс криптовалют',
+                    url: '/ru/market'
+                },
+                {
+                    value: 'portfolio',
+                    title: 'Портфолио',
+                    url: '/ru/portfolio'
+                },
+                {
+                    value: 'about',
+                    title: 'О нас',
+                    url: '/ru/about'
+                },
+            ]
+        }
+        var breadcrumbsList = [
+            {
+                title: 'Категории',
+                url: '/ru/categories'
+            },
+            // {
+            //     title: 'Руководства',
+            //     url: '/ru/guides'
+            // },
+            {
+                title: meta.h1,
+                url: ''
+            }
+        ]
+
+block main
+    section
+        .container
+            h1.mb-2.mt-5.display-6= meta.h1
+
+            +breadcrumbs(breadcrumbsList, meta.lang)
+
+            .row
+                .col-lg-9.col-xl-8.mb-4
+
+                    .row.align-items-center
+                        .col.pb-2
+
+                            +date(meta.lang, '08.12.2020')
+
+                        .col-auto.pb-2
+
+                            +share(meta.lang)
+
+                    .mb-5
+                        picture
+                            source(srcset="/public/images/portfolio/portfolio.jpg 2x, /public/images/portfolio/portfolio_sm.jpg 1x", media="(max-width: 768px)")
+                            source(srcset="/public/images/portfolio/portfolio@2x.jpg 2x, /public/images/portfolio/portfolio.jpg 1x")
+                            img(src="/public/images/portfolio/portfolio.jpg", alt="Приложение BC Portfolio")
+
+                    div !{require('../../../components/content/ru/rukovodstvo-polzovatelya-bc-portfolio.md')}
+
+                .col-lg-3.offset-xl-1
+                    include ../../../components/aside/ru/aside-1
+
+block scripts
+    script(src="https://yastatic.net/share2/share.js")

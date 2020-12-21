@@ -5,7 +5,7 @@ block page-vars
         var meta = {
             lang: 'ru',
             title: 'Сколько стоит биткоин | Цена bitcoin',
-            h1: '1 Биткоин в рублях',
+            h1: '1\u00A0Биткоин в\u00A0рублях',
             description: 'Цены криптовалют. Цена биткоина, эфириум, трон, xrp, eos в рублях, долларах, евро, гривнах и других криптовалютах на сегодня.',
             keywords: 'биткоин сегодня, биткоин цена сейчас, цена криптовалюты на сегодня в рублях, сколько стоит bitcoin, bitcoin price',
             type: 'website',
@@ -30,6 +30,11 @@ block page-vars
                     title: 'Портфолио',
                     url: '/ru/portfolio'
                 },
+                {
+                    value: 'about',
+                    title: 'О нас',
+                    url: '/ru/about'
+                },
             ]
         }
         var local = {
@@ -39,10 +44,11 @@ block page-vars
 
 block main
     .container
-        .text-md-right
+        .text-md-end
             .d-inline-flex.align-items-baseline.justify-content-md-end.mb-4.mt-5.alert.alert-primary
-                h1.display-6.mr-3= meta.h1
-                .display-4.font-weight-normal.mr-1.text-nowrap.js-btc-price
+                h1.display-6.me-1.me-sm-3= meta.h1
+
+                .display-4.font-weight-normal.me-1.text-nowrap.js-btc-price
                 span.display-6 ₽
         //-section.mb-4
             h1.mb-4.mt-5.display-6 Популярные статьи

@@ -1,0 +1,86 @@
+extends ../../pug/layouts/default
+
+block page-vars
+    -
+        var meta = {
+            lang: 'en',
+            title: 'Crypto hardware wallet | Trezor | Ledger | Keepkey',
+            h1: 'Hardware wallet',
+            description: 'Cold wallets for Ledger Nano S, Ledger Nano X, Trezor One, Trezor T, Keepkey prices, difference. The best hardware wallet for storing cryptocurrency.',
+            keywords: 'hardware wallets, Ledger Nano S price, Ledger Nano X price, Trezor One price, Trezor T price, Keepkey price',
+            type: 'article', //- website, article, audio, video
+            url: PROJECT_URL + 'articles/hardware-wallet',
+            image: PROJECT_URL + 'public/images/hardware-wallets/hardware-wallets.jpg'
+        }
+        var navBar = {
+            currentUrl: 'categories',
+            list: [
+                {
+                    value: 'categories',
+                    title: 'Categories',
+                    url: '/categories'
+                },
+                {
+                    value: 'market',
+                    title: 'Market',
+                    url: '/market'
+                },
+                {
+                    value: 'portfolio',
+                    title: 'Portfolio',
+                    url: '/portfolio'
+                },
+                {
+                    value: 'about',
+                    title: 'About',
+                    url: '/about'
+                },
+            ]
+        }
+        var breadcrumbsList = [
+            {
+                title: 'Categories',
+                url: '/categories'
+            },
+            // {
+            //     title: 'Articles',
+            //     url: '/articles'
+            // },
+            {
+                title: meta.h1,
+                url: ''
+            }
+        ]
+
+block main
+    section
+        .container
+            h1.mb-2.mt-5.display-6= meta.h1
+
+            +breadcrumbs(breadcrumbsList, meta.lang)
+
+            .row
+                .col-lg-9.col-xl-8.mb-4
+
+                    .row.align-items-center
+                        .col.pb-2
+
+                            +date(meta.lang, '20.12.2020')
+
+                        .col-auto.pb-2
+
+                            +share(meta.lang)
+
+                    .mb-5
+                        picture
+                            source(srcset="/public/images/hardware-wallets/hardware-wallets.jpg 2x, /public/images/hardware-wallets/hardware-wallets_sm.jpg 1x", media="(max-width: 768px)")
+                            source(srcset="/public/images/hardware-wallets/hardware-wallets@2x.jpg 2x, /public/images/hardware-wallets/hardware-wallets.jpg 1x")
+                            img(src="/public/images/hardware-wallets/hardware-wallets.jpg", alt="Hardware wallets")
+
+                    div !{require('../../components/content/en/hardware-wallet.md')}
+
+                .col-lg-3.offset-xl-1
+                    include ../../components/aside/en/aside-1
+
+block scripts
+    script(src="https://yastatic.net/share2/share.js")

@@ -18,16 +18,16 @@ html(lang= meta.lang)
                         .container
                             .row.w-100.align-items-center.mx-0
                                 .col-auto.px-0.order-lg-1
-                                    a.navbar-brand.mr-0.js-link-home(href= meta.lang === 'en' ? '/index': '/' + meta.lang + '/index')
+                                    a.navbar-brand.me-0.js-link-home(href= meta.lang === 'en' ? '/index': '/' + meta.lang + '/index')
                                         span.logo
                                             img.logo-img(src='/public/icons/logo.svg', alt="logo", style="width:1em;height:1em")
                                         | Blog Crypto
-                                .col-auto.ml-auto.px-0.order-lg-3
+                                .col-auto.ms-auto.px-0.order-lg-3
                                     include ../../components/switcher/switcher
 
                                 if navBar
-                                    .col-auto.pr-0.pl-1.pl-sm-3
-                                        button.navbar-toggler(type="button", data-toggle="collapse", data-target="#navbarToggle", aria-controls="navbarToggle", aria-expanded="false", aria-label="Toggle navigation")
+                                    .col-auto.pe-0.ps-1.ps-sm-3
+                                        button.navbar-toggler(type="button", data-bs-toggle="collapse", data-bs-target="#navbarToggle", aria-controls="navbarToggle", aria-expanded="false", aria-label="Toggle navigation")
                                             span.navbar-toggler-icon
 
                                     .col-12.col-lg.order-lg-2
@@ -38,29 +38,36 @@ html(lang= meta.lang)
                                                 include ../../components/search/search-form
 
             main.main
+                .container
+                    .banner.mt-3
+                        picture
+                            source(srcset="/public/images/banner-728x90@1x.jpg 2x, /public/images/banner-728x90_sm.jpg 1x", media="(max-width: 768px)")
+                            source(srcset="/public/images/banner-970x90@2x.jpg 2x, /public/images/banner-970x90.jpg 1x")
+                            img(src="/public/images/banner-970x90.jpg", alt="Blog Crypto banner")
+
                 block main
 
             block footer
                 footer.footer.bg-light.py-3.mt-5
                     .container
                         .row.align-items-center
-                            .col-auto.col-lg-1.text-center.text-lg-left.d-none.d-md-block.order-1.order-md-2.order-lg-1.pr-lg-0
+                            .col-auto.col-lg-1.text-center.text-lg-start.d-none.d-md-block.order-1.order-md-2.order-lg-1.pe-lg-0
                                 a.logo.border-0(href="#top")
                                     img.logo-img(src='/public/icons/logo.svg', alt="logo", style="width:1em;height:1em")
 
                             .col-sm.mb-3.mb-sm-0.order-sm-3
-                                .social.text-center.text-sm-right.text-lg-center
+                                .social.text-center.text-sm-end.text-lg-center
                                     +social(meta.lang)
 
                             .d-none.d-lg-block.col-lg-4.col-xl-3.order-lg-4
                                 include ../../components/search/search-form
 
-                            .col-12.col-sm.col-lg-3.col-xl-2.order-lg-2.pl-lg-0
+                            .col-12.col-sm.col-lg-3.col-xl-2.order-lg-2.ps-lg-0
                                 .attach.mt-md-2
                                     //-.d-flex.justify-content-center.justify-content-sm-start
                                         div Email:&nbsp;
                                         a(href="mailto:blogcryptoinfo@gmail.com") blogcryptoinfo@gmail.com
-                                    .text-center.text-sm-left © 2020 Blog crypto
+                                    .text-center.text-sm-start © 2020 Blog Crypto
 
         block scripts
 

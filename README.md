@@ -12,7 +12,7 @@
 
 #### Upgrade all packages
 
-`$ yarn upgrade-interactive [--latest]`
+    $ yarn upgrade-interactive [--latest]
 
 
 ### Development

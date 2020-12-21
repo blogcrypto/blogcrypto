@@ -179,6 +179,24 @@ module.exports = (env, argv) => {
             hot: true,
             port: 3000,
             host: '0.0.0.0',
+            historyApiFallback: {
+                rewrites: [
+                    { from: /^\/$/, to: '/index.html' },
+                    { from: /^\/index/, to: '/index.html' },
+                    { from: /^\/categories/, to: '/categories.html' },
+                    { from: /^\/market/, to: '/market.html' },
+                    { from: /^\/portfolio/, to: '/portfolio.html' },
+                    { from: /^\/about/, to: '/about.html' },
+                    { from: /^\/ru\/$/, to: '/ru/index.html' },
+                    { from: /^\/ru\/index/, to: '/ru/index.html' },
+                    { from: /^\/ru\/categories/, to: '/ru/categories.html' },
+                    { from: /^\/ru\/market/, to: '/ru/market.html' },
+                    { from: /^\/ru\/portfolio/, to: '/ru/portfolio.html' },
+                    { from: /^\/ru\/about/, to: '/ru/about.html' },
+                    { from: /^\/search/, to: '/search.html' },
+                    { from: /./, to: '/404.html' }
+                ]
+            }
             // public: '192.168.31.49:3000',
             // proxy: {
             //     '/api': 'http://localhost:8080'

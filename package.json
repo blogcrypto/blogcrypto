@@ -16,7 +16,7 @@
     "projectName": "Blog Crypto"
   },
   "dependencies": {
-    "bootstrap": "^5.0.0-alpha1",
+    "bootstrap": "^5.0.0-beta1",
     "lodash": "^4.17.20",
     "vanilla-lazyload": "^17.1.3"
   },

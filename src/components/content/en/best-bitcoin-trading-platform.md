@@ -14,7 +14,7 @@ Centralized Exchanges (CEX) are intermediary platforms that provide control over
 The largest exchange in the world by volume.
 
 <p>
-    <a href="https://www.binance.com?ref=26375672" target="_blank" rel="noopener noreferrer">
+    <a href="https://www.binance.com?ref=26375672" class="img-ext-link" data-link-text="Open www.binance.com in new tab" target="_blank" rel="noopener noreferrer">
         <picture class="img-wrap" style="padding-bottom: calc(100/225*100%)">
             <source data-srcset="/public/images/exchanges/binance.jpg 2x, /public/images/exchanges/binance_sm.jpg 1x" media="(max-width: 768px)">
             <source data-srcset="/public/images/exchanges/binance@2x.jpg 2x, /public/images/exchanges/binance.jpg 1x">
@@ -43,7 +43,7 @@ The largest exchange in the world by volume.
 Bitcoin.com is not an official bitcoin website, it is a collection of tools and services built on top of the bitcoin network.
 
 <p>
-    <a href="https://exchange.bitcoin.com/referral/99755c31b1a089b6" target="_blank" rel="noopener noreferrer">
+    <a href="https://exchange.bitcoin.com/referral/99755c31b1a089b6" class="img-ext-link" data-link-text="Open exchange.bitcoin.com in new tab" target="_blank" rel="noopener noreferrer">
         <picture class="img-wrap" style="padding-bottom: calc(100/225*100%)">
             <source data-srcset="/public/images/exchanges/bitcoin.com.jpg 2x, /public/images/exchanges/bitcoin.com_sm.jpg 1x" media="(max-width: 768px)">
             <source data-srcset="/public/images/exchanges/bitcoin.com@2x.jpg 2x, /public/images/exchanges/bitcoin.com.jpg 1x">
@@ -73,7 +73,7 @@ Bitcoin.com is not an official bitcoin website, it is a collection of tools and 
 It is positioned as the most secure platform that makes it easy to buy and sell, as well as store cryptocurrencies. Included in the TOP-3 in terms of trading volume.
 
 <p>
-    <a href="https://www.huobi.com/en-us/register/?invite_code=h8qw6" target="_blank" rel="noopener noreferrer">
+    <a href="https://www.huobi.com/en-us/register/?invite_code=h8qw6" class="img-ext-link" data-link-text="Open www.huobi.com in new tab" target="_blank" rel="noopener noreferrer">
         <picture class="img-wrap" style="padding-bottom: calc(100/225*100%)">
             <source data-srcset="/public/images/exchanges/huobi.jpg 2x, /public/images/exchanges/huobi_sm.jpg 1x" media="(max-width: 768px)">
             <source data-srcset="/public/images/exchanges/huobi@2x.jpg 2x, /public/images/exchanges/huobi.jpg 1x">
@@ -100,7 +100,7 @@ It is positioned as the most secure platform that makes it easy to buy and sell,
 Once one of the most popular exchanges on the market, consistently ranked in the top 5 by all criteria.
 
 <p>
-    <a href="https://poloniex.com/signup?c=TNPMCDQQ" target="_blank" rel="noopener noreferrer">
+    <a href="https://poloniex.com/signup?c=TNPMCDQQ" class="img-ext-link" data-link-text="Open poloniex.com in new tab" target="_blank" rel="noopener noreferrer">
         <picture class="img-wrap" style="padding-bottom: calc(100/225*100%)">
             <source data-srcset="/public/images/exchanges/poloniex.jpg 2x, /public/images/exchanges/poloniex_sm.jpg 1x" media="(max-width: 768px)">
             <source data-srcset="/public/images/exchanges/poloniex@2x.jpg 2x, /public/images/exchanges/poloniex.jpg 1x">
@@ -127,7 +127,7 @@ Once one of the most popular exchanges on the market, consistently ranked in the
 A cryptocurrency exchange working to improve its security.
 
 <p>
-    <a href="https://www.kucoin.com/?rcode=1sseshc" target="_blank" rel="noopener noreferrer">
+    <a href="https://www.kucoin.com/?rcode=1sseshc" class="img-ext-link" data-link-text="Open www.kucoin.com in new tab" target="_blank" rel="noopener noreferrer">
         <picture class="img-wrap" style="padding-bottom: calc(100/225*100%)">
             <source data-srcset="/public/images/exchanges/kukoin.jpg 2x, /public/images/exchanges/kukoin_sm.jpg 1x" media="(max-width: 768px)">
             <source data-srcset="/public/images/exchanges/kukoin@2x.jpg 2x, /public/images/exchanges/kukoin.jpg 1x">
@@ -154,7 +154,7 @@ A cryptocurrency exchange working to improve its security.
 Hong Kong blockchain platform that combines an exchange, a wallet, a credit protocol, as well as a cryptobank with the ability to earn money by storing coins.
 
 <p>
-    <a href="https://crypto.com/exch/8z8n472qxv" target="_blank" rel="noopener noreferrer">
+    <a href="https://crypto.com/exch/8z8n472qxv" class="img-ext-link" data-link-text="Open crypto.com in new tab" target="_blank" rel="noopener noreferrer">
         <picture class="img-wrap" style="padding-bottom: calc(100/225*100%)">
             <source data-srcset="/public/images/exchanges/crypto.com.jpg 2x, /public/images/exchanges/crypto.com_sm.jpg 1x" media="(max-width: 768px)">
             <source data-srcset="/public/images/exchanges/crypto.com@2x.jpg 2x, /public/images/exchanges/crypto.com.jpg 1x">
@@ -183,7 +183,7 @@ Hong Kong blockchain platform that combines an exchange, a wallet, a credit prot
 A cryptocurrency exchange that aims to promote the cryptocurrency market and support financial innovation.
 
 <p>
-    <a href="https://bitmax.io/register?inviteCode=RMVSIQAL" target="_blank" rel="noopener noreferrer">
+    <a href="https://bitmax.io/register?inviteCode=RMVSIQAL" class="img-ext-link" data-link-text="Open bitmax.io in new tab" target="_blank" rel="noopener noreferrer">
         <picture class="img-wrap" style="padding-bottom: calc(100/225*100%)">
             <source data-srcset="/public/images/exchanges/bitmax.jpg 2x, /public/images/exchanges/bitmax_sm.jpg 1x" media="(max-width: 768px)">
             <source data-srcset="/public/images/exchanges/bitmax@2x.jpg 2x, /public/images/exchanges/bitmax.jpg 1x">
@@ -212,7 +212,7 @@ A cryptocurrency exchange that aims to promote the cryptocurrency market and sup
 One of the first crypto-exchanges to start paying interest for storing its own Tiger Cash token (TCH).
 
 <p>
-    <a href="https://www.cointiger.top/#/register?refCode=UVIdze" target="_blank" rel="noopener noreferrer">
+    <a href="https://www.cointiger.top/#/register?refCode=UVIdze" class="img-ext-link" data-link-text="Open www.cointiger.top in new tab" target="_blank" rel="noopener noreferrer">
         <picture class="img-wrap" style="padding-bottom: calc(100/225*100%)">
             <source data-srcset="/public/images/exchanges/cointiger.jpg 2x, /public/images/exchanges/cointiger_sm.jpg 1x" media="(max-width: 768px)">
             <source data-srcset="/public/images/exchanges/cointiger@2x.jpg 2x, /public/images/exchanges/cointiger.jpg 1x">
@@ -241,7 +241,7 @@ One of the first crypto-exchanges to start paying interest for storing its own T
 OKEx maintains a secure, reliable and stable environment for trading digital assets on web and mobile applications.
 
 <p>
-    <a href="https://www.okex.com/join/2668346" target="_blank" rel="noopener noreferrer">
+    <a href="https://www.okex.com/join/2668346" class="img-ext-link" data-link-text="Open www.okex.com in new tab" target="_blank" rel="noopener noreferrer">
         <picture class="img-wrap" style="padding-bottom: calc(100/225*100%)">
             <source data-srcset="/public/images/exchanges/okex.jpg 2x, /public/images/exchanges/okex_sm.jpg 1x" media="(max-width: 768px)">
             <source data-srcset="/public/images/exchanges/okex@2x.jpg 2x, /public/images/exchanges/okex.jpg 1x">
@@ -272,7 +272,7 @@ Decentralized Exchange (DEX) - a platform for trading transactions directly betw
 ### Binance DEX
 
 <p>
-    <a href="https://www.binance.org/" target="_blank" rel="noopener noreferrer">
+    <a href="https://www.binance.org/" class="img-ext-link" data-link-text="Open www.binance.org in new tab" target="_blank" rel="noopener noreferrer">
         <picture class="img-wrap" style="padding-bottom: calc(100/225*100%)">
             <source data-srcset="/public/images/exchanges/binance-dex.jpg 2x, /public/images/exchanges/binance-dex_sm.jpg 1x" media="(max-width: 768px)">
             <source data-srcset="/public/images/exchanges/binance-dex@2x.jpg 2x, /public/images/exchanges/binance-dex.jpg 1x">
@@ -291,7 +291,7 @@ Decentralized Exchange (DEX) - a platform for trading transactions directly betw
 ### Uniswap
 
 <p>
-    <a href="https://app.uniswap.org/#/swap" target="_blank" rel="noopener noreferrer">
+    <a href="https://app.uniswap.org/#/swap" class="img-ext-link" data-link-text="Open app.uniswap.org in new tab" target="_blank" rel="noopener noreferrer">
         <picture class="img-wrap" style="padding-bottom: calc(100/225*100%)">
             <source data-srcset="/public/images/exchanges/uniswap.jpg 2x, /public/images/exchanges/uniswap_sm.jpg 1x" media="(max-width: 768px)">
             <source data-srcset="/public/images/exchanges/uniswap@2x.jpg 2x, /public/images/exchanges/uniswap.jpg 1x">
@@ -310,7 +310,7 @@ Decentralized Exchange (DEX) - a platform for trading transactions directly betw
 ### Curve
 
 <p>
-    <a href="https://www.curve.fi/" target="_blank" rel="noopener noreferrer">
+    <a href="https://www.curve.fi/" class="img-ext-link" data-link-text="Open www.curve.fi in new tab" target="_blank" rel="noopener noreferrer">
         <picture class="img-wrap" style="padding-bottom: calc(100/225*100%)">
             <source data-srcset="/public/images/exchanges/curve.jpg 2x, /public/images/exchanges/curve_sm.jpg 1x" media="(max-width: 768px)">
             <source data-srcset="/public/images/exchanges/curve@2x.jpg 2x, /public/images/exchanges/curve.jpg 1x">

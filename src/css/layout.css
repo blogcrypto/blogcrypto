@@ -21,7 +21,6 @@ body {
     min-width: 320px;
 }
 
-
 .wrapper {
     height: 100%;
     display: flex;
@@ -50,6 +49,7 @@ a {
 }
 
 a[href^="#"] {
+    color: #0057d8;
     border-bottom: 1px dashed currentColor;
 }
 
@@ -74,16 +74,20 @@ a[href^="#"] {
     color: #024dbc;
 }
 
-h2:not([class]) {
+h2 {
+    margin-top: 2.8rem;
+}
+
+h3 {
     margin-top: 2.5rem;
 }
 
-h3:not([class]) {
-    margin-top: 2rem;
+h4 {
+    margin-top: 2.2rem;
 }
 
-h4:not([class]) {
-    margin-top: 1.5rem;
+h5 {
+    margin-top: 1.8rem;
 }
 
 .header {
@@ -168,7 +172,6 @@ blockquote::before {
     font-size: 2.5rem;
     line-height: 0.65em;
 }
-
 
 .logo-img {
     width: 1em;
@@ -266,4 +269,48 @@ blockquote::before {
 .pagination a {
     border-bottom-style: solid;
     border-bottom-color: #dee2e6;
+}
+
+.breadcrumb-item {
+    display: flex;
+}
+
+.img-ext-link {
+    display: block;
+    position: relative;
+}
+
+.img-ext-link::before,
+.img-ext-link::after {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    opacity: 0;
+    transition: opacity .2s .12s;
+}
+
+.img-ext-link::before {
+    content: "";
+    background: rgba(0,0,0,0.5);
+    z-index: 1;
+}
+
+.img-ext-link::after {
+    content: attr(data-link-text);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.5rem;
+    padding: 1.5rem;
+    line-height: 1.2;
+    word-break: break-word;
+    color: #fff;
+    z-index: 2;
+}
+
+.img-ext-link:hover::before,
+.img-ext-link:hover::after {
+    opacity: 1;
 }
