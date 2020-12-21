@@ -4,10 +4,10 @@ block page-vars
     -
         var meta = {
             lang: 'en',
-            title: 'About | Blog Crypto',
-            h1: 'About',
-            description: '',
-            keywords: '',
+            title: 'About Blog Crypto – our mission and contacts',
+            h1: 'About Us',
+            description: 'About the Information resource telling about smart contracts, Bitcoin, cryptocurrency and blockchain technology in simple words.',
+            keywords: 'about Blog Crypto, about us, contacts, feedback form, our mission and purpose',
             type: 'website', //- website, article, audio, video
             url: PROJECT_URL + 'about',
             image: PROJECT_URL + 'public/images/main.jpg'
@@ -43,7 +43,14 @@ block main
         .container
             h1.mb-2.mt-5.display-6= meta.h1
 
-            div Blog Crypto is an information resource and a set of services on the topic: cryptocurrencies and blockchain technologies.
+            .row
+                .col-md-8.col-lg-9
+                    p Welcome to the Blog Crypto. Here you can find out the current value of bitcoin and other cryptocurrencies, see the statistics of the main cryptocurrency indices, and also use our services.
+                    p Blog Crypto provides free services such as currency conversion and a personal portfolio that will help you analyze your cryptocurrency investments and tell you when you should sell part of your assets or buy in addition to existing ones.
+                    p The Blog Crypto project was created to accelerate the transition of the world to cryptocurrency, telling in simple language about such concepts as blockchain, mining, smart contracts and other financial information and solutions, thereby trying to reduce the barrier to entry into the world of blockchain and cryptocurrencies.
+
+                .col-md-4.col-lg-3.text-center.mt-4.mt-md-0
+                    img.logo-img(src='/public/icons/logo.svg', alt="logo", style="width:12rem;height:12rem")
 
             .row
                 .col-sm-9.col-md-8.col.col-lg-7.col-xl-6

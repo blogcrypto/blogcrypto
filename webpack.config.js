@@ -193,6 +193,7 @@ module.exports = (env, argv) => {
                     { from: /^\/ru\/market/, to: '/ru/market.html' },
                     { from: /^\/ru\/portfolio/, to: '/ru/portfolio.html' },
                     { from: /^\/ru\/about/, to: '/ru/about.html' },
+                    { from: /^\/search/, to: '/search.html' },
                     { from: /./, to: '/404.html' }
                 ]
             }

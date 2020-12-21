@@ -21,7 +21,7 @@ You can create a spreadsheet on the official <a href="https://spreadsheets.googl
     </picture>
 </p>
 
-#### 1. Start a blank new spreadsheet
+### 1. Start a blank new spreadsheet
 
 <p>
     <picture class="img-wrap" style="padding-bottom: calc(240/960*100%)">
@@ -31,7 +31,7 @@ You can create a spreadsheet on the official <a href="https://spreadsheets.googl
     </picture>
 </p>
 
-#### 2. Add column titles
+### 2. Add column titles
 
 > Titles are identifiers and must be spelled exactly as shown below
 
@@ -51,7 +51,7 @@ You can create a spreadsheet on the official <a href="https://spreadsheets.googl
     </picture>
 </p>
 
-#### 3. Publish your spreadsheet
+### 3. Publish your spreadsheet
 
 Select from the menu "File" – "Publishing to the web"
 
@@ -73,7 +73,7 @@ In the pop-up window, click the publish button
     </picture>
 </p>
 
-#### 4. Insert your spreadsheet link into the app
+### 4. Insert your spreadsheet link into the app
 
 To get the link, click the "Access Settings" button
 
@@ -113,7 +113,7 @@ Paste the copied link into the app
     </picture>
 </p>
 
-#### 5. Fill the spreadsheet
+### 5. Fill the spreadsheet
 
 Enter the title of the required coin in the TITLE column
 
@@ -161,7 +161,7 @@ An example of filling in Google Spreadsheets can be seen on the example of a spr
 
 <h2 id="faq">FAQ</h2>
 
-#### Buying a coin
+### Buying a coin
 
 Set the purchase price of **all coins** in **BTC**. Set the bitcoin price in USD.
 
@@ -191,7 +191,7 @@ The current value can be found by setting the currency to BTC
     </picture>
 </p>
 
-#### Spreadsheet error
+### Spreadsheet error
 
 Check access to your spreadsheet by clicking on the appropriate link
 
@@ -203,7 +203,7 @@ Check access to your spreadsheet by clicking on the appropriate link
     </picture>
 </p>
 
-##### 1. Document not published
+#### 1. Document not published
 
 <p>
     <picture class="img-wrap" style="padding-bottom: calc(240/960*100%)">
@@ -233,7 +233,7 @@ The pop-up window should have the status "Published"
     </picture>
 </p>
 
-##### 2. Invalid address to spreadsheet
+#### 2. Invalid address to spreadsheet
 
 <p>
     <picture class="img-wrap" style="padding-bottom: calc(480/960*100%)">
