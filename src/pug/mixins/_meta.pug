@@ -15,3 +15,7 @@ mixin meta(meta)
     meta(name="keywords" content= meta.keywords)
     link(rel="canonical", href= meta.url)
     title #{meta.title}
+
+    if meta.verification
+        meta(name="google-site-verification", content="OB6y3CtO_qNFYBxBQm5oNWpTT1TR3svNh-7qlWew0eU")
+        meta(name="yandex-verification", content="d869b05c894acadb")

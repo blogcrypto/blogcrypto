@@ -4,12 +4,12 @@ block page-vars
     -
         var meta = {
             lang: 'ru',
-            title: 'BC Portfolio | Подробное руководство',
+            title: 'BC Portfolio | Подробное руководство Blog Crypto Portfolio',
             h1: 'Руководство пользователя BC Portfolio',
-            description: 'Подробная инструкция по работе с криптовалютным портфолио BC Portfolio.',
+            description: 'Пошаговая инструкция по работе с криптовалютным портфолио BC Portfolio. Подробное руководство по приложению Blog Crypto Portfolio.',
             keywords: 'инструкция по крипто портфолио BC Portfolio, руководство по криптовалютному портфолио, о приложении BC Portfolio',
             type: 'article', //- website, article, audio, video
-            url: PROJECT_URL + 'ru/articles/rukovodstvo-polzovatelya-bc-portfolio',
+            url: PROJECT_URL + 'ru/guides/rukovodstvo-polzovatelya-bc-portfolio',
             image: PROJECT_URL + 'public/images/portfolio/portfolio.jpg'
         }
         var navBar = {
@@ -73,9 +73,9 @@ block main
 
                     .mb-5
                         picture
-                            source(data-srcset="/public/images/portfolio/portfolio.jpg 2x, /public/images/portfolio/portfolio_sm.jpg 1x", media="(max-width: 768px)")
-                            source(data-srcset="/public/images/portfolio/portfolio@2x.jpg 2x, /public/images/portfolio/portfolio.jpg 1x")
-                            img.lazy(data-src="/public/images/portfolio/portfolio.jpg", alt="Приложение BC Portfolio")
+                            source(srcset="/public/images/portfolio/portfolio.jpg 2x, /public/images/portfolio/portfolio_sm.jpg 1x", media="(max-width: 768px)")
+                            source(srcset="/public/images/portfolio/portfolio@2x.jpg 2x, /public/images/portfolio/portfolio.jpg 1x")
+                            img(src="/public/images/portfolio/portfolio.jpg", alt="Приложение BC Portfolio")
 
                     div !{require('../../../components/content/ru/rukovodstvo-polzovatelya-bc-portfolio.md')}
 

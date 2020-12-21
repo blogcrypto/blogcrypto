@@ -125,7 +125,7 @@ export class Market {
                 <td>${row.market_cap_rank}</td>
                 <td style="padding-top:0;padding-bottom:0;">
                     <div>${row.symbol.toUpperCase()}</div>
-                    <div class="text-black-50" style="margin-top:-5px;font-size:0.8em">${row.name}</div>
+                    <div class="text-muted" style="margin-top:-5px;font-size:0.8em">${row.name}</div>
                 </td>
                 <td style="text-align: right">
                     ${P !== 'end' ? `${CS} <b>${decimalFormat(row.current_price, D)}</b>` : `<b>${ decimalFormat(row.current_price, D) }</b> ${ CS }`}

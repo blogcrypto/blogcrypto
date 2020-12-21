@@ -4,12 +4,12 @@ block page-vars
     -
         var meta = {
             lang: 'en',
-            title: 'BC Portfolio app user guide',
+            title: 'BC Portfolio app user guide | Blog Crypto Portfolio App',
             h1: 'BC Portfolio app user guide',
-            description: 'Detailed instructions for working with the BC Portfolio cryptocurrency portfolio.',
+            description: 'Step-by-step instructions for working with the cryptocurrency portfolio app BC Portfolio. A detailed guide to the Blog Crypto Portfolio app.',
             keywords: 'BC Portfolio Crypto Portfolio Guide, Crypto Portfolio Guide, About BC Portfolio App',
             type: 'article', //- website, article, audio, video
-            url: PROJECT_URL + 'articles/bc-portfolio-app-user-guide',
+            url: PROJECT_URL + 'guides/bc-portfolio-app-user-guide',
             image: PROJECT_URL + 'public/images/portfolio/portfolio.jpg'
         }
         var navBar = {
@@ -43,8 +43,8 @@ block page-vars
                 url: '/categories'
             },
             // {
-            //     title: 'Articles',
-            //     url: '/articles'
+            //     title: 'Guides',
+            //     url: '/guides'
             // },
             {
                 title: meta.h1,
@@ -73,9 +73,9 @@ block main
 
                     .mb-5
                         picture
-                            source(data-srcset="/public/images/portfolio/portfolio.jpg 2x, /public/images/portfolio/portfolio_sm.jpg 1x", media="(max-width: 768px)")
-                            source(data-srcset="/public/images/portfolio/portfolio@2x.jpg 2x, /public/images/portfolio/portfolio.jpg 1x")
-                            img.lazy(data-src="/public/images/portfolio/portfolio.jpg", alt="BC Portfolio App")
+                            source(srcset="/public/images/portfolio/portfolio.jpg 2x, /public/images/portfolio/portfolio_sm.jpg 1x", media="(max-width: 768px)")
+                            source(srcset="/public/images/portfolio/portfolio@2x.jpg 2x, /public/images/portfolio/portfolio.jpg 1x")
+                            img(src="/public/images/portfolio/portfolio.jpg", alt="BC Portfolio App")
 
                     div !{require('../../components/content/en/bc-portfolio-app-user-guide.md')}
 
