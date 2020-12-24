@@ -6,8 +6,9 @@ Allow: /ru/*.html
 Allow: /robots.txt
 Allow: /public/favicon
 
-Disallow: /404.html
-Disallow: /search.html
+Disallow: /404
+Disallow: /search
+Disallow: *?q=
 
 User-agent: GoogleBot
 Allow: /dist/css/*.css
