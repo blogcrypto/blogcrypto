@@ -8,7 +8,7 @@ Allow: /public/favicon
 
 Disallow: /404
 Disallow: /search
-Disallow: *?q=
+Disallow: *?q=*
 
 User-agent: GoogleBot
 Allow: /dist/css/*.css

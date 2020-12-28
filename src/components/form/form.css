@@ -1,0 +1,21 @@
+.form-invalid input:required:invalid:not(:placeholder-shown),
+.form-invalid textarea:required:invalid {
+    border: 1px solid red;
+}
+
+.error {
+    color: red;
+    border-color: red;
+}
+
+.error option:not(:disabled) {
+    color: #000;
+}
+
+.hidden {
+    position: absolute;
+    font-size: 1px;
+    width: 1px;
+    height: 1px;
+    opacity: 0;
+}
