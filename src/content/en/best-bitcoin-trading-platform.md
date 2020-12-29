@@ -1,15 +1,27 @@
 <div class="contents p-3 pb-2 px-sm-5 pt-sm-4 pb-sm-3">
 
 * [Centralized](#centralized)
+    * [Binance](#binance)
+    * [Bitcoin.com Exchange](#bitcoincom-exchange)
+    * [Huobi Global](#huobi-global)
+    * [Poloniex](#poloniex)
+    * [KuKoin](#kukoin)
+    * [Crypto.com](#cryptocom)
+    * [BitMax](#bitmax)
+    * [CoinTiger](#cointiger)
+    * [OKEx](#okex)
 * [Decentralized](#decentralized)
-
+    * [Binance DEX](#binance-dex)
+    * [Uniswap](#uniswap)
+    * [Curve](#curve)
+    
 </div>
 
 <h2 id="centralized">Centralized</h2>
 
 Centralized Exchanges (CEX) are intermediary platforms that provide control over all trading operations, storage of funds and security.
 
-### Binance
+<h3 id="binance">Binance</h3>
 
 The largest exchange in the world by volume.
 
@@ -38,7 +50,7 @@ The largest exchange in the world by volume.
     <dd class="col-sm-8 col-xxl-9">2 BTC / day</dd>
 </dl>
 
-### Bitcoin.com Exchange
+<h3 id="bitcoincom-exchange">Bitcoin.com Exchange</h3>
 
 Bitcoin.com is not an official bitcoin website, it is a collection of tools and services built on top of the bitcoin network.
 
@@ -68,7 +80,7 @@ Bitcoin.com is not an official bitcoin website, it is a collection of tools and 
     </dd>
 </dl>
 
-### Huobi Global
+<h3 id="huobi-global">Huobi Global</h3>
 
 It is positioned as the most secure platform that makes it easy to buy and sell, as well as store cryptocurrencies. Included in the TOP-3 in terms of trading volume.
 
@@ -95,7 +107,7 @@ It is positioned as the most secure platform that makes it easy to buy and sell,
     <dd class="col-sm-8 col-xxl-9">0,1 BTC / day</dd>
 </dl>
 
-### Poloniex
+<h3 id="poloniex">Poloniex</h3>
 
 Once one of the most popular exchanges on the market, consistently ranked in the top 5 by all criteria.
 
@@ -122,7 +134,7 @@ Once one of the most popular exchanges on the market, consistently ranked in the
     <dd class="col-sm-8 col-xxl-9">$ 10 000 / day</dd>
 </dl>
 
-### KuKoin
+<h3 id="kukoin">KuKoin</h3>
 
 A cryptocurrency exchange working to improve its security.
 
@@ -149,7 +161,7 @@ A cryptocurrency exchange working to improve its security.
     <dd class="col-sm-8 col-xxl-9">5 BTC / day</dd>
 </dl>
 
-### Crypto.com
+<h3 id="cryptocom">Crypto.com</h3>
 
 Hong Kong blockchain platform that combines an exchange, a wallet, a credit protocol, as well as a cryptobank with the ability to earn money by storing coins.
 
@@ -178,7 +190,7 @@ Hong Kong blockchain platform that combines an exchange, a wallet, a credit prot
     <dd class="col-sm-8 col-xxl-9">$ 5 000 / day</dd>
 </dl>
 
-### BitMax
+<h3 id="bitmax">BitMax</h3>
 
 A cryptocurrency exchange that aims to promote the cryptocurrency market and support financial innovation.
 
@@ -207,7 +219,7 @@ A cryptocurrency exchange that aims to promote the cryptocurrency market and sup
     <dd class="col-sm-8 col-xxl-9">5 BTC / day</dd>
 </dl>
 
-### CoinTiger
+<h3 id="cointiger">CoinTiger</h3>
 
 One of the first crypto-exchanges to start paying interest for storing its own Tiger Cash token (TCH).
 
@@ -236,7 +248,7 @@ One of the first crypto-exchanges to start paying interest for storing its own T
     <dd class="col-sm-8 col-xxl-9">5 BTC / day</dd>
 </dl>
 
-### OKEx
+<h3 id="okex">OKEx</h3>
 
 OKEx maintains a secure, reliable and stable environment for trading digital assets on web and mobile applications.
 
@@ -269,7 +281,7 @@ OKEx maintains a secure, reliable and stable environment for trading digital ass
 
 Decentralized Exchange (DEX) - a platform for trading transactions directly between users without intermediaries.
 
-### Binance DEX
+<h3 id="binance-dex">Binance DEX</h3>
 
 <p>
     <a href="https://www.binance.org/" class="img-ext-link" data-link-text="Open www.binance.org in new tab" target="_blank" rel="noopener noreferrer">
@@ -288,7 +300,7 @@ Decentralized Exchange (DEX) - a platform for trading transactions directly betw
     </dd>
 </dl>
 
-### Uniswap
+<h3 id="uniswap">Uniswap</h3>
 
 <p>
     <a href="https://app.uniswap.org/#/swap" class="img-ext-link" data-link-text="Open app.uniswap.org in new tab" target="_blank" rel="noopener noreferrer">
@@ -307,7 +319,7 @@ Decentralized Exchange (DEX) - a platform for trading transactions directly betw
     </dd>
 </dl>
 
-### Curve
+<h3 id="curve">Curve</h3>
 
 <p>
     <a href="https://www.curve.fi/" class="img-ext-link" data-link-text="Open www.curve.fi in new tab" target="_blank" rel="noopener noreferrer">
