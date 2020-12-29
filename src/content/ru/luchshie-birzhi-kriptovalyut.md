@@ -1,7 +1,19 @@
 <div class="contents p-3 pb-2 px-sm-5 pt-sm-4 pb-sm-3">
 
 * [Централизованные](#centralized)
+    * [Binance](#binance)
+    * [Bitcoin.com Exchange](#bitcoincom-exchange)
+    * [Huobi Global](#huobi-global)
+    * [Poloniex](#poloniex)
+    * [KuKoin](#kukoin)
+    * [Crypto.com](#cryptocom)
+    * [BitMax](#bitmax)
+    * [CoinTiger](#cointiger)
+    * [OKEx](#okex)
 * [Децентрализованные](#decentralized)
+    * [Binance DEX](#binance-dex)
+    * [Uniswap](#uniswap)
+    * [Curve](#curve)
 
 </div>
 
@@ -9,7 +21,7 @@
 
 Централизованные биржи CEX (Centralized Exchanges) - площадки-посредники, обеспечивающие контроль за всеми торговыми операциями, хранением средств и безопасностью.
 
-### Binance
+<h3 id="binance">Binance</h3>
 
 Крупнейшая биржа по объему в мире.
 
@@ -40,7 +52,7 @@
     <dd class="col-sm-8">2 BTC в день</dd>
 </dl>
 
-### Bitcoin.com Exchange
+<h3 id="bitcoincom-exchange">Bitcoin.com Exchange</h3>
 
 Bitcoin.com не является официальным сайтом биткойна, это набор инструментов и сервисов, созданных на базе биткойн-сети.
 
@@ -72,7 +84,7 @@ Bitcoin.com не является официальным сайтом битко
     </dd>
 </dl>
 
-### Huobi Global
+<h3 id="huobi-global">Huobi Global</h3>
 
 Позиционируется как самая безопасная платформа, которая позволяет легко покупать и продавать, а также хранить криптовалюты. Входит в ТОП-3 по объему торгов.
 
@@ -101,7 +113,7 @@ Bitcoin.com не является официальным сайтом битко
     <dd class="col-sm-8">0,1 BTC в день</dd>
 </dl>
 
-### Poloniex
+<h3 id="poloniex">Poloniex</h3>
 
 Когда-то одна из самых популярных бирж на рынке, стабильно входившая в топ-5 по всем критериям.
 
@@ -130,7 +142,7 @@ Bitcoin.com не является официальным сайтом битко
     <dd class="col-sm-8">$ 10 000 в день</dd>
 </dl>
 
-### KuKoin
+<h3 id="kukoin">KuKoin</h3>
 
 Криптовалютная биржа работающая в направлении повышения своей безопасности.
 
@@ -159,7 +171,7 @@ Bitcoin.com не является официальным сайтом битко
     <dd class="col-sm-8">5 BTC в день</dd>
 </dl>
 
-### Crypto.com
+<h3 id="cryptocom">Crypto.com</h3>
 
 Гонконгская блокчейн-платформа, объединяющая в себе биржу, кошелек, кредитный протокол, а также криптобанк с возможностью зарабатывать на хранении монет.
 
@@ -190,7 +202,7 @@ Bitcoin.com не является официальным сайтом битко
     <dd class="col-sm-8">$ 5 000 в день</dd>
 </dl>
 
-### BitMax
+<h3 id="bitmax">BitMax</h3>
 
 Криптовалютная биржа, которая ставит своей целью продвижение рынка криптовалют и поддержку финансовых инноваций.
 
@@ -221,7 +233,7 @@ Bitcoin.com не является официальным сайтом битко
     <dd class="col-sm-8">5 BTC в день</dd>
 </dl>
 
-### CoinTiger
+<h3 id="cointiger">CoinTiger</h3>
 
 Одна из первых криптобирж, начавшая выплачивать проценты за хранение собственного токена TCH.
 
@@ -252,7 +264,7 @@ Bitcoin.com не является официальным сайтом битко
     <dd class="col-sm-8">5 BTC в день</dd>
 </dl>
 
-### OKEx
+<h3 id="okex">OKEx</h3>
 
 OKEx поддерживает безопасную, надежную и стабильную среду для торговли цифровыми активами в веб- и мобильных приложениях.
 
@@ -287,7 +299,7 @@ OKEx поддерживает безопасную, надежную и стаб
 
 Децентрализованные биржи DEX (Decentralized Exchanges) - площадки для торговых сделок напрямую между пользователями без посредников.
 
-### Binance DEX
+<h3 id="binance-dex">Binance DEX</h3>
 
 <p>
     <a href="https://www.binance.org/" class="img-ext-link" data-link-text="Открыть www.binance.org в новой вкладке" target="_blank" rel="noopener noreferrer">
@@ -306,7 +318,7 @@ OKEx поддерживает безопасную, надежную и стаб
     </dd>
 </dl>
 
-### Uniswap
+<h3 id="uniswap">Uniswap</h3>
 
 <p>
     <a href="https://app.uniswap.org/#/swap" class="img-ext-link" data-link-text="Открыть app.uniswap.org в новой вкладке" target="_blank" rel="noopener noreferrer">
@@ -325,7 +337,7 @@ OKEx поддерживает безопасную, надежную и стаб
     </dd>
 </dl>
 
-### Curve
+<h3 id="curve">Curve</h3>
 
 <p>
     <a href="https://www.curve.fi/" class="img-ext-link" data-link-text="Открыть www.curve.fi в новой вкладке" target="_blank" rel="noopener noreferrer">

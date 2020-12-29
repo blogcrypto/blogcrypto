@@ -6,6 +6,7 @@
     * [Trezor](#trezor)
     * [Ledger](#ledger)
     * [KeepKey](#keepkey)
+    * [CoolWallet](#coolwallet)
 
 </div>
 
@@ -224,4 +225,37 @@ You can buy a wallet from the official distributor in your country; you can find
     <dd class="col-sm-9 col-md-10">Free</dd>
     <dt class="col-sm-3 col-md-2">Connectivity</dt>
     <dd class="col-sm-9 col-md-10">Micro USB</dd>
+</dl>
+
+<h3 id="coolwallet">CoolWallet</h3>
+
+<p>
+    <a href="https://coolwallet.io/product/coolwallet/?ref=blogcrypto" class="img-ext-link" data-link-text="Open coolwallet.io in new tab" target="_blank" rel="noopener noreferrer">
+        <picture class="img-wrap" style="padding-bottom: calc(480/960*100%)">
+            <source data-srcset="/public/images/hardware-wallets/coolwallet.jpg 2x, /public/images/hardware-wallets/coolwallet_sm.jpg 1x" media="(max-width: 768px)">
+            <source data-srcset="/public/images/hardware-wallets/coolwallet@2x.jpg 2x, /public/images/hardware-wallets/coolwallet.jpg 1x">
+            <img class="img-embed lazy" data-src="/public/images/hardware-wallets/coolwallet.jpg" alt="CoolWallet hardware wallet">
+        </picture>
+    </a>
+</p>
+
+<dl class="row">
+    <dt class="col-sm-3 col-md-2">Official site</dt>
+    <dd class="col-sm-9 col-md-10">
+        <a href="https://www.coolwallet.io/?ref=blogcrypto" class="ext" target="_blank" rel="noopener noreferrer">coolwallet.io</a>
+    </dd>
+    <dt class="col-sm-3 col-md-2">Since</dt>
+    <dd class="col-sm-9 col-md-10">2015</dd>
+    <dt class="col-sm-3 col-md-2">Country</dt>
+    <dd class="col-sm-9 col-md-10">Taiwan</dd>
+    <dt class="col-sm-3 col-md-2">Soft</dt>
+    <dd class="col-sm-9 col-md-10">Closed-source software</dd>
+    <dt class="col-sm-3 col-md-2">Price</dt>
+    <dd class="col-sm-9 col-md-10">99 USD</dd>
+    <dt class="col-sm-3 col-md-2">Shipping</dt>
+    <dd class="col-sm-9 col-md-10">Free</dd>
+    <dt class="col-sm-3 col-md-2">Connectivity</dt>
+    <dd class="col-sm-9 col-md-10">Bluetooth</dd>
+    <dt class="col-sm-3 col-md-2">Features</dt>
+    <dd class="col-sm-9 col-md-10">Battery (3 months in standby mode)</dd>
 </dl>

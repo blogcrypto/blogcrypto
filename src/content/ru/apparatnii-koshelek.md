@@ -6,6 +6,7 @@
     * [Trezor](#trezor)
     * [Ledger](#ledger)
     * [KeepKey](#keepkey)
+    * [CoolWallet](#coolwallet)
 
 </div>
 
@@ -224,4 +225,37 @@
     <dd class="col-sm-8 col-xl-7">Бесплатно</dd>
     <dt class="col-sm-4 col-xl-5">Подключение</dt>
     <dd class="col-sm-8 col-xl-7">Micro USB</dd>
+</dl>
+
+<h3 id="coolwallet">CoolWallet</h3>
+
+<p>
+    <a href="https://coolwallet.io/product/coolwallet/?ref=blogcrypto" class="img-ext-link" data-link-text="Открыть coolwallet.io в новой вкладке" target="_blank" rel="noopener noreferrer">
+        <picture class="img-wrap" style="padding-bottom: calc(480/960*100%)">
+            <source data-srcset="/public/images/hardware-wallets/coolwallet.jpg 2x, /public/images/hardware-wallets/coolwallet_sm.jpg 1x" media="(max-width: 768px)">
+            <source data-srcset="/public/images/hardware-wallets/coolwallet@2x.jpg 2x, /public/images/hardware-wallets/coolwallet.jpg 1x">
+            <img class="img-embed lazy" data-src="/public/images/hardware-wallets/coolwallet.jpg" alt="CoolWallet hardware wallet">
+        </picture>
+    </a>
+</p>
+
+<dl class="row">
+    <dt class="col-sm-4 col-xl-5">Официальный сайт</dt>
+    <dd class="col-sm-8 col-xl-7">
+        <a href="https://www.coolwallet.io/?ref=blogcrypto" class="ext" target="_blank" rel="noopener noreferrer">coolwallet.io</a>
+    </dd>
+    <dt class="col-sm-4 col-xl-5">Начало работы</dt>
+    <dd class="col-sm-8 col-xl-7">2015</dd>
+    <dt class="col-sm-4 col-xl-5">Страна</dt>
+    <dd class="col-sm-8 col-xl-7">Тайвань</dd>
+    <dt class="col-sm-4 col-xl-5">Программное обеспечение</dt>
+    <dd class="col-sm-8 col-xl-7">Закрытый исходный код</dd>
+    <dt class="col-sm-4 col-xl-5">Цена</dt>
+    <dd class="col-sm-8 col-xl-7">99 USD</dd>
+    <dt class="col-sm-4 col-xl-5">Доставка</dt>
+    <dd class="col-sm-8 col-xl-7">Бесплатно</dd>
+    <dt class="col-sm-4 col-xl-5">Подключение</dt>
+    <dd class="col-sm-8 col-xl-7">Bluetooth</dd>
+    <dt class="col-sm-3 col-md-4 col-xl-5">Особенности</dt>
+    <dd class="col-sm-9 col-md-8 col-xl-7">Встроенная батарея (до 3 месяцев в режиме ожидания)</dd>
 </dl>
