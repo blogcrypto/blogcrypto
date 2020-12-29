@@ -1,3 +1,7 @@
+.pagination {
+    user-select: none;
+}
+
 .page-item {
     text-align: center;
 }
