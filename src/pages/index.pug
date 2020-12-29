@@ -55,6 +55,8 @@ block main
     section.mb-5
         .container
             h2.mb-4.display-6= local.marketCap
+
             .market.table-nowrap.table-responsive-xl.js-market(data-per-page="10", data-currency="usd", data-decimal="2")
+
             .mt-4
                 a.btn.btn-primary.btn-lg.active(href="/market", role="button", aria-pressed="true")= local.showAll

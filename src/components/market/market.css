@@ -1,0 +1,48 @@
+.loading {
+    position: relative;
+}
+
+.loading::after {
+    content: "";
+    position: absolute;
+    z-index: 10;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(255,255,255,.5);
+}
+
+
+[data-sort-by] {
+    cursor: pointer;
+}
+
+[data-sort-order="asc"],
+[data-sort-order="desc"] {
+    position: relative;
+}
+
+[data-sort-order="asc"]::after,
+[data-sort-order="desc"]::after {
+    content: "";
+    position: absolute;
+    border: 5px solid transparent;
+    width: 5px;
+    height: 5px;
+    top: 3px;
+    bottom: 0;
+    margin: auto;
+    margin-left: 5px;
+}
+
+[data-sort-order="asc"]::after {
+    border-top-color: var(--bs-primary);
+    border-bottom-width: 0;
+}
+
+[data-sort-order="desc"]::after {
+    border-bottom-color: var(--bs-primary);
+    border-top-width: 0;
+}
+
