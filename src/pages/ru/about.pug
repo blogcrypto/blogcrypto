@@ -54,31 +54,70 @@ block main
             .row
                 .col-sm-9.col-md-8.col.col-lg-7.col-xl-6
                     h2#contacts Контакты
-                    form
-                        .mb-3
-                            label.form-label(for="inputName") Ваше имя
-                            input#inputName.form-control(type="text")
 
-                        .mb-3
-                            label.form-label(for="inputEmail") Ваш email
-                            input#inputEmail.form-control(type="email")
+                    .js-form-wrapper
 
-                        .mb-3
-                            label.form-label(for="inputTheme") Тема сообщения
-                            select#inputTheme.form-select(aria-label="Default select example", aria-describedby="themeHelp")
-                                option(selected) Без темы
-                                option(value="1") Отзыв или предложение
-                                option(value="2") Предложение о сотрудничестве
-                                option(value="3") Сообщение об ошибке
-                            #themeHelp.form-text Выберите тему вашего сообщения
+                        iframe(
+                            id="form-iframe"
+                            name="form-iframe"
+                            class="js-form-iframe"
+                            style="display:none;"
+                            )
 
-                        .mb-3
-                            label.form-label(for="inputMessage") Ваше сообщение
-                            textarea#inputMessage.form-control(rows="4")
+                        form(
+                            class="js-form"
+                            target="form-iframe"
+                            action="https://docs.google.com/forms/u/0/d/e/1FAIpQLSfeBIlsxZj_Voh_Z6NlY-75nQwB2uarhtQPoXiRHKXBVS1PUw/formResponse"
+                            method="POST"
+                            )
 
-                        .mb-3
-                            label.form-label(for="formFile") Добавить файл (не обязательно)
-                            input.form-control#formFile(type="file", aria-describedby="fileHelp", multiple)
-                            #fileHelp.form-text Максимальный размер файла 10Mb
+                            .mb-3
+                                label.form-label(for="entry.1935367712") Ваше имя
+                                input.form-control.js-form-item(
+                                    type="text",
+                                    id="entry.1935367712",
+                                    name="entry.1935367712",
+                                    required
+                                    minlength="2"
+                                    maxlength="180"
+                                    title="От 2 до 180 знаков"
+                                    )
 
-                        button.btn.btn-primary.px-5(type="submit") Отправить
+                            .mb-3
+                                label.form-label(for="entry.1868956748") Ваш email
+                                input.form-control.js-form-item(
+                                    type="email",
+                                    id="entry.1868956748",
+                                    name="entry.1868956748",
+                                    required
+                                    maxlength="90"
+                                    pattern="^([a-z0-9_-]+\\.)*[a-z0-9_-]+@[a-z0-9_-]+(\\.[a-z0-9_-]+)*\\.[a-z]{2,6}$",
+                                    title="your@mail.com"
+                                    )
+
+                            .mb-3
+                                label.form-label(for="entry.343603617") Тема сообщения
+                                select.form-select.js-form-item(id="entry.343603617", name="entry.343603617", required, aria-label="Select theme", aria-describedby="themeHelp")
+                                    option(value="", selected, disabled) Выберите тему
+                                    option(value="Отзыв или предложение") Отзыв или предложение
+                                    option(value="Предложение о сотрудничестве") Предложение о сотрудничестве
+                                    option(value="Сообщение об ошибке") Сообщение об ошибке
+                                #themeHelp.form-text Выберите тему вашего сообщения
+
+                            .mb-3
+                                label.form-label(for="entry.175292203") Ваше сообщение
+                                textarea.form-control.js-form-item(
+                                    id="entry.175292203",
+                                    maxlength=500,
+                                    name="entry.175292203",
+                                    required,
+                                    title="Максимум 500 символов"
+                                    rows="4"
+                                    )
+
+                            input(type="checkbox", id="check", name="check", hidden, required)
+                            button.btn.btn-primary.px-5(type="submit") Отправить
+
+                        .js-form-confirm.d-none
+                            .alert.alert-success.mt-4(role="alert")
+                                .alert-heading.display-6 Ваше сообщение успешно отправлено!
