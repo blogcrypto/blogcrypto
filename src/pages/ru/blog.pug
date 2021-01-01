@@ -1,0 +1,119 @@
+extends ../../pug/layouts/default
+
+block page-vars
+    -
+        var meta = {
+            lang: 'ru',
+            title: 'Блог | Blog Crypto – новости, руководства, обзоры',
+            h1: 'Категории',
+            description: 'Блокчейн новости. Руководства по работе с криптовалютой. Рейтинги криптовалют. Обзоры бирж и криптовалют. Описание технологии блокчейн. ',
+            keywords: 'bitcoin новости, гайды по криптовалюте, обзор криптовалют, обзоры криптовалютных бирж, технология blockchain, рейтинг криптовалют',
+            type: 'website', //- website, article, audio, video
+            url: PROJECT_URL + '/ru/blog',
+            image: PROJECT_URL + '/public/images/main.jpg'
+        }
+
+        var navBar = {
+            currentUrl: 'blog',
+            list: [
+                {
+                    value: 'portfolio',
+                    title: 'Портфолио',
+                    url: '/ru/portfolio'
+                },
+                {
+                    value: 'market',
+                    title: 'Курс криптовалют',
+                    url: '/ru/market'
+                },
+                {
+                    value: 'blog',
+                    title: 'Блог',
+                    url: '/ru/blog'
+                },
+                {
+                    value: 'about',
+                    title: 'О нас',
+                    url: '/ru/about'
+                },
+            ]
+        }
+
+        var categoriesList = [
+            {
+                url: '/ru/articles',
+                img: {
+                    x1: '/public/images/category/category-2_sm.jpg',
+                    x2: '/public/images/category/category-2.jpg'
+                },
+                alt: '',
+                title: 'Статьи',
+                desc: ''
+            },
+            {
+                url: '/ru/guides',
+                img: {
+                    x1: '/public/images/category/category-1_sm.jpg',
+                    x2: '/public/images/category/category-1.jpg'
+                },
+                alt: '',
+                title: 'Руководства',
+                desc: ''
+            },
+        ]
+
+        var data = [
+            {
+                url: '/ru/articles/apparatnii-koshelek',
+                title: 'Аппаратный кошелек',
+                img: {
+                    x1: '/public/images/hardware-wallets/hardware-wallets_sm.jpg',
+                    x2: '/public/images/hardware-wallets/hardware-wallets.jpg'
+                },
+                alt: 'Аппаратные кошельки',
+                category: 'Статьи'
+            },
+            {
+                url: '/ru/guides/rukovodstvo-polzovatelya-bc-portfolio',
+                title: 'Руководство пользователя Portfolio BC',
+                img: {
+                    x1: '/public/images/portfolio/portfolio_sm.jpg',
+                    x2: '/public/images/portfolio/portfolio.jpg'
+                },
+                alt: 'Приложение BC Portfolio',
+                category: 'Руководства',
+                /*label: [{
+                    title: 'Руководства',
+                    color: '#198754'
+                }]*/
+            },
+            {
+                url: '/ru/articles/luchshie-birzhi-kriptovalyut',
+                title: 'Лучшие биржи криптовалют',
+                img: {
+                    x1: '/public/images/exchanges/exchanges-main_sm.jpg',
+                    x2: '/public/images/exchanges/exchanges-main.jpg'
+                },
+                alt: 'Криптовалютные биржи',
+                category: 'Статьи'
+            }
+        ]
+
+block main
+    section.mb-4
+        .container
+            h1.mb-3.mt-5.display-6= meta.h1
+
+            if (categoriesList)
+                .row
+                    each item in categoriesList
+                        .col-md-6.col-xxl-3.mb-4(style="display: flex")
+                            +category(item.url, item.img, item.alt, item.title, item.desc)
+
+            h2.mb-3 Последние статьи
+
+            if (data)
+                .row
+                    each item in data
+                        .col-sm-6.col-lg-4.col-xl-3.mb-4(style="display: flex")
+                            +card(item.url, item.title, item.img, item.alt, item.category, item.label)

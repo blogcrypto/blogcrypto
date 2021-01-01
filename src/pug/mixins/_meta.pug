@@ -5,6 +5,9 @@ mixin meta(meta)
     meta(property="og:image", content= meta.image)
     meta(property="og:description", content= meta.description)
 
+    if (meta.title === 'Search')
+        meta(name="robots", content="none")
+
     meta(name="twitter:title", content= meta.title)
     meta(name="twitter:card", content= meta.type)
     meta(name="twitter:site", content= meta.url)
@@ -14,6 +17,7 @@ mixin meta(meta)
     meta(name="description" content= meta.description)
     meta(name="keywords" content= meta.keywords)
     link(rel="canonical", href= meta.url)
+
     title #{meta.title}
 
     if meta.verification

@@ -9,16 +9,16 @@ block page-vars
             description: 'Пошаговая инструкция по работе с криптовалютным портфолио BC Portfolio. Подробное руководство по приложению Blog Crypto Portfolio.',
             keywords: 'инструкция по крипто портфолио BC Portfolio, руководство по криптовалютному портфолио, о приложении BC Portfolio',
             type: 'article', //- website, article, audio, video
-            url: PROJECT_URL + 'ru/guides/rukovodstvo-polzovatelya-bc-portfolio',
-            image: PROJECT_URL + 'public/images/portfolio/portfolio.jpg'
+            url: PROJECT_URL + '/ru/guides/rukovodstvo-polzovatelya-bc-portfolio',
+            image: PROJECT_URL + '/public/images/portfolio/portfolio.jpg'
         }
         var navBar = {
-            currentUrl: 'categories',
+            currentUrl: 'blog',
             list: [
                 {
-                    value: 'categories',
-                    title: 'Категории',
-                    url: '/ru/categories'
+                    value: 'portfolio',
+                    title: 'Портфолио',
+                    url: '/ru/portfolio'
                 },
                 {
                     value: 'market',
@@ -26,9 +26,9 @@ block page-vars
                     url: '/ru/market'
                 },
                 {
-                    value: 'portfolio',
-                    title: 'Портфолио',
-                    url: '/ru/portfolio'
+                    value: 'blog',
+                    title: 'Блог',
+                    url: '/ru/blog'
                 },
                 {
                     value: 'about',
@@ -40,12 +40,12 @@ block page-vars
         var breadcrumbsList = [
             {
                 title: 'Категории',
-                url: '/ru/categories'
+                url: '/ru/blog'
             },
-            // {
-            //     title: 'Руководства',
-            //     url: '/ru/guides'
-            // },
+            {
+                title: 'Руководства',
+                url: '/ru/guides'
+            },
             {
                 title: meta.h1,
                 url: ''

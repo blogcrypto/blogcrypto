@@ -11,7 +11,7 @@
   "repository": "git+https://github.com/blogcrypto/blogcrypto.git",
   "author": "blogcrypto <blogcryptoinfo@gmail.com>",
   "license": "ISC",
-  "homepage": "https://blogcrypto.info/",
+  "homepage": "https://blogcrypto.info",
   "config": {
     "projectName": "Blog Crypto"
   },
