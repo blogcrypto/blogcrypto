@@ -9,16 +9,16 @@ block page-vars
             description: 'About the Information resource telling about smart contracts, Bitcoin, cryptocurrency and blockchain technology in simple words.',
             keywords: 'about Blog Crypto, about us, contacts, feedback form, our mission and purpose',
             type: 'website', //- website, article, audio, video
-            url: PROJECT_URL + 'about',
-            image: PROJECT_URL + 'public/images/main.jpg'
+            url: PROJECT_URL + '/about',
+            image: PROJECT_URL + '/public/images/main.jpg'
         }
         var navBar = {
             currentUrl: 'about',
             list: [
                 {
-                    value: 'categories',
-                    title: 'Categories',
-                    url: '/categories'
+                    value: 'portfolio',
+                    title: 'Portfolio',
+                    url: '/portfolio'
                 },
                 {
                     value: 'market',
@@ -26,9 +26,9 @@ block page-vars
                     url: '/market'
                 },
                 {
-                    value: 'portfolio',
-                    title: 'Portfolio',
-                    url: '/portfolio'
+                    value: 'blog',
+                    title: 'Blog',
+                    url: '/blog'
                 },
                 {
                     value: 'about',
@@ -55,31 +55,76 @@ block main
             .row
                 .col-sm-9.col-md-8.col.col-lg-7.col-xl-6
                     h2#contacts Contacts
-                    form
-                        .mb-3
-                            label.form-label(for="inputName") Your name
-                            input#inputName.form-control(type="text")
 
-                        .mb-3
-                            label.form-label(for="inputEmail") Your email
-                            input#inputEmail.form-control(type="email")
+                    .js-form-wrapper
 
-                        .mb-3
-                            label.form-label(for="inputTheme") Message subject
-                            select#inputTheme.form-select(aria-label="Default select example", aria-describedby="themeHelp")
-                                option(selected) Common
-                                option(value="1") Feedback or suggestion
-                                option(value="2") Cooperation proposal
-                                option(value="3") Bug report
-                            #themeHelp.form-text Please select a subject for your message
+                        iframe(
+                            id="form-iframe"
+                            name="form-iframe"
+                            class="js-form-iframe"
+                            style="display:none;"
+                        )
 
-                        .mb-3
-                            label.form-label(for="inputMessage") Your message
-                            textarea#inputMessage.form-control(rows="4")
+                        form(
+                            class="js-form"
+                            target="form-iframe"
+                            action="https://docs.google.com/forms/u/0/d/e/1FAIpQLSe1HNt_tlPsPtym73gbDiK4oo-0yPdupRboPD0oU43LJ5-0Lg/formResponse"
+                            method="POST"
+                        )
 
-                        .mb-3
-                            label.form-label(for="formFile") Add file (optional)
-                            input.form-control#formFile(type="file", aria-describedby="fileHelp", multiple)
-                            #fileHelp.form-text Max file size 10Mb
+                            .mb-3
+                                label.form-label(for="entry.1935367712") Your name
+                                input.form-control.js-form-item(
+                                    type="text",
+                                    id="entry.1935367712",
+                                    name="entry.1935367712",
+                                    required
+                                    minlength="2"
+                                    maxlength="180"
+                                    title="2 to 180 characters"
+                                )
 
-                        button.btn.btn-primary.px-5(type="submit") Sent
+                            .mb-3
+                                label.form-label(for="entry.1868956748") Your email
+                                input.form-control.js-form-item(
+                                    type="email",
+                                    id="entry.1868956748",
+                                    name="entry.1868956748",
+                                    required
+                                    maxlength="90"
+                                    pattern="^([a-z0-9_-]+\\.)*[a-z0-9_-]+@[a-z0-9_-]+(\\.[a-z0-9_-]+)*\\.[a-z]{2,6}$",
+                                    title="your@mail.com"
+                                )
+
+                            .mb-3
+                                label.form-label(for="entry.343603617") Message subject
+                                select.form-select.js-form-item(
+                                    id="entry.343603617",
+                                    name="entry.343603617",
+                                    required,
+                                    aria-label="Select theme",
+                                    aria-describedby="themeHelp"
+                                    )
+                                    option(value="", selected, disabled) Choose subject
+                                    option(value="Feedback or suggestion") Feedback or suggestion
+                                    option(value="Cooperation proposal") Cooperation proposal
+                                    option(value="Bug report") Bug report
+                                #themeHelp.form-text Please select a subject for your message
+
+                            .mb-3
+                                label.form-label(for="entry.175292203") Your message
+                                textarea.form-control.js-form-item(
+                                    id="entry.175292203",
+                                    maxlength=500,
+                                    name="entry.175292203",
+                                    required,
+                                    title="Max 500 chars"
+                                    rows="4"
+                                )
+
+                            input.hidden(type="checkbox", id="check", name="check", required)
+                            button.btn.btn-primary.px-5(type="submit") Sent
+
+                        .js-form-confirm.d-none
+                            .alert.alert-success.mt-4(role="alert")
+                                .alert-heading.display-6 Your message was successfully sent!

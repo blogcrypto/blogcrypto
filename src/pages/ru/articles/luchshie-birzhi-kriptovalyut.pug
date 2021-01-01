@@ -9,16 +9,16 @@ block page-vars
             description: 'Самые актуальные централизованные и децентрализованные криптобиржи. Топ криптовалютных бирж на русском языке с выводом в рублях.',
             keywords: 'криптобиржа, blockchain биржа, блокчейн биржи, bitcoin биржа, биржа крипты, биржа криптовалют без верификации',
             type: 'article', //- website, article, audio, video
-            url: PROJECT_URL + 'ru/articles/luchshie-birzhi-kriptovalyut',
-            image: PROJECT_URL + 'public/images/exchanges/exchanges-main.jpg'
+            url: PROJECT_URL + '/ru/articles/luchshie-birzhi-kriptovalyut',
+            image: PROJECT_URL + '/public/images/exchanges/exchanges-main.jpg'
         }
         var navBar = {
-            currentUrl: 'categories',
+            currentUrl: 'blog',
             list: [
                 {
-                    value: 'categories',
-                    title: 'Категории',
-                    url: '/ru/categories'
+                    value: 'portfolio',
+                    title: 'Портфолио',
+                    url: '/ru/portfolio'
                 },
                 {
                     value: 'market',
@@ -26,9 +26,9 @@ block page-vars
                     url: '/ru/market'
                 },
                 {
-                    value: 'portfolio',
-                    title: 'Портфолио',
-                    url: '/ru/portfolio'
+                    value: 'blog',
+                    title: 'Блог',
+                    url: '/ru/blog'
                 },
                 {
                     value: 'about',
@@ -40,12 +40,12 @@ block page-vars
         var breadcrumbsList = [
             {
                 title: 'Категории',
-                url: '/ru/categories'
+                url: '/ru/blog'
             },
-            // {
-            //     title: 'Статьи',
-            //     url: '/ru/articles'
-            // },
+            {
+                title: 'Статьи',
+                url: '/ru/articles'
+            },
             {
                 title: meta.h1,
                 url: ''
@@ -77,7 +77,7 @@ block main
                             source(srcset="/public/images/exchanges/exchanges-main@2x.jpg 2x, /public/images/exchanges/exchanges-main.jpg 1x")
                             img(src="/public/images/exchanges/exchanges-main.jpg", alt="Cryptocurrencies Exchanges")
 
-                    div !{require('../../../components/content/ru/luchshie-birzhi-kriptovalyut.md')}
+                    div !{require('../../../content/ru/luchshie-birzhi-kriptovalyut.md')}
 
                 .col-lg-3.offset-xl-1
                     include ../../../components/aside/ru/aside-1

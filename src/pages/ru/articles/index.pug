@@ -1,0 +1,87 @@
+extends ../../../pug/layouts/default
+
+block page-vars
+    -
+        var meta = {
+            lang: 'ru',
+            title: 'Статьи, обзоры и аналитика криптовалют, бирж, кошельков',
+            h1: 'Статьи',
+            description: 'Статьи о биткоине, криптовалюте,  биржах и кошельках, помогающие лучше разобраться в криптовалютной индустрии. Обзоры, аналитика и перспективы развития блокчейн технологии.',
+            keywords: 'статьи о криптовалюте, статья о биткоин, статья об эфире, статья о лайткоин, что ждет криптовалюты, статьи о том как и где выгодно купить криптовалюту, статьи как заработать криптовалюту',
+            type: 'website', //- website, article, audio, video
+            url: PROJECT_URL + '/ru/articles',
+            image: PROJECT_URL + '/public/images/main.jpg'
+        }
+
+        var navBar = {
+            currentUrl: 'blog',
+            list: [
+                {
+                    value: 'portfolio',
+                    title: 'Портфолио',
+                    url: '/ru/portfolio'
+                },
+                {
+                    value: 'market',
+                    title: 'Курс криптовалют',
+                    url: '/ru/market'
+                },
+                {
+                    value: 'blog',
+                    title: 'Блог',
+                    url: '/ru/blog'
+                },
+                {
+                    value: 'about',
+                    title: 'О нас',
+                    url: '/ru/about'
+                },
+            ]
+        }
+
+        var breadcrumbsList = [
+            {
+                title: 'Категории',
+                url: '/ru/blog'
+            },
+            {
+                title: 'Статьи',
+                url: ''
+            }
+        ]
+
+        var data = [
+            {
+                url: '/ru/articles/apparatnii-koshelek',
+                title: 'Аппаратный кошелек',
+                img: {
+                    x1: '/public/images/hardware-wallets/hardware-wallets_sm.jpg',
+                    x2: '/public/images/hardware-wallets/hardware-wallets.jpg'
+                },
+                alt: 'Аппаратные кошельки',
+                category: 'Статьи'
+            },
+            {
+                url: '/ru/articles/luchshie-birzhi-kriptovalyut',
+                title: 'Лучшие биржи криптовалют',
+                img: {
+                    x1: '/public/images/exchanges/exchanges-main_sm.jpg',
+                    x2: '/public/images/exchanges/exchanges-main.jpg'
+                },
+                alt: 'Криптовалютные биржи',
+                category: 'Статьи'
+            }
+        ]
+
+block main
+    section.mb-4
+        .container
+            h1.mb-2.mt-5.display-6= meta.h1
+
+            +breadcrumbs(breadcrumbsList, meta.lang)
+
+            if (data)
+                .row
+                    each item in data
+                        .col-sm-6.col-lg-4.col-xl-3.mb-4(style="display: flex")
+                            +card(item.url, item.title, item.img, item.alt)

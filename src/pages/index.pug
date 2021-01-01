@@ -10,16 +10,16 @@ block page-vars
             keywords: 'cryptocurrency prices today, bitcoin cash price, bitcoin market cap, bitcoin rate, eth price usd, bitcoin cost',
             type: 'website',
             url: PROJECT_URL,
-            image: PROJECT_URL + 'public/images/main.jpg',
+            image: PROJECT_URL + '/public/images/main.jpg',
             verification: true
         }
         var navBar = {
             currentUrl: '',
             list: [
                 {
-                    value: 'categories',
-                    title: 'Categories',
-                    url: '/categories'
+                    value: 'portfolio',
+                    title: 'Portfolio',
+                    url: '/portfolio'
                 },
                 {
                     value: 'market',
@@ -27,9 +27,9 @@ block page-vars
                     url: '/market'
                 },
                 {
-                    value: 'portfolio',
-                    title: 'Portfolio',
-                    url: '/portfolio'
+                    value: 'blog',
+                    title: 'Blog',
+                    url: '/blog'
                 },
                 {
                     value: 'about',
@@ -55,6 +55,8 @@ block main
     section.mb-5
         .container
             h2.mb-4.display-6= local.marketCap
+
             .market.table-nowrap.table-responsive-xl.js-market(data-per-page="10", data-currency="usd", data-decimal="2")
+
             .mt-4
                 a.btn.btn-primary.btn-lg.active(href="/market", role="button", aria-pressed="true")= local.showAll

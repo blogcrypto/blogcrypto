@@ -90,6 +90,12 @@ h5 {
     margin-top: 1.8rem;
 }
 
+h2:not([class]),
+h3:not([class]),
+h4:not([class]) {
+    color: var(--bs-primary);
+}
+
 .header {
     box-shadow: 0 2px 4px -1px rgba(0,0,0,0.05), 0 4px 5px 0 rgba(0,0,0,0.04), 0 1px 10px 0 rgba(0,0,0,0.03);
 }

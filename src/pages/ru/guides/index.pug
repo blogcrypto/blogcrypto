@@ -1,0 +1,74 @@
+extends ../../../pug/layouts/default
+
+block page-vars
+    -
+        var meta = {
+            lang: 'ru',
+            title: 'Руководства и подробные инструкции по работе с криптовалютой',
+            h1: 'Руководства',
+            description: 'Подробные руководства и пошаговые инструкции по работе с криптовалютными кошельками, биржами и прочими инструментами и блокчейн технологией.',
+            keywords: 'создать холодный кошелек bitcoin core подробная инструкция, как купить биткоин пошаговые инструкции, инструкция как покупать криптовалюту на бирже за рубли, как завести криптовалютный кошелек',
+            type: 'website', //- website, article, audio, video
+            url: PROJECT_URL + '/ru/guides',
+            image: PROJECT_URL + '/public/images/main.jpg'
+        }
+        var navBar = {
+            currentUrl: 'blog',
+            list: [
+                {
+                    value: 'portfolio',
+                    title: 'Портфолио',
+                    url: '/ru/portfolio'
+                },
+                {
+                    value: 'market',
+                    title: 'Курс криптовалют',
+                    url: '/ru/market'
+                },
+                {
+                    value: 'blog',
+                    title: 'Блог',
+                    url: '/ru/blog'
+                },
+                {
+                    value: 'about',
+                    title: 'О нас',
+                    url: '/ru/about'
+                },
+            ]
+        }
+        var breadcrumbsList = [
+            {
+                title: 'Категории',
+                url: '/ru/blog'
+            },
+            {
+                title: 'Руководства',
+                url: ''
+            }
+        ]
+        var data = [
+            {
+                url: '/ru/guides/rukovodstvo-polzovatelya-bc-portfolio',
+                title: 'Руководство пользователя Portfolio BC',
+                img: {
+                    x1: '/public/images/portfolio/portfolio_sm.jpg',
+                    x2: '/public/images/portfolio/portfolio.jpg'
+                },
+                alt: 'Приложение BC Portfolio',
+                category: 'Руководства'
+            }
+        ]
+
+block main
+    section.mb-4
+        .container
+            h1.mb-2.mt-5.display-6= meta.h1
+
+            +breadcrumbs(breadcrumbsList, meta.lang)
+
+            if (data)
+                .row
+                    each item in data
+                        .col-sm-6.col-lg-4.col-xl-3.mb-4(style="display: flex")
+                            +card(item.url, item.title, item.img, item.alt)

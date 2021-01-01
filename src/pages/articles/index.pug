@@ -1,0 +1,85 @@
+extends ../../pug/layouts/default
+
+block page-vars
+    -
+        var meta = {
+            lang: 'en',
+            title: 'Articles and reviews of cryptocurrencies, exchanges, wallets',
+            h1: 'Articles',
+            description: 'Articles about bitcoin, cryptocurrencies, exchanges and wallets designed to understand the cryptocurrency industry. Reviews, analytics and prospects for the development of blockchain technology.',
+            keywords: 'cryptocurrency articles, article about bitcoin, article about ethereum, article about litecoin, prospects for cryptocurrencies, articles on how and where it is profitable to buy cryptocurrency, articles on how to earn cryptocurrency',
+            type: 'website', //- website, article, audio, video
+            url: PROJECT_URL + '/articles',
+            image: PROJECT_URL + '/public/images/main.jpg'
+        }
+
+        var navBar = {
+            currentUrl: 'blog',
+            list: [
+                {
+                    value: 'portfolio',
+                    title: 'Portfolio',
+                    url: '/portfolio'
+                },
+                {
+                    value: 'market',
+                    title: 'Market',
+                    url: '/market'
+                },
+                {
+                    value: 'blog',
+                    title: 'Blog',
+                    url: '/blog'
+                },
+                {
+                    value: 'about',
+                    title: 'About',
+                    url: '/about'
+                },
+            ]
+        }
+
+        var breadcrumbsList = [
+            {
+                title: 'Categories',
+                url: '/blog'
+            },
+            {
+                title: meta.h1,
+                url: ''
+            }
+        ]
+
+        var data = [
+            {
+                url: 'articles/hardware-wallet',
+                title: 'Hardware wallet',
+                img: {
+                    x1: '/public/images/hardware-wallets/hardware-wallets_sm.jpg',
+                    x2: '/public/images/hardware-wallets/hardware-wallets.jpg'
+                },
+                alt: 'Hardware wallets'
+            },
+            {
+                url: 'articles/best-bitcoin-trading-platform',
+                title: 'Best bitcoin trading platform',
+                img: {
+                    x1: '/public/images/exchanges/exchanges-main_sm.jpg',
+                    x2: '/public/images/exchanges/exchanges-main.jpg'
+                },
+                alt: 'Cryptocurrencies Exchanges'
+            }
+        ]
+
+block main
+    section.mb-4
+        .container
+            h1.mb-2.mt-5.display-6= meta.h1
+
+            +breadcrumbs(breadcrumbsList, meta.lang)
+
+            if (data)
+                .row
+                    each item in data
+                        .col-sm-6.col-lg-4.col-xl-3.mb-4(style="display: flex")
+                            +card(item.url, item.title, item.img, item.alt)

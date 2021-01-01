@@ -6,4 +6,6 @@
 @import 'select.css';
 @import 'pagination.css';
 @import '../components/search/search.css';
+@import '../components/market/market.css';
+@import '../components/form/form.css';
 
