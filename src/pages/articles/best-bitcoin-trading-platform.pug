@@ -9,16 +9,16 @@ block page-vars
             description: 'Top crypto exchanges list. Decentralized and centralized cryptocurrency exchange. Convert cryptocurrency trading platform.',
             keywords: 'crypto exchange, top crypto exchanges, digital currency exchange,  crypto currency rate, best bitcoin trading app list',
             type: 'article', //- website, article, audio, video
-            url: PROJECT_URL + 'articles/best-bitcoin-trading-platform',
-            image: PROJECT_URL + 'public/images/exchanges/exchanges-main.jpg'
+            url: PROJECT_URL + '/articles/best-bitcoin-trading-platform',
+            image: PROJECT_URL + '/public/images/exchanges/exchanges-main.jpg'
         }
         var navBar = {
-            currentUrl: 'categories',
+            currentUrl: 'blog',
             list: [
                 {
-                    value: 'categories',
-                    title: 'Categories',
-                    url: '/categories'
+                    value: 'portfolio',
+                    title: 'Portfolio',
+                    url: '/portfolio'
                 },
                 {
                     value: 'market',
@@ -26,9 +26,9 @@ block page-vars
                     url: '/market'
                 },
                 {
-                    value: 'portfolio',
-                    title: 'Portfolio',
-                    url: '/portfolio'
+                    value: 'blog',
+                    title: 'Blog',
+                    url: '/blog'
                 },
                 {
                     value: 'about',
@@ -40,12 +40,12 @@ block page-vars
         var breadcrumbsList = [
             {
                 title: 'Categories',
-                url: '/categories'
+                url: '/blog'
             },
-            // {
-            //     title: 'Articles',
-            //     url: '/articles'
-            // },
+            {
+                title: 'Articles',
+                url: '/articles'
+            },
             {
                 title: meta.h1,
                 url: ''

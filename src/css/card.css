@@ -30,3 +30,35 @@
 .card-overlay:hover::before {
     background: rgba(0,0,0,.35);
 }
+
+.card-label-list {
+    position: absolute;
+    top: -.5rem;
+    left: -.5rem;
+}
+
+.card-label-item {
+    margin-bottom: .5rem;
+}
+
+.card-label-item span {
+    padding: .1rem 1rem .2rem;
+    color: #fff;
+}
+
+.card-img-top {
+    position: relative;
+}
+
+.card-category {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+}
+
+.card-category span {
+    display: inline-block;
+    padding: .1em 1em .2em;
+    color: #fff;
+    font-size: 0.875rem;;
+}

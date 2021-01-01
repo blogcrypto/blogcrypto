@@ -9,16 +9,16 @@ block page-vars
             description: 'Step-by-step instructions for working with the cryptocurrency portfolio app BC Portfolio. A detailed guide to the Blog Crypto Portfolio app.',
             keywords: 'BC Portfolio Crypto Portfolio Guide, Crypto Portfolio Guide, About BC Portfolio App',
             type: 'article', //- website, article, audio, video
-            url: PROJECT_URL + 'guides/bc-portfolio-app-user-guide',
-            image: PROJECT_URL + 'public/images/portfolio/portfolio.jpg'
+            url: PROJECT_URL + '/guides/bc-portfolio-app-user-guide',
+            image: PROJECT_URL + '/public/images/portfolio/portfolio.jpg'
         }
         var navBar = {
-            currentUrl: 'categories',
+            currentUrl: 'blog',
             list: [
                 {
-                    value: 'categories',
-                    title: 'Categories',
-                    url: '/categories'
+                    value: 'portfolio',
+                    title: 'Portfolio',
+                    url: '/portfolio'
                 },
                 {
                     value: 'market',
@@ -26,9 +26,9 @@ block page-vars
                     url: '/market'
                 },
                 {
-                    value: 'portfolio',
-                    title: 'Portfolio',
-                    url: '/portfolio'
+                    value: 'blog',
+                    title: 'Blog',
+                    url: '/blog'
                 },
                 {
                     value: 'about',
@@ -40,12 +40,12 @@ block page-vars
         var breadcrumbsList = [
             {
                 title: 'Categories',
-                url: '/categories'
+                url: '/blog'
             },
-            // {
-            //     title: 'Guides',
-            //     url: '/guides'
-            // },
+            {
+                title: 'Guides',
+                url: '/guides'
+            },
             {
                 title: meta.h1,
                 url: ''

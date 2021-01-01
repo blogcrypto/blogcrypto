@@ -1,25 +1,51 @@
 User-agent: *
-Disallow: /
-
-Allow: /*.html
-Allow: /ru/*.html
-Allow: /robots.txt
-Allow: /public/favicon
-
-User-agent: GoogleBot
-Allow: /dist/css/*.css
-Allow: /dist/js/*.js
-Allow: /public/images
-
-User-agent: Yandex
-Allow: /dist/css/*.css
-Allow: /dist/js/*.js
-Allow: /public/images
-Clean-Param: utm_source&utm_medium&utm_campaign
-Crawl-Delay: 0.5
-
+Disallow: /src
+Disallow: /dist
+Disallow: /CNAME
+Disallow: /.babelrc
+Disallow: /.editorconfig
+Disallow: /.gitignore
+Disallow: /*.json
+Disallow: /*.js
+Disallow: /*.lock
+Disallow: /*.md
 Disallow: /404
 Disallow: /search
+
+User-agent: GoogleBot
+Disallow: /src
+Disallow: /CNAME
+Disallow: /.babelrc
+Disallow: /.editorconfig
+Disallow: /.gitignore
+Disallow: /*.json
+Disallow: /*.js
+Disallow: /*.lock
+Disallow: /*.md
+Disallow: /404
+Disallow: /search
+
+Allow: /dist/css/*.css
+Allow: /dist/js/*.js
+
+User-agent: Yandex
+Disallow: /src
+Disallow: /CNAME
+Disallow: /.babelrc
+Disallow: /.editorconfig
+Disallow: /.gitignore
+Disallow: /*.json
+Disallow: /*.js
+Disallow: /*.lock
+Disallow: /*.md
+Disallow: /404
+Disallow: /search
+
+Allow: /dist/css/*.css
+Allow: /dist/js/*.js
+
+Clean-Param: utm_source&utm_medium&utm_campaign
+Crawl-Delay: 0.5
 
 Sitemap: https://blogcrypto.info/sitemap.xml
 Host: https://blogcrypto.info

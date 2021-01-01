@@ -9,16 +9,16 @@ block page-vars
             description: 'Cold wallets for Ledger Nano S, Ledger Nano X, Trezor One, Trezor T, Keepkey prices, difference. The best hardware wallet for storing cryptocurrency.',
             keywords: 'hardware wallets, Ledger Nano S price, Ledger Nano X price, Trezor One price, Trezor T price, Keepkey price',
             type: 'article', //- website, article, audio, video
-            url: PROJECT_URL + 'articles/hardware-wallet',
-            image: PROJECT_URL + 'public/images/hardware-wallets/hardware-wallets.jpg'
+            url: PROJECT_URL + '/articles/hardware-wallet',
+            image: PROJECT_URL + '/public/images/hardware-wallets/hardware-wallets.jpg'
         }
         var navBar = {
-            currentUrl: 'categories',
+            currentUrl: 'blog',
             list: [
                 {
-                    value: 'categories',
-                    title: 'Categories',
-                    url: '/categories'
+                    value: 'portfolio',
+                    title: 'Portfolio',
+                    url: '/portfolio'
                 },
                 {
                     value: 'market',
@@ -26,9 +26,9 @@ block page-vars
                     url: '/market'
                 },
                 {
-                    value: 'portfolio',
-                    title: 'Portfolio',
-                    url: '/portfolio'
+                    value: 'blog',
+                    title: 'Blog',
+                    url: '/blog'
                 },
                 {
                     value: 'about',
@@ -37,15 +37,16 @@ block page-vars
                 },
             ]
         }
+
         var breadcrumbsList = [
             {
                 title: 'Categories',
-                url: '/categories'
+                url: '/blog'
             },
-            // {
-            //     title: 'Articles',
-            //     url: '/articles'
-            // },
+            {
+                title: 'Articles',
+                url: '/articles'
+            },
             {
                 title: meta.h1,
                 url: ''
