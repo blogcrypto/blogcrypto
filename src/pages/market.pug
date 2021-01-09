@@ -26,6 +26,11 @@ block page-vars
                     url: '/market'
                 },
                 {
+                    value: 'converter',
+                    title: 'Converter',
+                    url: '/converter'
+                },
+                {
                     value: 'blog',
                     title: 'Blog',
                     url: '/blog'
@@ -79,3 +84,6 @@ block main
 
                 nav.mt-4(aria-label="pagination")
                     .js-market-pagination
+
+block scripts
+    script(src="/dist/js/market.js")

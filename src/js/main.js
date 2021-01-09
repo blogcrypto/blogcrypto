@@ -1,5 +1,5 @@
 import LazyLoad from 'vanilla-lazyload';
-import { Market } from '../components/market/market';
+// import { Market } from '../components/market/market';
 import { Switcher } from '../components/switcher/switcher';
 import { Form } from '../components/form/form';
 
@@ -14,9 +14,9 @@ export const lazyLoadInit = () => {
 document.addEventListener('DOMContentLoaded', () => {
     lazyLoadInit();
 
-    document.querySelectorAll('.js-market').forEach((el) => {
-        new Market(el);
-    });
+    // document.querySelectorAll('.js-market').forEach((el) => {
+    //     new Market(el);
+    // });
 
     document.querySelectorAll('.js-switcher').forEach((el) => {
         new Switcher(el);

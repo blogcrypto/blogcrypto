@@ -1,0 +1,236 @@
+.converter__wrap {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+@media (min-width: 768px) {
+    .converter__col_separator {
+        max-width: 60px;
+        margin-top: 1.2rem;
+    }
+}
+
+.converter__toggle {
+    font-size: 2rem;
+    margin-top: .5rem;
+    margin-bottom: .5rem;
+    text-align: center;
+}
+
+@media (min-width: 768px) {
+    .converter__toggle {
+        margin-top: 1rem;
+        margin-bottom: 1rem;
+    }
+}
+
+.converter__btn-group {
+    display: flex;
+    margin-bottom: 1rem;
+    background: #fff;
+    border-radius: .25rem;
+}
+
+.converter__btn-item {
+    width: 30%;
+}
+
+.converter__btn-item:last-child {
+    width: 40%;
+}
+
+.converter .btn-check:active + .btn-outline-primary:focus,
+.converter .btn-check:checked + .btn-outline-primary:focus,
+.converter .btn-outline-primary.active:focus,
+.converter .btn-outline-primary.dropdown-toggle.show:focus,
+.converter .btn-outline-primary:active:focus,
+.converter-coins__item[type="button"]:focus,
+.converter-currencies__item[type="button"]:focus {
+    box-shadow: none;
+}
+
+.converter__btn-item button:not(.dropdown-toggle) {
+    width: 75%;
+}
+
+.converter__btn-item > button:not(.dropdown-toggle) {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    width: 100%;
+}
+
+.converter__btn-item .dropdown-toggle {
+    min-width: 48px;
+}
+
+.converter__input-item {
+    padding: 1rem;
+    border: 1px solid #ccc;
+    background: #fff;
+    border-radius: .25rem;
+}
+
+.converter__input-wrap {
+    position: relative;
+}
+
+.converter__input-wrap::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    width: 2rem;
+    pointer-events: none;
+    background: linear-gradient(to right, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 1) 100%);;
+}
+
+.converter__input {
+    border: none;
+    display: block;
+    font-size: 2rem;
+    margin: 0.5rem 0 1rem;
+    background: transparent;
+    outline: none;
+    width: 100%;
+    padding-left: 0;
+    padding-right: 0;
+}
+
+.converter__price {
+    color: #757575;
+}
+
+.converter-coins__list,
+.converter-currencies__list {
+    overflow-x: hidden;
+    max-height: 315px;
+}
+
+.converter-coins__name {
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
+    max-width: 100px;
+    font-size: 0.875rem;
+}
+
+.converter-coins__symbol {
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
+    max-width: 60px;
+    font-weight: 500;
+}
+
+button.converter-coins__item.btn,
+button.converter-currencies__item.btn {
+    display: flex;
+    width: 100%;
+    border-radius: 0;
+    text-align: left;
+    white-space: nowrap;
+    align-items: center;
+}
+
+@media (min-width: 1200px) {
+    button.converter-coins__item.btn,
+    button.converter-currencies__item.btn {
+        font-size: .9rem;
+    }
+}
+
+button.converter-coins__item.btn:hover,
+button.converter-currencies__item.btn:hover {
+    background-color: #eee;
+}
+
+button.converter-coins__item.btn:not(:first-child),
+button.converter-currencies__item.btn:not(:first-child) {
+    border-top: 1px solid #ccc;
+}
+
+.converter-search__label {
+    width: 100%;
+    border-bottom: 1px solid #ccc;
+}
+
+.converter .dropdown-menu {
+    min-width: 5rem;
+}
+
+.converter-currencies__item {
+    font-weight: 500;
+}
+
+.converter-coin-image {
+    width: 4rem;
+    height: 4rem;
+}
+
+@media (min-width: 992px) {
+    .converter-coin-image {
+        width: 4.5rem;
+        height: 4.5rem;
+    }
+}
+
+/* Popular */
+@media (min-width: 1200px) {
+    .converter-popular {
+        font-size: 0.75rem;
+    }
+}
+
+.converter-popular thead th {
+    background: var(--light-blue);
+    font-weight: 700;
+    border-bottom: none;
+    padding-top: 0.25rem;
+    padding-bottom: 0.25rem;
+}
+
+td.converter-popular__col {
+    padding: 0.1rem .5rem;
+}
+
+@media (min-width: 1200px) {
+    td.converter-popular__col {
+        padding: 0.1rem .25rem;
+    }
+}
+
+.converter-popular__col_1 {
+    font-weight: 500;
+}
+
+.converter-popular__col_2,
+.converter-popular__col_3 {
+    text-align: right;
+}
+
+/* Numpad */
+.converter__numpad table {
+    width: 100%;
+}
+
+.converter__numpad td {
+    padding: 0;
+    width: 33%;
+}
+
+.converter__numpad td:not(:last-of-type) button {
+    border-right: 0;
+}
+
+.converter__num {
+    border-radius: 0;
+    width: 100%;
+    margin-bottom: -1px;
+}
+
+.converter__num:focus {
+    box-shadow: none;
+}

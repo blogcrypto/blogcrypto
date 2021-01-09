@@ -26,6 +26,11 @@ block page-vars
                     url: '/ru/market'
                 },
                 {
+                    value: 'converter',
+                    title: 'Конвертер',
+                    url: '/ru/converter'
+                },
+                {
                     value: 'blog',
                     title: 'Блог',
                     url: '/ru/blog'
@@ -54,6 +59,6 @@ block main
             #root
 
 block scripts
-    script(src="https://cdn.jsdelivr.net/gh/blogcrypto/portfolio/build/js/main.js")
-    script(src="https://cdn.jsdelivr.net/gh/blogcrypto/portfolio/build/js/2.chunk.js")
-    script(src="https://cdn.jsdelivr.net/gh/blogcrypto/portfolio/build/js/main.chunk.js")
+    script(src="https://cdn.jsdelivr.net/gh/blogcrypto/portfolio/build/js/main.js", crossorigin)
+    script(src="https://cdn.jsdelivr.net/gh/blogcrypto/portfolio/build/js/2.chunk.js", crossorigin)
+    script(src="https://cdn.jsdelivr.net/gh/blogcrypto/portfolio/build/js/main.chunk.js", crossorigin)
