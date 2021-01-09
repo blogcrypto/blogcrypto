@@ -7,5 +7,7 @@
 @import 'pagination.css';
 @import '../components/search/search.css';
 @import '../components/market/market.css';
+@import '../components/chart/chart.css';
+@import '../components/converter/converter.css';
 @import '../components/form/form.css';
 

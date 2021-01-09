@@ -1,0 +1,3 @@
+.yAxis .recharts-cartesian-axis-tick:first-of-type {
+    opacity: 0;
+}

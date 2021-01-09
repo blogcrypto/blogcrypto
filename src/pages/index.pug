@@ -5,7 +5,7 @@ block page-vars
         var meta = {
             lang: 'en',
             title: 'Cryptocurrency price | BTC in usd',
-            h1: '1 BTC in\u00A0usd',
+            h1: '1 BTC in\u00A0USD',
             description: 'Coins market. Top 10 cryptocurrency prices. Price of bitcoin today. Bitcoin cash, xrp, ada, price today in usd and euro. Ethereum rate today.',
             keywords: 'cryptocurrency prices today, bitcoin cash price, bitcoin market cap, bitcoin rate, eth price usd, bitcoin cost',
             type: 'website',
@@ -32,10 +32,15 @@ block page-vars
                     url: '/blog'
                 },
                 {
+                    value: 'converter',
+                    title: 'Converter',
+                    url: '/converter'
+                },
+                {
                     value: 'about',
                     title: 'About',
                     url: '/about'
-                },
+                }
             ]
         }
         var local = {
@@ -48,9 +53,7 @@ block main
         .text-md-end
             .d-inline-flex.align-items-baseline.mb-4.mt-5.alert.alert-primary
                 h1.display-6.me-1.me-sm-3= meta.h1
-
-                .display-4.font-weight-normal.me-1.text-nowrap.js-btc-price
-                span.display-6 $
+                .display-4.font-weight-normal.me-1.text-nowrap.ms-2.js-btc-price
 
     section.mb-5
         .container
@@ -60,3 +63,6 @@ block main
 
             .mt-4
                 a.btn.btn-primary.btn-lg.active(href="/market", role="button", aria-pressed="true")= local.showAll
+
+block scripts
+    script(src="/dist/js/market.js")

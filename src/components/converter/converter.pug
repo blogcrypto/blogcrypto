@@ -1,0 +1,128 @@
+.js-converter.converter
+    .row.g-0.align-items-center
+        .converter__col.col-12.col-md
+            .converter__item
+                .converter__btn-group.btn-group.js-converter-buttons(role="group", aria-label="Button group with nested dropdown")
+                    button.converter__btn-item.btn.btn-outline-primary.active(
+                        type="button",
+                        data-coin-id="bitcoin"
+                    ) BTC
+                    button.converter__btn-item.btn.btn-outline-primary(
+                        type="button",
+                        data-coin-id="ethereum"
+                    ) ETH
+                    .converter__btn-item.btn-group(role="group")
+                        button.btn.btn-outline-primary(
+                            type="button",
+                            data-coin-id="litecoin"
+                        ) LTC
+                        button.btn.btn-outline-primary.dropdown-toggle.dropdown-toggle-split(
+                            type="button",
+                            data-bs-toggle="dropdown",
+                            aria-expanded="false",
+                            data-bs-reference="parent",
+                            data-converter-coins="litecoin,ripple,polkadot,cardano,bitcoin-cash,binancecoin,chainlink,stellar,eos,monero,theta-token,tron,nem,vechain,tezos,cosmos,uniswap,dogecoin"
+                        )
+                            span.visually-hidden Toggle Dropdown
+
+                        .dropdown-menu.dropdown-menu-end.m-0.p-0(style="width:210px;")
+                            .converter-search
+                                label.converter-search__label.p-2
+                                    input.converter-search__input.form-control(
+                                        type="text",
+                                        placeholder="Find other coins",
+                                        aria-label="Search coins"
+                                    )
+
+                            .js-converter-coins-result
+                            .converter-coins.js-converter-coins-init
+
+                .converter__input-item
+                    label.converter__label
+                        .converter__input-wrap
+                            input.converter__input.form-control.js-converter-input-coin(type="text", inputmode="decimal", maxlength="20", autocomplete="off", value="1")
+                        .js-converter-coin-price
+                            .converter__price 1 BTC
+
+        .converter__col.converter__col_separator.col-12.col-md.text-center
+            button.btn.converter__toggle.js-converter-toggle.disabled.p-0(type="button", tabindex="-1", role="button", aria-disabled="true") ⇆
+
+        .converter__col.col-12.col-md
+            .converter__item
+                .converter__btn-group.btn-group.js-converter-buttons(role="group", aria-label="Button group with nested dropdown")
+                    button.converter__btn-item.btn.btn-outline-primary.active(
+                        type="button",
+                        data-currency-id="usd"
+                    ) USD
+                    button.converter__btn-item.btn.btn-outline-primary(
+                        type="button",
+                        data-currency-id="eur"
+                    ) EUR
+
+                    .converter__btn-item.btn-group(role="group")
+                        button.btn.btn-outline-primary(
+                            type="button",
+                            data-currency-id="gbp"
+                        ) GBP
+                        button.btn.btn-outline-primary.dropdown-toggle.dropdown-toggle-split(
+                            type="button",
+                            data-bs-toggle="dropdown",
+                            aria-expanded="false",
+                            data-converter-currencies="rub,uah",
+                        )
+                            span.visually-hidden Toggle Dropdown
+
+                        .dropdown-menu.m-0.p-0.dropdown-menu-end
+                            .converter-currencies.js-converter-currencies-init
+                                .converter-currencies__list
+                                    .p-2 Loading...
+
+                .converter__input-item
+                    label.converter__label
+                        .converter__input-wrap
+                            input.converter__input.form-control.js-converter-input-currency(type="text", inputmode="decimal", maxlength="20", autocomplete="off", value="Loading...")
+                        .js-converter-currency-price
+                            .converter__price 1 USD
+
+    .row.g-0
+        .converter__col.col-12.col-md.d-none.d-md-block
+            //-*.converter__numpad.mt-4
+                table
+                    tbody
+                        tr
+                            td
+                                button.converter__num.btn.btn-outline-primary(type="button") 7
+                            td
+                                button.converter__num.btn.btn-outline-primary(type="button") 8
+                            td
+                                button.converter__num.btn.btn-outline-primary(type="button") 9
+
+                        tr
+                            td
+                                button.converter__num.btn.btn-outline-primary(type="button") 4
+                            td
+                                button.converter__num.btn.btn-outline-primary(type="button") 5
+                            td
+                                button.converter__num.btn.btn-outline-primary(type="button") 6
+                        tr
+                            td
+                                button.converter__num.btn.btn-outline-primary(type="button") 3
+                            td
+                                button.converter__num.btn.btn-outline-primary(type="button") 2
+                            td
+                                button.converter__num.btn.btn-outline-primary(type="button") 1
+                        tr
+                            td
+                                button.converter__num.btn.btn-outline-primary(type="button") ,
+                            td
+                                button.converter__num.btn.btn-outline-primary(type="button") 0
+                            td
+                                button.converter__num.btn.btn-outline-primary(type="button") ←
+
+        .converter__col.converter__col_separator.col-12.col-md
+        .converter__col.col-12.col-md
+            .d-flex.mt-3
+                .me-1.text-muted Updated date:
+                .js-converter-actual-date.text-secondary(data-standart-type="1")
+
+

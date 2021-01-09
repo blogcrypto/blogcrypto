@@ -1,5 +1,6 @@
 // Vendors
 import 'bootstrap/js/dist/collapse';
+import 'bootstrap/js/dist/dropdown';
 
 // JS
 import './js/main';
