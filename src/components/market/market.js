@@ -78,10 +78,10 @@ export class Market {
         this.marketGlobal = data;
         this.initPagination();
 
-        this.nodes.marketCoins.innerHTML = decimalFormat(data.active_cryptocurrencies);
-        this.nodes.marketCap.innerHTML = `$${decimalFormat(data.total_market_cap.usd)}`;
-        this.nodes.marketVol.innerHTML = `$${decimalFormat(data.total_volume.usd)}`;
-        this.nodes.marketDominance.innerHTML = `${Object.keys(data.market_cap_percentage)[0].toUpperCase()} ${decimalFormat(Object.values(data.market_cap_percentage)[0], 2)}%`
+        if (this.nodes.marketCoins) this.nodes.marketCoins.innerHTML = decimalFormat(data.active_cryptocurrencies);
+        if (this.nodes.marketCap) this.nodes.marketCap.innerHTML = `$${decimalFormat(data.total_market_cap.usd)}`;
+        if (this.nodes.marketVol) this.nodes.marketVol.innerHTML = `$${decimalFormat(data.total_volume.usd)}`;
+        if (this.nodes.marketDominance) this.nodes.marketDominance.innerHTML = `${Object.keys(data.market_cap_percentage)[0].toUpperCase()} ${decimalFormat(Object.values(data.market_cap_percentage)[0], 2)}%`
     }
 
     async initTable(sortBy = 'rank', sortOrder = 'asc') {

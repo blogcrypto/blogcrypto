@@ -41,7 +41,7 @@ const getFiles = (entry) => {
 };
 
 const getNestedDir = (src, dir) => {
-    const srcArr = src.split('/');
+    const srcArr = src.replace(/\/index.pug/, '').split('/');
     let srcStr;
 
     if (srcArr[srcArr.length - 2] === dir) {
