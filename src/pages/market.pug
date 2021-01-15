@@ -50,7 +50,30 @@ block page-vars
 block main
     section.mb-4
         .container
-            h1.mb-4.mt-5.display-6= meta.h1
+            .bg-primary-light
+                .row.justify-content-center
+                    .col-auto
+                        small Coins:&nbsp;
+                        span.fw-bolder.js-market-cains-count
+                            span.spinner-border.market-spinner(role="status")
+                                span.visually-hidden Loading...
+                    .col-auto
+                        small Market Cap:&nbsp;
+                        span.fw-bolder.js-market-cap
+                            span.spinner-border.market-spinner(role="status")
+                                span.visually-hidden Loading...
+                    .col-auto
+                        small 24h Vol:&nbsp;
+                        span.fw-bolder.js-market-vol
+                            span.spinner-border.market-spinner(role="status")
+                                span.visually-hidden Loading...
+                    .col-auto
+                        small Dominance:&nbsp;
+                        span.fw-bolder.js-market-dominance
+                            span.spinner-border.market-spinner(role="status")
+                                span.visually-hidden Loading...
+
+            h1.mb-4.mt-4.display-6= meta.h1
 
             .js-market-wrapper
 

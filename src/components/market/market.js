@@ -18,7 +18,11 @@ export class Market {
             perPage: document.querySelector('.js-market-per-page'),
             preloader: document.querySelector('.js-table-preloader'),
             pagination: document.querySelectorAll('.js-market-pagination'),
-            btcPrice: document.querySelector('.js-btc-price')
+            btcPrice: document.querySelector('.js-btc-price'),
+            marketCoins: document.querySelector('.js-market-cains-count'),
+            marketCap: document.querySelector('.js-market-cap'),
+            marketVol: document.querySelector('.js-market-vol'),
+            marketDominance: document.querySelector('.js-market-dominance'),
         };
 
         this.marketGlobal = null;
@@ -73,6 +77,11 @@ export class Market {
 
         this.marketGlobal = data;
         this.initPagination();
+
+        this.nodes.marketCoins.innerHTML = decimalFormat(data.active_cryptocurrencies);
+        this.nodes.marketCap.innerHTML = `$${decimalFormat(data.total_market_cap.usd)}`;
+        this.nodes.marketVol.innerHTML = `$${decimalFormat(data.total_volume.usd)}`;
+        this.nodes.marketDominance.innerHTML = `${Object.keys(data.market_cap_percentage)[0].toUpperCase()} ${decimalFormat(Object.values(data.market_cap_percentage)[0], 2)}%`
     }
 
     async initTable(sortBy = 'rank', sortOrder = 'asc') {

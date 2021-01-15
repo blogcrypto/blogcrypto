@@ -346,8 +346,6 @@ dt {
     opacity: 1;
 }
 
-@media (max-width: 1199px) {
-    .max-w-280px_down-xl {
-        /*max-width: 330px;*/
-    }
+.bg-primary-light {
+    background: var(--light-blue);
 }
