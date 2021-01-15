@@ -65,6 +65,7 @@ const generatePages = (mode) => {
                       ? `${ getNestedDir(Object.values(page)[0], 'pages') }.html`
                       : `../${ getNestedDir(Object.values(page)[0], 'pages') }.html`,
             template: Object.values(page)[0],
+            inject: false,
             minify: {
                 collapseWhitespace: true,
                 preserveLineBreaks: true,
@@ -79,10 +80,14 @@ module.exports = (env, argv) => {
     const defaultConfig = {
         mode: argv.mode,
         entry: {
-            main: './src/index.js'
+            main: './src/index.js',
+            market: './src/components/market/market.js',
+            coin: './src/components/coin/coin.js',
+            converter: './src/components/converter/converter.js'
         },
         output: {
-            filename: 'js/main.js',
+            filename: argv.mode !== 'production' ? 'dist/js/[name].js' : 'js/[name].js',
+            // filename: 'js/main.js',
             // publicPath: './', // <script src="[publicPath]/[filename]"></script>
             path: PATHS.output.dist
         },
@@ -162,7 +167,7 @@ module.exports = (env, argv) => {
             PROJECT_URL: JSON.stringify(require('./package.json').homepage)
         }),
         new MiniCssExtractPlugin({
-            filename: 'css/main.css',
+            filename: argv.mode !== 'production' ? 'dist/css/main.css' : 'css/main.css',
             chunkFilename: '[id].css'
         }),
         // new CopyWebpackPlugin({
@@ -185,12 +190,16 @@ module.exports = (env, argv) => {
                     { from: /^\/index/, to: '/index.html' },
                     { from: /^\/blog/, to: '/blog.html' },
                     { from: /^\/market/, to: '/market.html' },
+                    { from: /^\/coin/, to: '/coin.html' },
+                    { from: /^\/converter/, to: '/converter.html' },
                     { from: /^\/portfolio/, to: '/portfolio.html' },
                     { from: /^\/about/, to: '/about.html' },
                     { from: /^\/ru\/$/, to: '/ru/index.html' },
                     { from: /^\/ru\/index/, to: '/ru/index.html' },
                     { from: /^\/ru\/blog/, to: '/ru/blog.html' },
                     { from: /^\/ru\/market/, to: '/ru/market.html' },
+                    { from: /^\/ru\/coin/, to: '/ru/coin.html' },
+                    { from: /^\/ru\/converter/, to: '/ru/converter.html' },
                     { from: /^\/ru\/portfolio/, to: '/ru/portfolio.html' },
                     { from: /^\/ru\/about/, to: '/ru/about.html' },
                     { from: /^\/search/, to: '/search.html' },

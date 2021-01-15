@@ -1,0 +1,108 @@
+extends ../pug/layouts/default
+
+block page-vars
+    -
+        var meta = {
+            lang: 'en',
+            title: 'Cryptocurrency price today | Coin chart and info',
+            h1: 'Cryptocurrency (Coin)',
+            description: 'Coin market capitalization, supply and charts. The latest Cryptocurrency price. Coin price per week, month, year, low and high.',
+            keywords: 'Cryptocurrency price, Coin chart and information, maximum Coin supply, maximum amount of Coin, Cryptocurrency price per day, Cryptocurrency price per week, Cryptocurrency price per month, Cryptocurrency price per year',
+            type: 'website',
+            url: PROJECT_URL + '/coin',
+            image: PROJECT_URL + '/public/images/main.jpg'
+        }
+
+        var navBar = {
+            currentUrl: 'market',
+            list: [
+                {
+                    value: 'portfolio',
+                    title: 'Portfolio',
+                    url: '/portfolio'
+                },
+                {
+                    value: 'market',
+                    title: 'Market',
+                    url: '/market'
+                },
+                {
+                    value: 'converter',
+                    title: 'Converter',
+                    url: '/converter'
+                },
+                {
+                    value: 'blog',
+                    title: 'Blog',
+                    url: '/blog'
+                },
+                {
+                    value: 'about',
+                    title: 'About',
+                    url: '/about'
+                },
+            ]
+        }
+
+        var breadcrumbsList = [
+            {
+                title: 'Coins',
+                url: '/market'
+            },
+            {
+                title: 'Loading...',
+                url: ''
+            }
+        ]
+
+block main
+    section.mb-4
+        .container
+            .mt-5
+                +breadcrumbs(breadcrumbsList, meta.lang)
+
+                .js-coin.coin
+                    .row
+                        .col-md-6.col-lg-5
+                            .row.mb-3.mt-md-4
+                                .col-auto
+                                    .coin__img
+                                        .spinner-grow.text-secondary(role="status")
+                                            span.visually-hidden Loading...
+                                .col
+                                    h1.coin__title.h2.mb-1.text-nowrap.text-secondary= meta.h1
+                                    .coin__rank.text-nowrap.text-secondary Loading...
+
+                        .col-md-6.col-lg-3.mb-4.pe-lg-4
+                            .text-secondary Price
+                            .row
+                                .col-auto.mb-2.pe-sm-4.pe-lg-3
+                                    .fs-2.text-nowrap.text-secondary Loading...
+
+                        .col-lg-4
+                            .row.justify-content-md-between
+                                .col-auto.col-sm.col-md-5.col-lg-12.mb-3.max-w-280px_down-xl
+                                    .text-secondary Supply
+                                    .text-nowrap.text-secondary Loading...
+
+                                .col-sm.col-md-6.col-lg-12.mb-3
+
+                                    .mb-3
+                                        .text-secondary Market Cap
+                                        .text-nowrap.text-secondary Loading...
+                                    div
+                                        .text-secondary Volume 24h
+                                        .text-nowrap.text-secondary Loading...
+
+                h2.mb-4
+                    span.js-coin-chart-title Coin / USD Chart
+                #chart-root.js-coin-chart Loading...
+
+block scripts
+    include ../components/coin/coin-template
+
+    script(src="https://unpkg.com/react/umd/react.production.min.js", crossorigin)
+    script(src="https://unpkg.com/react-dom/umd/react-dom.production.min.js", crossorigin)
+    script(src="https://unpkg.com/prop-types/prop-types.min.js", crossorigin)
+    script(src="https://unpkg.com/recharts/umd/Recharts.min.js", crossorigin)
+    script(src="/dist/js/coin.js")

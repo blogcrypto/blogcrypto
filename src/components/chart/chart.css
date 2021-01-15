@@ -1,0 +1,7 @@
+.yAxis .recharts-cartesian-axis-tick:first-of-type {
+    opacity: 0;
+}
+
+.recharts-brush-texts {
+    font-size: 14px;
+}

@@ -1,4 +1,8 @@
 :root {
     --light-orange: #fbc599;
     --light-blue: #b1d0ff;
+    --bs-red: #d63342;
+    --bs-green: #198251;
+    --bs-font-sans-serif: Roboto,system-ui,-apple-system,"Segoe UI","Helvetica Neue",Arial,"Noto Sans","Liberation Sans",sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji";
 }
+

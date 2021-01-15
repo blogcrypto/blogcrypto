@@ -16,6 +16,7 @@
     "projectName": "Blog Crypto"
   },
   "dependencies": {
+    "@popperjs/core": "^2.6.0",
     "bootstrap": "^5.0.0-beta1",
     "lodash": "^4.17.20",
     "vanilla-lazyload": "^17.1.3"

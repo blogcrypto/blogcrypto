@@ -1,0 +1,114 @@
+<script id="coin-template" type="text/template">
+    <div class="row">
+        <div class="col-md-6 col-lg-5">
+            <div class="row mb-3 mt-md-4">
+                <div class="col-auto">
+                    <div class="coin__img">
+                        <img src="<%= d.image.large %>" alt="<%= d.name %>">
+                    </div>
+                </div>
+                <div class="col">
+                    <h1 class="coin__title h2 mb-1"><%= d.name %> (<%= d.symbol.toUpperCase() %>)</h1>
+                    <% if (d.market_cap_rank) { %>
+                        <div class="coin__rank">Позиция #<%= d.market_cap_rank %></div>
+                    <% } %>
+                </div>
+            </div>
+            <dl class="row">
+                <% if (d.hashing_algorithm) { %>
+                    <dt class="col-5 col-sm-3 col-md-5 col-lg-4 text-secondary pe-0">Алгоритм хеширования</dt>
+                    <dd class="col-7 col-sm-9 col-md-7 col-lg-8"><%= d.hashing_algorithm %></dd>
+                <% } %>
+                <% if (d.genesis_date) { %>
+                    <dt class="col-5 col-sm-3 col-md-5 col-lg-4 text-secondary pe-0">Запуск блокчейна</dt>
+                    <dd class="col-7 col-sm-9 col-md-7 col-lg-8"><%= d.genesis_date %></dd>
+                <% } %><% if (d.links.homepage && d.links.homepage.length) { %>
+                    <dt class="col-5 col-sm-3 col-md-5 col-lg-4 text-secondary pe-0">Официальный сайт</dt>
+                    <dd class="col-7 col-sm-9 col-md-7 col-lg-8">
+                        <a class="ext" href="<%= d.links.homepage[0] %>" target="_blank" rel="noopener noreferrer"><%= d.links.homepage[0].split('//')[1] %></a>
+                    </dd>
+                <% } %>
+            </dl>
+        </div>
+        <div class="col-md-6 col-lg-3 mb-4 pe-lg-4">
+            <div class="text-secondary">Цена</div>
+            <div class="row">
+                <div class="col-auto mb-2 pe-sm-4 pe-lg-3">
+                    <div class="fs-2 text-nowrap">$<%= d.market_data.current_price.usd ? df(d.market_data.current_price.usd, 2) : 0 %></div>
+                    <div class="<% if (d.market_data.price_change_24h > 0) { %>text-success<% } else { %>text-danger<% } %>">
+                        <span>$<%= df(Math.abs(d.market_data.price_change_24h, 2)) %></span>
+                        <span>(<%= df(d.market_data.price_change_percentage_24h, 2)%>%)</span>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="row mt-1 flex-nowrap">
+                        <div class="col-auto">
+                            <small class="text-secondary">Низшая</small>
+                            <div class="text-nowrap">$<%= d.market_data.low_24h.usd ? df(d.market_data.low_24h.usd, 2) : 0 %></div>
+                        </div>
+                        <div class="col">
+                            <small class="text-secondary">Высшая</small>
+                            <div class="text-nowrap">$<%= d.market_data.high_24h.usd ? df(d.market_data.high_24h.usd, 2) : 0 %></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-auto mt-3">
+                    <div class="row bg-light rounded border border-1">
+                        <div class="col">
+                            <small>За&nbsp;неделю</small>
+                            <div class="<% if (d.market_data.price_change_percentage_7d > 0) { %>text-success<% } else { %>text-danger<% } %>"><%= df(d.market_data.price_change_percentage_7d, 2)%>%</div>
+                        </div>
+                        <div class="col">
+                            <small>За&nbsp;месяц</small>
+                            <div class="<% if (d.market_data.price_change_percentage_30d > 0) { %>text-success<% } else { %>text-danger<% } %>"><%= df(d.market_data.price_change_percentage_30d, 2)%>%</div>
+                        </div>
+                        <div class="col">
+                            <small>За&nbsp;год</small>
+                            <div class="<% if (d.market_data.price_change_percentage_1y > 0) { %>text-success<% } else { %>text-danger<% } %>"><%= df(d.market_data.price_change_percentage_1y, 2)%>%</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-lg-4">
+            <div class="row justify-content-md-between">
+                <div class="col-auto col-sm col-md-5 col-lg-12 mb-3">
+                    <div class="text-secondary">Эмиссия</div>
+                    <% if (d.market_data.total_supply) { %>
+                        <div class="coin__progress progress my-1">
+                            <div class="progress-bar" style="width:<%= Math.ceil((d.market_data.circulating_supply / d.market_data.total_supply) * 100) %>%" role="progressbar" aria-valuenow="<%= Math.ceil((d.market_data.circulating_supply / d.market_data.total_supply) * 100) %>" aria-valuemin="0" aria-valuemax="100">
+                                <div><%= Math.ceil((d.market_data.circulating_supply / d.market_data.total_supply) * 100) %>%</div>
+                            </div>
+                        </div>
+                        <div class="row justify-content-between align-items-end">
+                            <small class="col">В обращении</small>
+                            <div class="col-auto"><%= df(d.market_data.circulating_supply, 0)%> <%= d.symbol.toUpperCase() %></div>
+                        </div>
+                        <div class="row justify-content-between align-items-end">
+                            <small class="col">Всего</small>
+                            <div class="col-auto"><%= df(d.market_data.total_supply, 0)%> <%= d.symbol.toUpperCase() %></div>
+                        </div>
+                    <% } else { %>
+                        <div class="row align-items-end">
+                            <small class="col-auto pe-0">В обращении</small>
+                            <div class="col"><%= df(d.market_data.circulating_supply, 0)%> <%= d.symbol.toUpperCase() %></div>
+                        </div>
+                    <% } %>
+                </div>
+                <div class="col-sm col-md-6 col-lg-12 mb-3">
+                    <div class="mb-3">
+                        <div class="text-secondary">Капитализация</div>
+                            <div class="text-nowrap">$<%= d.market_data.market_cap.usd ? df(d.market_data.market_cap.usd, 2) : 0 %></div>
+                            <div class="text-nowrap">
+                                <span class="<% if (d.market_data.market_cap_change_percentage_24h > 0) { %>text-success<% } else { %>text-danger<% } %>">$<%= df(Math.abs(d.market_data.market_cap_change_24h_in_currency.usd), 2)%>&nbsp;(<%= df(d.market_data.market_cap_change_percentage_24h, 2)%>%)</span>
+                            </div>
+                        </div>
+                    <div>
+                        <div class="text-secondary">Суточный объем</div>
+                        <div class="text-nowrap">$<%= d.market_data.total_volume.usd ? df(d.market_data.total_volume.usd, 2) : 0 %></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</script>

@@ -1,0 +1,82 @@
+extends ../pug/layouts/default
+
+block page-vars
+    -
+        var meta = {
+            lang: 'en',
+            title: 'BTC calculator | Bitcoin to usd converter',
+            h1: 'Bitcoin calculator. BTC to USD converter',
+            description: 'Cryptocurrency calculator. Bitcoin converter. Bitcoin exchange rate. Crypto converter. Ethereum to usd exchange. Calculadora bitcoin a usd.',
+            keywords: '1 btc in usd, 1 usd to btc, 1 satoshi to usd, xrp to usd, crypto calculator, cryptocurrency converter',
+            type: 'website', //- website, article, audio, video
+            url: PROJECT_URL + '/converter',
+            image: PROJECT_URL + '/public/images/main.jpg'
+        }
+        var navBar = {
+            currentUrl: 'converter',
+            list: [
+                {
+                    value: 'portfolio',
+                    title: 'Portfolio',
+                    url: '/portfolio'
+                },
+                {
+                    value: 'market',
+                    title: 'Market',
+                    url: '/market'
+                },
+                {
+                    value: 'converter',
+                    title: 'Converter',
+                    url: '/converter'
+                },
+                {
+                    value: 'blog',
+                    title: 'Blog',
+                    url: '/blog'
+                },
+                {
+                    value: 'about',
+                    title: 'About',
+                    url: '/about'
+                }
+            ]
+        }
+
+block main
+    section.mb-4
+        .container
+            .h1.mb-2.mt-5.display-6 Cryptocurrencies converter
+            h1.mb-5.fs-5.text.fw-normal.text-secondary= meta.h1
+
+            .row
+                .col-xl-9
+                    include ../components/converter/converter
+
+                    h2
+                        span.js-converter-coin Bitcoin
+                        span &nbsp;/&nbsp;
+                        span.js-converter-currency USD
+                        span &nbsp;Last 7 Days
+
+                    .mt-3.mb-4
+                        .row
+                            .col-auto
+                                .js-converter-coin-image.converter-coin-image
+                            .col
+                                .h2.my-0.js-converter-price Loading...
+                                .h4.mt-0.js-converter-change Loading...
+                        #chart-root.js-converter-chart.mt-4
+
+                .col-md-8.col-lg-6.col-xl-3
+                    h2.mb-3.mt-xl-0 Popular
+
+                    .js-converter-popular.converter-popular
+                        table.converter-popular__table.table.table-striped.table-hover
+
+block scripts
+    script(src="https://unpkg.com/react/umd/react.production.min.js", crossorigin)
+    script(src="https://unpkg.com/react-dom/umd/react-dom.production.min.js", crossorigin)
+    script(src="https://unpkg.com/prop-types/prop-types.min.js", crossorigin)
+    script(src="https://unpkg.com/recharts/umd/Recharts.min.js", crossorigin)
+    script(src="/dist/js/converter.js")

@@ -1,0 +1,17 @@
+.coin__img,
+.coin__img .spinner-grow{
+    width: 60px;
+    height: 60px;
+}
+
+@media (min-width: 1200px) {
+    .coin__img,
+    .coin__img .spinner-grow {
+        width: 80px;
+        height: 80px;
+    }
+}
+
+.coin__progress {
+    width: 100%;
+}

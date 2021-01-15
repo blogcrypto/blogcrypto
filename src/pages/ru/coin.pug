@@ -1,0 +1,108 @@
+extends ../../pug/layouts/default
+
+block page-vars
+    -
+        var meta = {
+            lang: 'ru',
+            title: 'Криптовалюта цена сегодня | График и информация Монеты',
+            h1: 'Криптовалюта (Монеты)',
+            description: 'Рыночная капитализация, предложение и графики Монеты. Криптовалюта последняя цена. Цена Монеты за неделю, месяц, год, минимум и максимум цены за день.',
+            keywords: 'Криптовалюта цена, Монеты график и информация, максимальное предложение Монеты, максимальное количество Монеты, Криптовалюта цена за день, Криптовалюта цена за неделю, Криптовалюта цена за месяц, Криптовалюта цена за год',
+            type: 'website',
+            url: PROJECT_URL + '/ru/coin',
+            image: PROJECT_URL + '/public/images/main.jpg'
+        }
+
+        var navBar = {
+            currentUrl: 'market',
+            list: [
+                {
+                    value: 'portfolio',
+                    title: 'Портфолио',
+                    url: '/ru/portfolio'
+                },
+                {
+                    value: 'market',
+                    title: 'Курс криптовалют',
+                    url: '/ru/market'
+                },
+                {
+                    value: 'converter',
+                    title: 'Конвертер',
+                    url: '/ru/converter'
+                },
+                {
+                    value: 'blog',
+                    title: 'Блог',
+                    url: '/ru/blog'
+                },
+                {
+                    value: 'about',
+                    title: 'О нас',
+                    url: '/ru/about'
+                },
+            ]
+        }
+
+        var breadcrumbsList = [
+            {
+                title: 'Монеты',
+                url: '/ru/market'
+            },
+            {
+                title: 'Загрузка...',
+                url: ''
+            }
+        ]
+
+block main
+    section.mb-4
+        .container
+            .mt-5
+                +breadcrumbs(breadcrumbsList, meta.lang)
+
+                .js-coin.coin
+                    .row
+                        .col-md-6.col-lg-5
+                            .row.mb-3.mt-md-4
+                                .col-auto
+                                    .coin__img
+                                        .spinner-grow.text-secondary(role="status")
+                                            span.visually-hidden Загрузка...
+                                .col
+                                    h1.coin__title.h2.mb-1.text-nowrap.text-secondary= meta.h1
+                                    .coin__rank.text-nowrap.text-secondary Загрузка...
+
+                        .col-md-6.col-lg-3.mb-4.pe-lg-4
+                            .text-secondary Цена
+                            .row
+                                .col-auto.mb-2.pe-sm-4.pe-lg-3
+                                    .fs-2.text-nowrap.text-secondary Загрузка...
+
+                        .col-lg-4
+                            .row.justify-content-md-between
+                                .col-auto.col-sm.col-md-5.col-lg-12.mb-3.max-w-280px_down-xl
+                                    .text-secondary Эмиссия
+                                    .text-nowrap.text-secondary Загрузка...
+
+                                .col-sm.col-md-6.col-lg-12.mb-3
+
+                                    .mb-3
+                                        .text-secondary Капитализация
+                                        .text-nowrap.text-secondary Загрузка...
+                                    div
+                                        .text-secondary Суточный объем
+                                        .text-nowrap.text-secondary Загрузка...
+
+                h2.mb-4
+                    span.js-coin-chart-title График Монеты / USD
+                #chart-root.js-coin-chart Загрузка...
+
+block scripts
+    include ../../components/coin/coin-template-ru
+
+    script(src="https://unpkg.com/react/umd/react.production.min.js", crossorigin)
+    script(src="https://unpkg.com/react-dom/umd/react-dom.production.min.js", crossorigin)
+    script(src="https://unpkg.com/prop-types/prop-types.min.js", crossorigin)
+    script(src="https://unpkg.com/recharts/umd/Recharts.min.js", crossorigin)
+    script(src="/dist/js/coin.js")

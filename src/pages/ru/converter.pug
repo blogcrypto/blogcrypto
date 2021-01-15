@@ -1,0 +1,83 @@
+extends ../../pug/layouts/default
+
+block page-vars
+    -
+        var meta = {
+            lang: 'ru',
+            title: 'Биткоин калькулятор онлайн | Bitcoin конвертер',
+            h1: 'Биткоин в рублях, долларах, евро и в любой другой валюте и криптовалюте',
+            description: 'Калькулятор Биткоин в рубли. Перевести биткоин в рубли, доллар, евро, юань, гривну, usdt, eth, bsv и любую другую фиатную валюту и криптовалюту  онлайн.',
+            keywords: 'крипто калькулятор, крипто конвертер, калькулятор биткоин рубль, перевести bitcoin в рубли, конвертер криптовалют, bitcoin converter, биткоин доллар калькулятор',
+            type: 'website',
+            url: PROJECT_URL + '/ru/converter',
+            image: PROJECT_URL + '/public/images/main.jpg'
+        }
+        var navBar = {
+            currentUrl: 'converter',
+            list: [
+                {
+                    value: 'portfolio',
+                    title: 'Портфолио',
+                    url: '/ru/portfolio'
+                },
+                {
+                    value: 'market',
+                    title: 'Курс криптовалют',
+                    url: '/ru/market'
+                },
+                {
+                    value: 'converter',
+                    title: 'Конвертер',
+                    url: '/ru/converter'
+                },
+                {
+                    value: 'blog',
+                    title: 'Блог',
+                    url: '/ru/blog'
+                },
+                {
+                    value: 'about',
+                    title: 'О нас',
+                    url: '/ru/about'
+                },
+            ]
+        }
+
+block main
+    section.mb-4
+        .container
+            .h1.mb-2.mt-5.display-6 Конвертер криптовалюты
+            h1.mb-5.fs-5.text.fw-normal.text-secondary= meta.h1
+
+            .row
+                .col-xl-9
+                    include ../../components/converter/converter
+
+                    h2
+                        span Динамика курса&nbsp;
+                        span.js-converter-coin Bitcoin
+                        span &nbsp;/&nbsp;
+                        span.js-converter-currency USD
+                        span &nbsp;за неделю
+
+                    .mt-3.mb-4
+                        .row
+                            .col-auto
+                                .js-converter-coin-image.converter-coin-image
+                            .col
+                                .h2.my-0.js-converter-price Загрузка...
+                                .h4.mt-0.js-converter-change Загрузка...
+                        #chart-root.js-converter-chart.mt-4
+
+                .col-md-8.col-lg-6.col-xl-3
+                    h2.mb-3.mt-xl-0 Популярные
+
+                    .js-converter-popular.converter-popular
+                        table.converter-popular__table.table.table-striped.table-hover
+
+block scripts
+    script(src="https://unpkg.com/react/umd/react.production.min.js", crossorigin)
+    script(src="https://unpkg.com/react-dom/umd/react-dom.production.min.js", crossorigin)
+    script(src="https://unpkg.com/prop-types/prop-types.min.js", crossorigin)
+    script(src="https://unpkg.com/recharts/umd/Recharts.min.js", crossorigin)
+    script(src="/dist/js/converter.js")
