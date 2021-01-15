@@ -107,9 +107,25 @@ export class Converter {
             return `${ day } ${ months_arr[month] }`;
         };
 
-        data.splice(0, 1);
+        const removeDoubleDay = arr => {
+            const dateArr = [];
+            let day = '';
+
+            arr.forEach(item => {
+                if (day !== item.name) {
+                    day = item.name;
+                    dateArr.push(item)
+                } else {
+                    dateArr.pop();
+                    dateArr.push(item);
+                }
+            })
+
+            return dateArr;
+        }
+
         ReactDOM.render(e(Chart, {
-            data: data.map(item => ({name: getDate(item[0]), price: this.defineFiat(this.currency) ? item[1].toFixed(2) : item[1].toFixed(8)})),
+            data: removeDoubleDay(data.map(item => ({name: getDate(item[0]), price: this.defineFiat(this.currency) ? +item[1].toFixed(2) : +item[1].toFixed(8)}))),
             isFiat: this.defineFiat(this.currency),
             currency: this.currency.toUpperCase()
         }), root);

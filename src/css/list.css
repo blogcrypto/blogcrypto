@@ -24,7 +24,7 @@ ul:not([class]) > li::before {
     height: 0.375rem;
     color: currentColor;
     background-color: #777;
-    top: 0.65em;
+    top: 0.55em;
     left: 0;
 }
 

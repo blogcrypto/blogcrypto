@@ -2,25 +2,14 @@ import { decimalFormat } from '../../js/utils';
 
 const e = React.createElement;
 
-export const Chart = ({data, isFiat, currency}) => {
-    // const inputs = document.querySelectorAll('.js-converter-input');
-
-    // inputs.forEach(item => {
-    //     item.addEventListener('change', e => console.log(e.target.value));
-    // });
-
-    // React.useEffect(() => {
-        // console.log(prop);
-    // });
-
-    // console.log('chart data ', data);
+export const Chart = ({data, isFiat, currency, brush}) => {
 
     return e(
         Recharts.ResponsiveContainer,
         {width: '100%', height: 300},
         e(
             Recharts.AreaChart,
-            {data: data, margin: {right: 30, top: 30}},
+            {data: data, margin: {right: brush ? 80 : 30, left: brush ? 30 : 0}},
             e('defs', {},
                 e('linearGradient',
                     {id: 'chartGradient', x1: '0%', y1: '100%', x2: '0%', y2: '0%'},
@@ -36,14 +25,15 @@ export const Chart = ({data, isFiat, currency}) => {
                 Recharts.XAxis,
                 {
                     dataKey: 'name',
-                    stroke: '#aaa'
+                    stroke: '#aaa',
+                    minTickGap: 50
                 }
             ),
             e(
                 Recharts.YAxis,
                 {
+                    padding: {top: 30},
                     stroke: '#aaa',
-                    padding: {top: 30, left: 30},
                     tickFormatter: (tick => {
                         if (tick > 1000 && tick < 1000000) {
                             return `${ tick.toString().slice(0, -3) }K`;
@@ -62,7 +52,6 @@ export const Chart = ({data, isFiat, currency}) => {
                     labelFormatter: (value, name, props) => {
                         return `Date: ${ value }`;
                     },
-                    label: 'test',
                     cursor: {
                         stroke: '#ccc',
                         strokeWidth: 2
@@ -73,15 +62,30 @@ export const Chart = ({data, isFiat, currency}) => {
                 Recharts.Area,
                 {
                     fill: 'url(#chartGradient)',
-                    // type: 'linear',
                     dataKey: 'price',
                     stroke: '#0d6efd',
                     strokeWidth: 3,
                     activeDot: {'r': 6}
                 }
+            ),
+            brush &&
+            e(
+                Recharts.Brush, {
+                    dataKey: 'name',
+                    tickFormatter: (value, name, props) => {
+                        const valArr = value.split(' ');
+
+                        return `${valArr[0]} ${valArr[2]}`;
+                    },
+                    fontSize: '10px',
+                    style: {
+                        fontSize: '10px',
+                        padding: 50
+                    },
+                    fill: '#b1d0ff',
+                    stroke: '#0d6efd'
+                }
             )
         )
     );
 };
-
-
