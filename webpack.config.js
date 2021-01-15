@@ -82,6 +82,7 @@ module.exports = (env, argv) => {
         entry: {
             main: './src/index.js',
             market: './src/components/market/market.js',
+            coin: './src/components/coin/coin.js',
             converter: './src/components/converter/converter.js'
         },
         output: {
@@ -189,6 +190,7 @@ module.exports = (env, argv) => {
                     { from: /^\/index/, to: '/index.html' },
                     { from: /^\/blog/, to: '/blog.html' },
                     { from: /^\/market/, to: '/market.html' },
+                    { from: /^\/coin/, to: '/coin.html' },
                     { from: /^\/converter/, to: '/converter.html' },
                     { from: /^\/portfolio/, to: '/portfolio.html' },
                     { from: /^\/about/, to: '/about.html' },
@@ -196,6 +198,7 @@ module.exports = (env, argv) => {
                     { from: /^\/ru\/index/, to: '/ru/index.html' },
                     { from: /^\/ru\/blog/, to: '/ru/blog.html' },
                     { from: /^\/ru\/market/, to: '/ru/market.html' },
+                    { from: /^\/ru\/coin/, to: '/ru/coin.html' },
                     { from: /^\/ru\/converter/, to: '/ru/converter.html' },
                     { from: /^\/ru\/portfolio/, to: '/ru/portfolio.html' },
                     { from: /^\/ru\/about/, to: '/ru/about.html' },

@@ -15,7 +15,12 @@ meta(name="apple-mobile-web-app-capable", content="yes")
 meta(name="format-detection", content="telephone=no")
 meta(name="format-detection", content="address=no")
 
-link(rel="stylesheet", href="/dist/css/main.css")
+link(rel="preconnect", href="https://fonts.gstatic.com")
+link(href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,400;0,500;0,700;1,400&display=swap", rel="stylesheet")
+
+if !htmlWebpackPlugin.options.isDevelopment
+    link(rel="stylesheet", href="/dist/css/main.css")
+
 link(rel="apple-touch-icon", sizes="180x180", href= settings.paths.favicon + "apple-touch-icon.png")
 link(rel="icon", type="image/png", sizes="32x32", href= settings.paths.favicon + "favicon-32x32.png")
 link(rel="icon", type="image/png", sizes="16x16", href= settings.paths.favicon + "favicon-16x16.png")

@@ -46,3 +46,12 @@
     border-top-width: 0;
 }
 
+.market-coin-link {
+    color: var(--bs-gray-dark);
+}
+
+.market-coin-link:hover,
+td:hover + td .market-coin-link {
+    color: var(--bs-primary);
+}
+

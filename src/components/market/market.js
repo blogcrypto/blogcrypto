@@ -193,15 +193,21 @@ export class Market {
             </td>`
         );
 
+        const localeLink = (id) => document.documentElement.lang !== 'en'
+                                   ? `/${ document.documentElement.lang }/coin?${ id }`
+                                   : `/coin?${ id }`;
+
         const tableRow = (row) => (
-            `<tr>
+            `<tr id="${ row.id }">
                 <td>${ row.market_cap_rank }</td>
                 <td style="max-width:22px;max-height:22px;width:22px;height:22px;padding: 0;vertical-align: middle;text-align: center;">
-                  <img src="${ row.image }" alt="${ row.name }">
+                  <a href="${ localeLink(row.id) }"><img src="${ row.image }" alt="${ row.name }"></a>
                 </td>
-                <td style="padding-top:0;padding-bottom:0;">
-                    <div>${ row.symbol.toUpperCase() }</div>
-                    <div class="text-muted" style="margin-top:-5px;font-size:0.8em">${ row.name }</div>
+                <td style="padding-top:0;padding-bottom:0;padding-left:0">
+                    <a href="${ localeLink(row.id) }" class="market-coin-link">
+                        <div style="padding-left:.5rem">${ row.symbol.toUpperCase() }</div>
+                        <div class="text-muted" style="margin-top:-5px;font-size:0.8em;padding-left:.5rem">${ row.name }</div>
+                    </a>
                 </td>
                 <td style="text-align: right">
                     ${ P !== 'end' ? `${ CS } <b>${ decimalFormat(row.current_price, D) }</b>` : `<b>${ decimalFormat(row.current_price, D) }</b> ${ CS }` }
