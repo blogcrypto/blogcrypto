@@ -476,7 +476,7 @@ export class Converter {
             const defineChange = (start, end) => {
                 // const val = start
 
-                console.log((end * 100 / start) - 100);
+                // console.log((end * 100 / start) - 100);
 
                 if (start > end) {
                     return `<span class="text-danger">${ decimalFormat(Math.abs(start - end), this.defineFiat(this.currency) ? 2 : 8) } (${ ((end * 100 / start) - 100).toFixed(2) }%)</span>`;
