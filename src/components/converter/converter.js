@@ -2,7 +2,7 @@ import debounce from 'lodash/debounce';
 import { Chart } from '../chart/chart';
 import { decimalFormat } from '../../js/utils';
 
-const e = React.createElement;
+const element = React.createElement;
 const MARKET_API = 'https://api.coingecko.com/api/v3';
 
 export class Converter {
@@ -60,7 +60,11 @@ export class Converter {
         this.nodes.btnGroup.forEach(item => {
             item.addEventListener('click', e => {
                 if (e.target.dataset.coinId || e.target.dataset.currencyId || (e.target.closest('[data-coin-id]') && e.target.closest('[data-coin-id]').dataset.coinId)) {
-                    this.btnClickHandler(e.target);
+                    if (e.target.tagName.toLowerCase() !== 'button') {
+                        this.btnClickHandler(e.target.closest('button'))
+                    } else {
+                        this.btnClickHandler(e.target)
+                    }
                 }
             });
         });
@@ -124,7 +128,7 @@ export class Converter {
             return dateArr;
         }
 
-        ReactDOM.render(e(Chart, {
+        ReactDOM.render(element(Chart, {
             data: removeDoubleDay(data.map(item => ({name: getDate(item[0]), price: this.defineFiat(this.currency) ? +item[1].toFixed(2) : +item[1].toFixed(8)}))),
             isFiat: this.defineFiat(this.currency),
             currency: this.currency.toUpperCase()
@@ -342,15 +346,45 @@ export class Converter {
     btnClickHandler(btn) {
         // Separate dropdown buttons from single button
         if (btn.closest('.dropdown-menu')) {
-            // Define clicked button if e.target is not button type
-            if (btn.tagName.toLowerCase() !== 'button') {
-                this.btnGroupHandler(btn.closest('button'));
-            } else {
-                this.btnGroupHandler(btn);
-            }
+            this.btnGroupHandler(btn);
         } else {
+            // Set selected coin
+            if (btn.dataset.coinId && btn.dataset.coinId !== this.coin) {
+                this.coin = btn.dataset.coinId;
+                this.getConverterData();
+            }
+            // Set selected currency
+            if (btn.dataset.currencyId && btn.dataset.currencyId !== this.currency) {
+                this.currency = btn.dataset.currencyId;
+                this.getConverterData();
+            }
             this.btnSetActive(btn);
         }
+    }
+
+    /**
+     *
+     * @param btn
+     */
+    btnGroupHandler(btn) {
+        const btnGroup = btn.closest('.btn-group:not(.js-converter-buttons)');
+
+        if (btn.dataset.coinId) {
+            btnGroup.querySelector('[data-coin-id]').dataset.coinId = btn.dataset.coinId;
+            btnGroup.querySelector('[data-coin-id]').innerHTML = this.defineCoinById(btn.dataset.coinId).symbol.toUpperCase();
+        } else if (btn.dataset.currencyId) {
+            btnGroup.querySelector('[data-currency-id]').dataset.currencyId = btn.dataset.currencyId;
+            btnGroup.querySelector('[data-currency-id]').innerHTML = btn.dataset.currencyId.toUpperCase();
+        }
+
+        btn.closest('.js-converter-buttons')
+            .querySelectorAll('button').forEach(item => {
+            item.classList.remove('active');
+        });
+
+        btn.closest('.btn-group:not(.js-converter-buttons)')
+            .querySelectorAll('button:not(.converter-coins__item)')
+            .forEach(item => item.classList.add('active'));
         // Set selected coin
         if (btn.dataset.coinId && btn.dataset.coinId !== this.coin) {
             this.coin = btn.dataset.coinId;
@@ -399,42 +433,6 @@ export class Converter {
         return fiat.includes(currency);
     }
 
-    /**
-     *
-     * @param btn
-     */
-    btnGroupHandler(btn) {
-        const btnGroup = btn.closest('.btn-group:not(.js-converter-buttons)');
-
-        if (btn.dataset.coinId) {
-            btnGroup.querySelector('[data-coin-id]').dataset.coinId = btn.dataset.coinId;
-            btnGroup.querySelector('[data-coin-id]').innerHTML = this.defineCoinById(btn.dataset.coinId).symbol.toUpperCase();
-        } else if (btn.dataset.currencyId) {
-            btnGroup.querySelector('[data-currency-id]').dataset.currencyId = btn.dataset.currencyId;
-            btnGroup.querySelector('[data-currency-id]').innerHTML = btn.dataset.currencyId.toUpperCase();
-        }
-
-        btn.closest('.js-converter-buttons')
-            .querySelectorAll('button').forEach(item => {
-            item.classList.remove('active');
-        });
-
-        btn.closest('.btn-group:not(.js-converter-buttons)')
-            .querySelectorAll('button:not(.converter-coins__item)')
-            .forEach(item => item.classList.add('active'));
-
-        // Set selected coin
-        if (btn.dataset.coinId && btn.dataset.coinId !== this.coin) {
-            this.coin = btn.dataset.coinId;
-            this.getConverterData();
-        }
-        // Set selected currency
-        if (btn.dataset.currencyId && btn.dataset.currencyId !== this.currency) {
-            this.currency = btn.dataset.currencyId;
-            this.getConverterData();
-        }
-    }
-
     showPreloader(bool) {
         bool
         ? this.el.closest('.row').classList.add('loading')
@@ -474,8 +472,6 @@ export class Converter {
 
         if (data) {
             const defineChange = (start, end) => {
-                // const val = start
-
                 // console.log((end * 100 / start) - 100);
 
                 if (start > end) {
