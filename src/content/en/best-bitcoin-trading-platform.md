@@ -2,14 +2,14 @@
 
 * [Centralized](#centralized)
     * [Binance](#binance)
-    * [Bitcoin.com Exchange](#bitcoincom-exchange)
     * [Huobi Global](#huobi-global)
+    * [OKEx](#okex)
+    * [Bitcoin.com Exchange](#bitcoincom-exchange)
     * [Poloniex](#poloniex)
     * [KuKoin](#kukoin)
-    * [Crypto.com](#cryptocom)
+    <!-- * [Crypto.com](#cryptocom) -->
     * [BitMax](#bitmax)
     * [CoinTiger](#cointiger)
-    * [OKEx](#okex)
 * [Decentralized](#decentralized)
     * [Binance DEX](#binance-dex)
     * [Uniswap](#uniswap)
@@ -50,6 +50,62 @@ The largest exchange in the world by volume.
     <dd class="col-sm-8 col-xxl-9">2 BTC / day</dd>
 </dl>
 
+<h3 id="huobi-global">Huobi Global</h3>
+
+It is positioned as the most secure platform that makes it easy to buy and sell, as well as store cryptocurrencies. Included in the TOP-3 in terms of trading volume.
+
+<p>
+    <a href="https://www.huobi.com/en-us/register/?invite_code=h8qw6" class="img-ext-link" data-link-text="Open www.huobi.com in new tab" target="_blank" rel="noopener noreferrer">
+        <picture class="img-wrap" style="padding-bottom: calc(100/225*100%)">
+            <source data-srcset="/public/images/exchanges/huobi.jpg 2x, /public/images/exchanges/huobi_sm.jpg 1x" media="(max-width: 768px)">
+            <source data-srcset="/public/images/exchanges/huobi@2x.jpg 2x, /public/images/exchanges/huobi.jpg 1x">
+            <img class="img-embed lazy" data-src="/public/images/exchanges/huobi.jpg" alt="Huobi Global Exchange">
+        </picture>
+    </a>
+</p>
+
+<dl class="row">
+    <dt class="col-sm-4 col-xxl-3">Official site</dt>
+    <dd class="col-sm-8 col-xxl-9">
+        <a href="https://www.huobi.com/en-us/register/?invite_code=h8qw6" class="ext" target="_blank" rel="noopener noreferrer">www.huobi.com</a>
+    </dd>
+    <dt class="col-sm-4 col-xxl-3">Since</dt>
+    <dd class="col-sm-8 col-xxl-9">2013</dd>
+    <dt class="col-sm-4 col-xxl-3">Based</dt>
+    <dd class="col-sm-8 col-xxl-9">China</dd>
+    <dt class="col-sm-4 col-xxl-3" title="Withdrawal limit without verification">Withdrawal limit without verification</dt>
+    <dd class="col-sm-8 col-xxl-9">0,1 BTC / day</dd>
+</dl>
+
+<h3 id="okex">OKEx</h3>
+
+OKEx maintains a secure, reliable and stable environment for trading digital assets on web and mobile applications.
+
+<p>
+    <a href="https://www.okex.com/join/2668346" class="img-ext-link" data-link-text="Open www.okex.com in new tab" target="_blank" rel="noopener noreferrer">
+        <picture class="img-wrap" style="padding-bottom: calc(100/225*100%)">
+            <source data-srcset="/public/images/exchanges/okex.jpg 2x, /public/images/exchanges/okex_sm.jpg 1x" media="(max-width: 768px)">
+            <source data-srcset="/public/images/exchanges/okex@2x.jpg 2x, /public/images/exchanges/okex.jpg 1x">
+            <img class="img-embed lazy" data-src="/public/images/exchanges/okex.jpg" alt="OKEx Exchange">
+        </picture>
+    </a>
+</p>
+
+<dl class="row">
+    <dt class="col-sm-4 col-xxl-3">Official site</dt>
+    <dd class="col-sm-8 col-xxl-9">
+        <a href="https://www.okex.com/join/2668346" class="ext" target="_blank" rel="noopener noreferrer">www.okex.com</a>
+    </dd>
+    <dt class="col-sm-4 col-xxl-3">Since</dt>
+    <dd class="col-sm-8 col-xxl-9">2017</dd>
+    <dt class="col-sm-4 col-xxl-3">Based</dt>
+    <dd class="col-sm-8 col-xxl-9">China</dd>
+    <dt class="col-sm-4 col-xxl-3">Own token</dt>
+    <dd class="col-sm-8 col-xxl-9">OKB</dd>
+    <dt class="col-sm-4 col-xxl-3" title="Withdrawal limit without verification">Withdrawal limit without verification</dt>
+    <dd class="col-sm-8 col-xxl-9">10 BTC / day</dd>
+</dl>
+
 <h3 id="bitcoincom-exchange">Bitcoin.com Exchange</h3>
 
 Bitcoin.com is not an official bitcoin website, it is a collection of tools and services built on top of the bitcoin network.
@@ -78,33 +134,6 @@ Bitcoin.com is not an official bitcoin website, it is a collection of tools and 
     <div>1 BTC / day</div>
     <div>5 BTC / month</div>
     </dd>
-</dl>
-
-<h3 id="huobi-global">Huobi Global</h3>
-
-It is positioned as the most secure platform that makes it easy to buy and sell, as well as store cryptocurrencies. Included in the TOP-3 in terms of trading volume.
-
-<p>
-    <a href="https://www.huobi.com/en-us/register/?invite_code=h8qw6" class="img-ext-link" data-link-text="Open www.huobi.com in new tab" target="_blank" rel="noopener noreferrer">
-        <picture class="img-wrap" style="padding-bottom: calc(100/225*100%)">
-            <source data-srcset="/public/images/exchanges/huobi.jpg 2x, /public/images/exchanges/huobi_sm.jpg 1x" media="(max-width: 768px)">
-            <source data-srcset="/public/images/exchanges/huobi@2x.jpg 2x, /public/images/exchanges/huobi.jpg 1x">
-            <img class="img-embed lazy" data-src="/public/images/exchanges/huobi.jpg" alt="Huobi Global Exchange">
-        </picture>
-    </a>
-</p>
-
-<dl class="row">
-    <dt class="col-sm-4 col-xxl-3">Official site</dt>
-    <dd class="col-sm-8 col-xxl-9">
-        <a href="https://www.huobi.com/en-us/register/?invite_code=h8qw6" class="ext" target="_blank" rel="noopener noreferrer">www.huobi.com</a>
-    </dd>
-    <dt class="col-sm-4 col-xxl-3">Since</dt>
-    <dd class="col-sm-8 col-xxl-9">2013</dd>
-    <dt class="col-sm-4 col-xxl-3">Based</dt>
-    <dd class="col-sm-8 col-xxl-9">China</dd>
-    <dt class="col-sm-4 col-xxl-3" title="Withdrawal limit without verification">Withdrawal limit without verification</dt>
-    <dd class="col-sm-8 col-xxl-9">0,1 BTC / day</dd>
 </dl>
 
 <h3 id="poloniex">Poloniex</h3>
@@ -161,6 +190,7 @@ A cryptocurrency exchange working to improve its security.
     <dd class="col-sm-8 col-xxl-9">5 BTC / day</dd>
 </dl>
 
+<!--
 <h3 id="cryptocom">Crypto.com</h3>
 
 Hong Kong blockchain platform that combines an exchange, a wallet, a credit protocol, as well as a cryptobank with the ability to earn money by storing coins.
@@ -189,6 +219,7 @@ Hong Kong blockchain platform that combines an exchange, a wallet, a credit prot
     <dt class="col-sm-4 col-xxl-3" title="Withdrawal limit without verification">Withdrawal limit without verification</dt>
     <dd class="col-sm-8 col-xxl-9">$ 5 000 / day</dd>
 </dl>
+-->
 
 <h3 id="bitmax">BitMax</h3>
 
@@ -246,35 +277,6 @@ One of the first crypto-exchanges to start paying interest for storing its own T
     <dd class="col-sm-8 col-xxl-9">Tiger Cash (TCH)</dd>
     <dt class="col-sm-4 col-xxl-3" title="Withdrawal limit without verification">Withdrawal limit without verification</dt>
     <dd class="col-sm-8 col-xxl-9">5 BTC / day</dd>
-</dl>
-
-<h3 id="okex">OKEx</h3>
-
-OKEx maintains a secure, reliable and stable environment for trading digital assets on web and mobile applications.
-
-<p>
-    <a href="https://www.okex.com/join/2668346" class="img-ext-link" data-link-text="Open www.okex.com in new tab" target="_blank" rel="noopener noreferrer">
-        <picture class="img-wrap" style="padding-bottom: calc(100/225*100%)">
-            <source data-srcset="/public/images/exchanges/okex.jpg 2x, /public/images/exchanges/okex_sm.jpg 1x" media="(max-width: 768px)">
-            <source data-srcset="/public/images/exchanges/okex@2x.jpg 2x, /public/images/exchanges/okex.jpg 1x">
-            <img class="img-embed lazy" data-src="/public/images/exchanges/okex.jpg" alt="OKEx Exchange">
-        </picture>
-    </a>
-</p>
-
-<dl class="row">
-    <dt class="col-sm-4 col-xxl-3">Official site</dt>
-    <dd class="col-sm-8 col-xxl-9">
-        <a href="https://www.okex.com/join/2668346" class="ext" target="_blank" rel="noopener noreferrer">www.okex.com</a>
-    </dd>
-    <dt class="col-sm-4 col-xxl-3">Since</dt>
-    <dd class="col-sm-8 col-xxl-9">2017</dd>
-    <dt class="col-sm-4 col-xxl-3">Based</dt>
-    <dd class="col-sm-8 col-xxl-9">China</dd>
-    <dt class="col-sm-4 col-xxl-3">Own token</dt>
-    <dd class="col-sm-8 col-xxl-9">OKB</dd>
-    <dt class="col-sm-4 col-xxl-3" title="Withdrawal limit without verification">Withdrawal limit without verification</dt>
-    <dd class="col-sm-8 col-xxl-9">10 BTC / day</dd>
 </dl>
 
 <h2 id="decentralized">Decentralized</h2>
