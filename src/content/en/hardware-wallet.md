@@ -6,6 +6,7 @@
     * [Trezor](#trezor)
     * [Ledger](#ledger)
     * [KeepKey](#keepkey)
+    * [SafePal](#safepal)
     * [CoolWallet](#coolwallet)
 
 </div>
@@ -225,6 +226,39 @@ You can buy a wallet from the official distributor in your country; you can find
     <dd class="col-sm-9 col-md-10">Free</dd>
     <dt class="col-sm-3 col-md-2">Connectivity</dt>
     <dd class="col-sm-9 col-md-10">Micro USB</dd>
+</dl>
+
+<h3 id="safepal">SafePal</h3>
+
+<p>
+    <a href="https://shop.safepal.io/products/safepal-hardware-wallet-s1-bitcoin-wallet?ref=blocgcrypto" class="img-ext-link" data-link-text="Open safepal.io in new tab" target="_blank" rel="noopener noreferrer">
+        <picture class="img-wrap" style="padding-bottom: calc(480/960*100%)">
+            <source data-srcset="/public/images/hardware-wallets/safepal.jpg 2x, /public/images/hardware-wallets/safepal_sm.jpg 1x" media="(max-width: 768px)">
+            <source data-srcset="/public/images/hardware-wallets/safepal@2x.jpg 2x, /public/images/hardware-wallets/safepal.jpg 1x">
+            <img class="img-embed lazy" data-src="/public/images/hardware-wallets/safepal.jpg" alt="SafePal hardware wallet">
+        </picture>
+    </a>
+</p>
+
+<dl class="row">
+    <dt class="col-sm-3 col-md-2">Official site</dt>
+    <dd class="col-sm-9 col-md-10">
+        <a href="https://shop.safepal.io/products/safepal-hardware-wallet-s1-bitcoin-wallet?ref=blocgcrypto" class="ext" target="_blank" rel="noopener noreferrer">safepal.io</a>
+    </dd>
+    <dt class="col-sm-3 col-md-2">Since</dt>
+    <dd class="col-sm-9 col-md-10">2018</dd>
+    <dt class="col-sm-3 col-md-2">Country</dt>
+    <dd class="col-sm-9 col-md-10">China</dd>
+    <dt class="col-sm-3 col-md-2">Soft</dt>
+    <dd class="col-sm-9 col-md-10">Closed-source software</dd>
+    <dt class="col-sm-3 col-md-2">Price</dt>
+    <dd class="col-sm-9 col-md-10">39.99 USD</dd>
+    <dt class="col-sm-3 col-md-2">Shipping</dt>
+    <dd class="col-sm-9 col-md-10">From 5 USD</dd>
+    <dt class="col-sm-3 col-md-2">Connectivity</dt>
+    <dd class="col-sm-9 col-md-10">Web app (iOS, Android)</dd>
+    <dt class="col-sm-3 col-md-2">Features</dt>
+    <dd class="col-sm-9 col-md-10">Camera for QRcode scanning, battery (20 days based on 10 minutes daily use)</dd>
 </dl>
 
 <h3 id="coolwallet">CoolWallet</h3>

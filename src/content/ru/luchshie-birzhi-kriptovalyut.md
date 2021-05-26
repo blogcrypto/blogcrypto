@@ -2,14 +2,14 @@
 
 * [Централизованные](#centralized)
     * [Binance](#binance)
-    * [Bitcoin.com Exchange](#bitcoincom-exchange)
     * [Huobi Global](#huobi-global)
+    * [OKEx](#okex)
+    * [Bitcoin.com Exchange](#bitcoincom-exchange)
     * [Poloniex](#poloniex)
     * [KuKoin](#kukoin)
-    * [Crypto.com](#cryptocom)
+    <!-- * [Crypto.com](#cryptocom) -->
     * [BitMax](#bitmax)
     * [CoinTiger](#cointiger)
-    * [OKEx](#okex)
 * [Децентрализованные](#decentralized)
     * [Binance DEX](#binance-dex)
     * [Uniswap](#uniswap)
@@ -52,6 +52,66 @@
     <dd class="col-sm-8">2 BTC в день</dd>
 </dl>
 
+<h3 id="huobi-global">Huobi Global</h3>
+
+Позиционируется как самая безопасная платформа, которая позволяет легко покупать и продавать, а также хранить криптовалюты. Входит в ТОП-3 по объему торгов.
+
+<p>
+    <a href="https://www.huobi.com/en-us/register/?invite_code=h8qw6" class="img-ext-link" data-link-text="Открыть www.huobi.com в новой вкладке" target="_blank" rel="noopener noreferrer">
+        <picture class="img-wrap" style="padding-bottom: calc(100/225*100%)">
+            <source data-srcset="/public/images/exchanges/huobi.jpg 2x, /public/images/exchanges/huobi_sm.jpg 1x" media="(max-width: 768px)">
+            <source data-srcset="/public/images/exchanges/huobi@2x.jpg 2x, /public/images/exchanges/huobi.jpg 1x">
+            <img class="img-embed lazy" data-src="/public/images/exchanges/huobi.jpg" alt="Huobi Global Exchange">
+        </picture>
+    </a>
+</p>
+
+<dl class="row">
+    <dt class="col-sm-4">Официальный сайт</dt>
+    <dd class="col-sm-8">
+        <a href="https://www.huobi.com/en-us/register/?invite_code=h8qw6" class="ext" target="_blank" rel="noopener noreferrer">www.huobi.com</a>
+    </dd>
+    <dt class="col-sm-4">Начало работы</dt>
+    <dd class="col-sm-8">2013</dd>
+    <dt class="col-sm-4">Страна</dt>
+    <dd class="col-sm-8">Китай</dd>
+    <dt class="col-sm-4">Язык интерфейса</dt>
+    <dd class="col-sm-8">Английский, Русский</dd>
+    <dt class="col-sm-4">Ограничение на вывод средств без верификации</dt>
+    <dd class="col-sm-8">0,1 BTC в день</dd>
+</dl>
+
+<h3 id="okex">OKEx</h3>
+
+OKEx поддерживает безопасную, надежную и стабильную среду для торговли цифровыми активами в веб и мобильных приложениях.
+
+<p>
+    <a href="https://www.okex.com/join/2668346" class="img-ext-link" data-link-text="Открыть www.okex.com в новой вкладке" target="_blank" rel="noopener noreferrer">
+        <picture class="img-wrap" style="padding-bottom: calc(100/225*100%)">
+            <source data-srcset="/public/images/exchanges/okex.jpg 2x, /public/images/exchanges/okex_sm.jpg 1x" media="(max-width: 768px)">
+            <source data-srcset="/public/images/exchanges/okex@2x.jpg 2x, /public/images/exchanges/okex.jpg 1x">
+            <img class="img-embed lazy" data-src="/public/images/exchanges/okex.jpg" alt="OKEx Exchange">
+        </picture>
+    </a>
+</p>
+
+<dl class="row">
+    <dt class="col-sm-4">Официальный сайт</dt>
+    <dd class="col-sm-8">
+        <a href="https://www.okex.com/join/2668346" class="ext" target="_blank" rel="noopener noreferrer">www.okex.com</a>
+    </dd>
+    <dt class="col-sm-4">Начало работы</dt>
+    <dd class="col-sm-8">2017</dd>
+    <dt class="col-sm-4">Страна</dt>
+    <dd class="col-sm-8">Китай</dd>
+    <dt class="col-sm-4">Собственный токен</dt>
+    <dd class="col-sm-8">OKB</dd>
+    <dt class="col-sm-4">Язык интерфейса</dt>
+    <dd class="col-sm-8">Английский, Русский</dd>
+    <dt class="col-sm-4">Ограничение на вывод средств без верификации</dt>
+    <dd class="col-sm-8">10 BTC в день</dd>
+</dl>
+
 <h3 id="bitcoincom-exchange">Bitcoin.com Exchange</h3>
 
 Bitcoin.com не является официальным сайтом биткойна, это набор инструментов и сервисов, созданных на базе биткойн-сети.
@@ -82,35 +142,6 @@ Bitcoin.com не является официальным сайтом битко
     <div>1 BTC в день</div>
     <div>5 BTC в месяц</div>
     </dd>
-</dl>
-
-<h3 id="huobi-global">Huobi Global</h3>
-
-Позиционируется как самая безопасная платформа, которая позволяет легко покупать и продавать, а также хранить криптовалюты. Входит в ТОП-3 по объему торгов.
-
-<p>
-    <a href="https://www.huobi.com/en-us/register/?invite_code=h8qw6" class="img-ext-link" data-link-text="Открыть www.huobi.com в новой вкладке" target="_blank" rel="noopener noreferrer">
-        <picture class="img-wrap" style="padding-bottom: calc(100/225*100%)">
-            <source data-srcset="/public/images/exchanges/huobi.jpg 2x, /public/images/exchanges/huobi_sm.jpg 1x" media="(max-width: 768px)">
-            <source data-srcset="/public/images/exchanges/huobi@2x.jpg 2x, /public/images/exchanges/huobi.jpg 1x">
-            <img class="img-embed lazy" data-src="/public/images/exchanges/huobi.jpg" alt="Huobi Global Exchange">
-        </picture>
-    </a>
-</p>
-
-<dl class="row">
-    <dt class="col-sm-4">Официальный сайт</dt>
-    <dd class="col-sm-8">
-        <a href="https://www.huobi.com/en-us/register/?invite_code=h8qw6" class="ext" target="_blank" rel="noopener noreferrer">www.huobi.com</a>
-    </dd>
-    <dt class="col-sm-4">Начало работы</dt>
-    <dd class="col-sm-8">2013</dd>
-    <dt class="col-sm-4">Страна</dt>
-    <dd class="col-sm-8">Китай</dd>
-    <dt class="col-sm-4">Язык интерфейса</dt>
-    <dd class="col-sm-8">Английский, Русский</dd>
-    <dt class="col-sm-4">Ограничение на вывод средств без верификации</dt>
-    <dd class="col-sm-8">0,1 BTC в день</dd>
 </dl>
 
 <h3 id="poloniex">Poloniex</h3>
@@ -171,6 +202,7 @@ Bitcoin.com не является официальным сайтом битко
     <dd class="col-sm-8">5 BTC в день</dd>
 </dl>
 
+<!--
 <h3 id="cryptocom">Crypto.com</h3>
 
 Гонконгская блокчейн-платформа, объединяющая в себе биржу, кошелек, кредитный протокол, а также криптобанк с возможностью зарабатывать на хранении монет.
@@ -201,6 +233,7 @@ Bitcoin.com не является официальным сайтом битко
     <dt class="col-sm-4">Ограничение на вывод средств без верификации</dt>
     <dd class="col-sm-8">$ 5 000 в день</dd>
 </dl>
+-->
 
 <h3 id="bitmax">BitMax</h3>
 
@@ -262,37 +295,6 @@ Bitcoin.com не является официальным сайтом битко
     <dd class="col-sm-8">Английский, Русский</dd>
     <dt class="col-sm-4">Ограничение на вывод средств без верификации</dt>
     <dd class="col-sm-8">5 BTC в день</dd>
-</dl>
-
-<h3 id="okex">OKEx</h3>
-
-OKEx поддерживает безопасную, надежную и стабильную среду для торговли цифровыми активами в веб и мобильных приложениях.
-
-<p>
-    <a href="https://www.okex.com/join/2668346" class="img-ext-link" data-link-text="Открыть www.okex.com в новой вкладке" target="_blank" rel="noopener noreferrer">
-        <picture class="img-wrap" style="padding-bottom: calc(100/225*100%)">
-            <source data-srcset="/public/images/exchanges/okex.jpg 2x, /public/images/exchanges/okex_sm.jpg 1x" media="(max-width: 768px)">
-            <source data-srcset="/public/images/exchanges/okex@2x.jpg 2x, /public/images/exchanges/okex.jpg 1x">
-            <img class="img-embed lazy" data-src="/public/images/exchanges/okex.jpg" alt="OKEx Exchange">
-        </picture>
-    </a>
-</p>
-
-<dl class="row">
-    <dt class="col-sm-4">Официальный сайт</dt>
-    <dd class="col-sm-8">
-        <a href="https://www.okex.com/join/2668346" class="ext" target="_blank" rel="noopener noreferrer">www.okex.com</a>
-    </dd>
-    <dt class="col-sm-4">Начало работы</dt>
-    <dd class="col-sm-8">2017</dd>
-    <dt class="col-sm-4">Страна</dt>
-    <dd class="col-sm-8">Китай</dd>
-    <dt class="col-sm-4">Собственный токен</dt>
-    <dd class="col-sm-8">OKB</dd>
-    <dt class="col-sm-4">Язык интерфейса</dt>
-    <dd class="col-sm-8">Английский, Русский</dd>
-    <dt class="col-sm-4">Ограничение на вывод средств без верификации</dt>
-    <dd class="col-sm-8">10 BTC в день</dd>
 </dl>
 
 <h2 id="decentralized">Децентрализованные</h2>

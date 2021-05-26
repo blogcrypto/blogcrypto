@@ -6,6 +6,7 @@
     * [Trezor](#trezor)
     * [Ledger](#ledger)
     * [KeepKey](#keepkey)
+    * [SafePal](#safepal)
     * [CoolWallet](#coolwallet)
 
 </div>
@@ -226,6 +227,40 @@
     <dt class="col-sm-4 col-xl-5">Подключение</dt>
     <dd class="col-sm-8 col-xl-7">Micro USB</dd>
 </dl>
+
+<h3 id="safepal">SafePal</h3>
+
+<p>
+    <a href="https://shop.safepal.io/products/safepal-hardware-wallet-s1-bitcoin-wallet?ref=blocgcrypto" class="img-ext-link" data-link-text="Открыть safepal.io в новой вкладке" target="_blank" rel="noopener noreferrer">
+        <picture class="img-wrap" style="padding-bottom: calc(480/960*100%)">
+            <source data-srcset="/public/images/hardware-wallets/safepal.jpg 2x, /public/images/hardware-wallets/safepal_sm.jpg 1x" media="(max-width: 768px)">
+            <source data-srcset="/public/images/hardware-wallets/safepal@2x.jpg 2x, /public/images/hardware-wallets/safepal.jpg 1x">
+            <img class="img-embed lazy" data-src="/public/images/hardware-wallets/safepal.jpg" alt="SafePal hardware wallet">
+        </picture>
+    </a>
+</p>
+
+<dl class="row">
+    <dt class="col-sm-4 col-xl-5">Официальный сайт</dt>
+    <dd class="col-sm-8 col-xl-7">
+        <a href="https://shop.safepal.io/products/safepal-hardware-wallet-s1-bitcoin-wallet?ref=blocgcrypto" class="ext" target="_blank" rel="noopener noreferrer">safepal.io</a>
+    </dd>
+    <dt class="col-sm-4 col-xl-5">Начало работы</dt>
+    <dd class="col-sm-8 col-xl-7">2018</dd>
+    <dt class="col-sm-4 col-xl-5">Страна</dt>
+    <dd class="col-sm-8 col-xl-7">Китай</dd>
+    <dt class="col-sm-4 col-xl-5">Программное обеспечение</dt>
+    <dd class="col-sm-8 col-xl-7">Закрытый исходный код</dd>
+    <dt class="col-sm-4 col-xl-5">Цена</dt>
+    <dd class="col-sm-8 col-xl-7">39.99 USD</dd>
+    <dt class="col-sm-4 col-xl-5">Доставка</dt>
+    <dd class="col-sm-8 col-xl-7">От 5 USD</dd>
+    <dt class="col-sm-4 col-xl-5">Подключение</dt>
+    <dd class="col-sm-8 col-xl-7">Веб приложение (iOS, Android)</dd>
+    <dt class="col-sm-3 col-md-4 col-xl-5">Особенности</dt>
+    <dd class="col-sm-9 col-md-8 col-xl-7">Встроенная камера для чтения QR-кодов и батарея (до 20 дней работы по 10 минут в день)</dd>
+</dl>
+
 
 <h3 id="coolwallet">CoolWallet</h3>
 
