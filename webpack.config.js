@@ -206,10 +206,10 @@ module.exports = (env, argv) => {
                     { from: /^\/search/, to: '/search.html' },
                     { from: /./, to: '/404.html' }
                 ]
-            }
+            },
             // public: '192.168.31.49:3000',
             // proxy: {
-            //     '/api': 'http://localhost:8080'
+            //     '/api': 'http://localhost:3000/blogcrypto'
             // },
         },
         devtool: 'cheap-module-eval-source-map',

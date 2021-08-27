@@ -17,9 +17,9 @@ A hardware wallet is a highly secured storage device. Usually equipped with a di
 
 <p>
     <picture class="img-wrap" style="padding-bottom: calc(480/960*100%)">
-        <source data-srcset="public/images/hardware-wallets/ledger-inside.jpg 2x, public/images/hardware-wallets/ledger-inside_sm.jpg 1x" media="(max-width: 768px)">
-        <source data-srcset="public/images/hardware-wallets/ledger-inside@2x.jpg 2x, public/images/hardware-wallets/ledger-inside.jpg 1x">
-        <img class="img-embed lazy" data-src="public/images/hardware-wallets/ledger-inside.jpg" alt="Ledger Inside">
+        <source data-srcset="../public/images/hardware-wallets/ledger-inside.jpg 2x, ../public/images/hardware-wallets/ledger-inside_sm.jpg 1x" media="(max-width: 768px)">
+        <source data-srcset="../public/images/hardware-wallets/ledger-inside@2x.jpg 2x, ../public/images/hardware-wallets/ledger-inside.jpg 1x">
+        <img class="img-embed lazy" data-src="../public/images/hardware-wallets/ledger-inside.jpg" alt="Ledger Inside">
     </picture>
 </p>
 
@@ -33,9 +33,9 @@ The main purpose of hardware wallets is to provide complete isolation between pr
 
 <p>
     <picture class="img-wrap" style="padding-bottom: calc(480/960*100%)">
-        <source data-srcset="public/images/hardware-wallets/hacker.jpg 2x, public/images/hardware-wallets/hacker_sm.jpg 1x" media="(max-width: 768px)">
-        <source data-srcset="public/images/hardware-wallets/hacker@2x.jpg 2x, public/images/hardware-wallets/hacker.jpg 1x">
-        <img class="img-embed lazy" data-src="public/images/hardware-wallets/hacker.jpg" alt="Hacker">
+        <source data-srcset="../public/images/hardware-wallets/hacker.jpg 2x, ../public/images/hardware-wallets/hacker_sm.jpg 1x" media="(max-width: 768px)">
+        <source data-srcset="../public/images/hardware-wallets/hacker@2x.jpg 2x, ../public/images/hardware-wallets/hacker.jpg 1x">
+        <img class="img-embed lazy" data-src="../public/images/hardware-wallets/hacker.jpg" alt="Hacker">
     </picture>
 </p>
 
@@ -52,9 +52,9 @@ You can buy a wallet from the official distributor in your country; you can find
 <p>
     <a href="https://trezor.io/?offer_id=12&aff_id=5639" class="img-ext-link" data-link-text="Open trezor.io in new tab" target="_blank" rel="noopener noreferrer">
         <picture class="img-wrap" style="padding-bottom: calc(480/960*100%)">
-            <source data-srcset="public/images/hardware-wallets/trezor.jpg 2x, public/images/hardware-wallets/trezor_sm.jpg 1x" media="(max-width: 768px)">
-            <source data-srcset="public/images/hardware-wallets/trezor@2x.jpg 2x, public/images/hardware-wallets/trezor.jpg 1x">
-            <img class="img-embed lazy" data-src="public/images/hardware-wallets/trezor.jpg" alt="Trezor hardware wallet">
+            <source data-srcset="../public/images/hardware-wallets/trezor.jpg 2x, ../public/images/hardware-wallets/trezor_sm.jpg 1x" media="(max-width: 768px)">
+            <source data-srcset="../public/images/hardware-wallets/trezor@2x.jpg 2x, ../public/images/hardware-wallets/trezor.jpg 1x">
+            <img class="img-embed lazy" data-src="../public/images/hardware-wallets/trezor.jpg" alt="Trezor hardware wallet">
         </picture>
     </a>
 </p>
@@ -82,8 +82,8 @@ You can buy a wallet from the official distributor in your country; you can find
 <p>
     <a href="https://shop.trezor.io/product/trezor-one-black?offer_id=35&aff_id=5639" class="img-ext-link" data-link-text="Open shop.trezor.io in new tab" target="_blank" rel="noopener noreferrer">
         <picture class="img-wrap" style="padding-bottom: calc(480/960*100%)">
-            <source data-srcset="public/images/hardware-wallets/trezor-model-one.jpg 2x, public/images/hardware-wallets/trezor-model-one_sm.jpg 1x">
-            <img class="img-embed lazy" data-src="public/images/hardware-wallets/trezor-model-one_sm.jpg" alt="Trezor One">
+            <source data-srcset="../public/images/hardware-wallets/trezor-model-one.jpg 2x, ../public/images/hardware-wallets/trezor-model-one_sm.jpg 1x">
+            <img class="img-embed lazy" data-src="../public/images/hardware-wallets/trezor-model-one_sm.jpg" alt="Trezor One">
         </picture>
     </a>
 </p>
@@ -105,8 +105,8 @@ You can buy a wallet from the official distributor in your country; you can find
 <p>
     <a href="https://shop.trezor.io/product/trezor-model-t?offer_id=15&aff_id=5639" class="img-ext-link" data-link-text="Open shop.trezor.io in new tab" target="_blank" rel="noopener noreferrer">
         <picture class="img-wrap" style="padding-bottom: calc(480/960*100%)">
-            <source data-srcset="public/images/hardware-wallets/trezor-model-t.jpg 2x, public/images/hardware-wallets/trezor-model-t_sm.jpg 1x">
-            <img class="img-embed lazy" data-src="public/images/hardware-wallets/trezor-model-t_sm.jpg" alt="Trezor Model T">
+            <source data-srcset="../public/images/hardware-wallets/trezor-model-t.jpg 2x, ../public/images/hardware-wallets/trezor-model-t_sm.jpg 1x">
+            <img class="img-embed lazy" data-src="../public/images/hardware-wallets/trezor-model-t_sm.jpg" alt="Trezor Model T">
         </picture>
     </a>
 </p>
@@ -128,9 +128,9 @@ You can buy a wallet from the official distributor in your country; you can find
 <p>
     <a href="https://shop.ledger.com?r=73a55febf9b7" class="img-ext-link" data-link-text="Open ledger.com in new tab" target="_blank" rel="noopener noreferrer">
         <picture class="img-wrap" style="padding-bottom: calc(480/960*100%)">
-            <source data-srcset="public/images/hardware-wallets/ledger.jpg 2x, public/images/hardware-wallets/ledger_sm.jpg 1x" media="(max-width: 768px)">
-            <source data-srcset="public/images/hardware-wallets/ledger@2x.jpg 2x, public/images/hardware-wallets/ledger.jpg 1x">
-            <img class="img-embed lazy" data-src="public/images/hardware-wallets/ledger.jpg" alt="Ledger hardware wallet">
+            <source data-srcset="../public/images/hardware-wallets/ledger.jpg 2x, ../public/images/hardware-wallets/ledger_sm.jpg 1x" media="(max-width: 768px)">
+            <source data-srcset="../public/images/hardware-wallets/ledger@2x.jpg 2x, ../public/images/hardware-wallets/ledger.jpg 1x">
+            <img class="img-embed lazy" data-src="../public/images/hardware-wallets/ledger.jpg" alt="Ledger hardware wallet">
         </picture>
     </a>
 </p>
@@ -156,8 +156,8 @@ You can buy a wallet from the official distributor in your country; you can find
 <p>
     <a href="https://shop.ledger.com/products/ledger-nano-s?r=73a55febf9b7" class="img-ext-link" data-link-text="Open shop.ledger.com in new tab" target="_blank" rel="noopener noreferrer">
         <picture class="img-wrap" style="padding-bottom: calc(480/960*100%)">
-            <source data-srcset="public/images/hardware-wallets/ledger-nano-s.jpg 2x, public/images/hardware-wallets/ledger-nano-s_sm.jpg 1x">
-            <img class="img-embed lazy" data-src="public/images/hardware-wallets/ledger-nano-s_sm.jpg" alt="Ledger Nano S">
+            <source data-srcset="../public/images/hardware-wallets/ledger-nano-s.jpg 2x, ../public/images/hardware-wallets/ledger-nano-s_sm.jpg 1x">
+            <img class="img-embed lazy" data-src="../public/images/hardware-wallets/ledger-nano-s_sm.jpg" alt="Ledger Nano S">
         </picture>
     </a>
 </p>
@@ -177,8 +177,8 @@ You can buy a wallet from the official distributor in your country; you can find
 <p>
     <a href="https://shop.ledger.com/products/ledger-nano-x?r=73a55febf9b7" class="img-ext-link" data-link-text="Open shop.ledger.com in new tab" target="_blank" rel="noopener noreferrer">
         <picture class="img-wrap" style="padding-bottom: calc(480/960*100%)">
-            <source data-srcset="public/images/hardware-wallets/ledger-nano-x.jpg 2x, public/images/hardware-wallets/ledger-nano-x_sm.jpg 1x">
-            <img class="img-embed lazy" data-src="public/images/hardware-wallets/ledger-nano-x_sm.jpg" alt="Ledger Nano X">
+            <source data-srcset="../public/images/hardware-wallets/ledger-nano-x.jpg 2x, ../public/images/hardware-wallets/ledger-nano-x_sm.jpg 1x">
+            <img class="img-embed lazy" data-src="../public/images/hardware-wallets/ledger-nano-x_sm.jpg" alt="Ledger Nano X">
         </picture>
     </a>
 </p>
@@ -200,9 +200,9 @@ You can buy a wallet from the official distributor in your country; you can find
 <p>
     <a href="https://lddy.no/srzs" class="img-ext-link" data-link-text="Open classic.shapeshift.com/keepkey in new tab" target="_blank" rel="noopener noreferrer">
         <picture class="img-wrap" style="padding-bottom: calc(480/960*100%)">
-            <source data-srcset="public/images/hardware-wallets/keepkey.jpg 2x, public/images/hardware-wallets/keepkey_sm.jpg 1x" media="(max-width: 768px)">
-            <source data-srcset="public/images/hardware-wallets/keepkey@2x.jpg 2x, public/images/hardware-wallets/keepkey.jpg 1x">
-            <img class="img-embed lazy" data-src="public/images/hardware-wallets/keepkey.jpg" alt="KeepKey hardware wallet">
+            <source data-srcset="../public/images/hardware-wallets/keepkey.jpg 2x, ../public/images/hardware-wallets/keepkey_sm.jpg 1x" media="(max-width: 768px)">
+            <source data-srcset="../public/images/hardware-wallets/keepkey@2x.jpg 2x, ../public/images/hardware-wallets/keepkey.jpg 1x">
+            <img class="img-embed lazy" data-src="../public/images/hardware-wallets/keepkey.jpg" alt="KeepKey hardware wallet">
         </picture>
     </a>
 </p>
@@ -233,9 +233,9 @@ You can buy a wallet from the official distributor in your country; you can find
 <p>
     <a href="https://shop.safepal.io/products/safepal-hardware-wallet-s1-bitcoin-wallet?ref=blocgcrypto" class="img-ext-link" data-link-text="Open safepal.io in new tab" target="_blank" rel="noopener noreferrer">
         <picture class="img-wrap" style="padding-bottom: calc(480/960*100%)">
-            <source data-srcset="public/images/hardware-wallets/safepal.jpg 2x, public/images/hardware-wallets/safepal_sm.jpg 1x" media="(max-width: 768px)">
-            <source data-srcset="public/images/hardware-wallets/safepal@2x.jpg 2x, public/images/hardware-wallets/safepal.jpg 1x">
-            <img class="img-embed lazy" data-src="public/images/hardware-wallets/safepal.jpg" alt="SafePal hardware wallet">
+            <source data-srcset="../public/images/hardware-wallets/safepal.jpg 2x, ../public/images/hardware-wallets/safepal_sm.jpg 1x" media="(max-width: 768px)">
+            <source data-srcset="../public/images/hardware-wallets/safepal@2x.jpg 2x, ../public/images/hardware-wallets/safepal.jpg 1x">
+            <img class="img-embed lazy" data-src="../public/images/hardware-wallets/safepal.jpg" alt="SafePal hardware wallet">
         </picture>
     </a>
 </p>
@@ -266,9 +266,9 @@ You can buy a wallet from the official distributor in your country; you can find
 <p>
     <a href="https://coolwallet.io/product/coolwallet/?ref=blogcrypto" class="img-ext-link" data-link-text="Open coolwallet.io in new tab" target="_blank" rel="noopener noreferrer">
         <picture class="img-wrap" style="padding-bottom: calc(480/960*100%)">
-            <source data-srcset="public/images/hardware-wallets/coolwallet.jpg 2x, public/images/hardware-wallets/coolwallet_sm.jpg 1x" media="(max-width: 768px)">
-            <source data-srcset="public/images/hardware-wallets/coolwallet@2x.jpg 2x, public/images/hardware-wallets/coolwallet.jpg 1x">
-            <img class="img-embed lazy" data-src="public/images/hardware-wallets/coolwallet.jpg" alt="CoolWallet hardware wallet">
+            <source data-srcset="../public/images/hardware-wallets/coolwallet.jpg 2x, ../public/images/hardware-wallets/coolwallet_sm.jpg 1x" media="(max-width: 768px)">
+            <source data-srcset="../public/images/hardware-wallets/coolwallet@2x.jpg 2x, ../public/images/hardware-wallets/coolwallet.jpg 1x">
+            <img class="img-embed lazy" data-src="../public/images/hardware-wallets/coolwallet.jpg" alt="CoolWallet hardware wallet">
         </picture>
     </a>
 </p>

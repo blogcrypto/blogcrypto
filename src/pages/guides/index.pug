@@ -3,6 +3,7 @@ extends ../../pug/layouts/default
 block page-vars
     -
         var meta = {
+            path: '../',
             lang: 'en',
             title: 'Guides and detailed instructions for working with cryptocurrency',
             h1: 'Guides',
@@ -19,27 +20,27 @@ block page-vars
                 {
                     value: 'portfolio',
                     title: 'Portfolio',
-                    url: '/portfolio'
+                    url: meta.path + '/portfolio'
                 },
                 {
                     value: 'market',
                     title: 'Market',
-                    url: '/market'
+                    url: meta.path + '/market'
                 },
                 {
                     value: 'converter',
                     title: 'Converter',
-                    url: '/converter'
+                    url: meta.path + '/converter'
                 },
                 {
                     value: 'blog',
                     title: 'Blog',
-                    url: '/blog'
+                    url: meta.path + '/blog'
                 },
                 {
                     value: 'about',
                     title: 'About',
-                    url: '/about'
+                    url: meta.path + '/about'
                 },
             ]
         }
@@ -47,7 +48,7 @@ block page-vars
         var breadcrumbsList = [
             {
                 title: 'Categories',
-                url: '/blog'
+                url: meta.path + '/blog'
             },
             {
                 title: meta.h1,
@@ -57,11 +58,11 @@ block page-vars
 
         var data = [
             {
-                url: '/guides/bc-portfolio-app-user-guide',
+                url: meta.path + '/guides/bc-portfolio-app-user-guide',
                 title: 'BC Portfolio app user guide',
                 img: {
-                    x1: 'public/images/portfolio/portfolio_sm.jpg',
-                    x2: 'public/images/portfolio/portfolio.jpg'
+                    x1: meta.path + 'public/images/portfolio/portfolio_sm.jpg',
+                    x2: meta.path + 'public/images/portfolio/portfolio.jpg'
                 },
                 alt: 'BC Portfolio App',
                 category: 'Guides'
@@ -73,7 +74,7 @@ block main
         .container
             h1.mb-2.mt-5.display-6= meta.h1
 
-            +breadcrumbs(breadcrumbsList, meta.lang)
+            +breadcrumbs(breadcrumbsList, meta.lang, meta.path)
 
             if (data)
                 .row
