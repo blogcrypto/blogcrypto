@@ -3,6 +3,7 @@ extends ../../pug/layouts/default
 block page-vars
     -
         var meta = {
+            path: '../',
             lang: 'en',
             title: 'Cryptocurrency exchanges list | Crypto trading platform',
             h1: 'Best bitcoin trading platform',
@@ -18,42 +19,42 @@ block page-vars
                 {
                     value: 'portfolio',
                     title: 'Portfolio',
-                    url: '/portfolio'
+                    url: meta.path + '/portfolio'
                 },
                 {
                     value: 'market',
                     title: 'Market',
-                    url: '/market'
+                    url: meta.path + '/market'
                 },
                 {
                     value: 'converter',
                     title: 'Converter',
-                    url: '/converter'
+                    url: meta.path + '/converter'
                 },
                 {
                     value: 'blog',
                     title: 'Blog',
-                    url: '/blog'
+                    url: meta.path + '/blog'
                 },
                 {
                     value: 'about',
                     title: 'About',
-                    url: '/about'
+                    url: meta.path + '/about'
                 },
             ]
         }
         var breadcrumbsList = [
             {
                 title: 'Categories',
-                url: '/blog'
+                url: meta.path + '/blog'
             },
             {
                 title: 'Articles',
-                url: '/articles'
+                url: meta.path + '/articles'
             },
             {
                 title: meta.h1,
-                url: ''
+                url: meta.path + ''
             }
         ]
 
@@ -62,7 +63,7 @@ block main
         .container
             h1.mb-2.mt-5.display-6= meta.h1
 
-            +breadcrumbs(breadcrumbsList, meta.lang)
+            +breadcrumbs(breadcrumbsList, meta.lang, meta.path)
 
             .row
                 .col-lg-9.col-xl-8.mb-4
@@ -70,7 +71,7 @@ block main
                     .row.align-items-center
                         .col.pb-2
 
-                            +date(meta.lang, '22.10.2020')
+                            +date(meta.lang, meta.path, '22.10.2020')
 
                         .col-auto.pb-2
 
@@ -78,9 +79,9 @@ block main
 
                     .mb-5
                         picture
-                            source(srcset="public/images/exchanges/exchanges-main.jpg 2x, public/images/exchanges/exchanges-main_sm.jpg 1x", media="(max-width: 768px)")
-                            source(srcset="public/images/exchanges/exchanges-main@2x.jpg 2x, public/images/exchanges/exchanges-main.jpg 1x")
-                            img(src="public/images/exchanges/exchanges-main.jpg", alt="Cryptocurrencies Exchanges")
+                            source(srcset= meta.path + "public/images/exchanges/exchanges-main.jpg 2x, " + meta.path + "public/images/exchanges/exchanges-main_sm.jpg 1x", media="(max-width: 768px)")
+                            source(srcset= meta.path + "public/images/exchanges/exchanges-main@2x.jpg 2x, " + meta.path + "public/images/exchanges/exchanges-main.jpg 1x")
+                            img(src= meta.path + "public/images/exchanges/exchanges-main.jpg", alt="Cryptocurrencies Exchanges")
 
                     div !{require('../../content/en/best-bitcoin-trading-platform.md')}
 

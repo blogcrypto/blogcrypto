@@ -18,9 +18,9 @@ html(lang= meta.lang)
                         .container
                             .row.w-100.align-items-center.mx-0
                                 .col-auto.px-0.order-lg-1
-                                    a.navbar-brand.me-0.js-link-home(href= meta.lang === 'en' ? '/index': '/' + meta.lang + '/index')
+                                    a.navbar-brand.me-0.js-link-home(href= 'index')
                                         span.logo
-                                            img.logo-img(src= meta.lang === 'en' ? 'public/icons/logo.svg': '../public/icons/logo.svg', alt="logo", style="width:1em;height:1em")
+                                            img.logo-img(src= meta.path + 'public/icons/logo.svg', alt="logo", style="width:1em;height:1em")
                                         | Blog Crypto
                                 .col-auto.ms-auto.px-0.order-lg-3
                                     include ../../components/switcher/switcher
@@ -40,17 +40,10 @@ html(lang= meta.lang)
             main.main.pb-5
                 .container
                     .banner.mt-3
-
-                        if meta.lang === 'en'
-                            picture
-                                source(srcset="public/images/banner-728x90@1x.jpg 2x, public/images/banner-728x90_sm.jpg 1x", media="(max-width: 768px)")
-                                source(srcset="public/images/banner-970x90@2x.jpg 2x, public/images/banner-970x90.jpg 1x")
-                                img(src="public/images/banner-970x90.jpg", alt="Blog Crypto banner")
-                        else
-                            picture
-                                source(srcset="../public/images/banner-728x90@1x.jpg 2x, ../public/images/banner-728x90_sm.jpg 1x", media="(max-width: 768px)")
-                                source(srcset="../public/images/banner-970x90@2x.jpg 2x, ../public/images/banner-970x90.jpg 1x")
-                                img(src="../public/images/banner-970x90.jpg", alt="Blog Crypto banner")
+                        picture
+                            source(srcset= meta.path + "public/images/banner-728x90@1x.jpg 2x, " + meta.path + "public/images/banner-728x90_sm.jpg 1x", media="(max-width: 768px)")
+                            source(srcset= meta.path + "public/images/banner-970x90@2x.jpg 2x," + meta.path + "public/images/banner-970x90.jpg 1x")
+                            img(src= meta.path + "public/images/banner-970x90.jpg", alt="Blog Crypto banner")
 
                 block main
 
@@ -60,7 +53,7 @@ html(lang= meta.lang)
                         .row.align-items-center
                             .col-auto.col-lg-1.text-center.text-lg-start.d-none.d-md-block.order-1.order-md-2.order-lg-1.pe-lg-0
                                 a.logo.border-0(href="#top")
-                                    img.logo-img(src= meta.lang === 'en' ? 'public/icons/logo.svg': '../public/icons/logo.svg', alt="logo", style="width:1em;height:1em")
+                                    img.logo-img(src= meta.path + 'public/icons/logo.svg', alt="logo", style="width:1em;height:1em")
 
                             .col-sm.mb-3.mb-sm-0.order-sm-3
                                 .social.text-center.text-sm-end.text-lg-center
@@ -100,6 +93,7 @@ html(lang= meta.lang)
             // <noscript><div><img src="https://mc.yandex.ru/watch/66920359" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
             // Yandex.Metrika counter
 
-        script(src="dist/js/main.js")
+
+        script(src= meta.path + "dist/js/main.js")
 
         block scripts

@@ -3,6 +3,7 @@ extends ../../../pug/layouts/default
 block page-vars
     -
         var meta = {
+            path: '../../',
             lang: 'ru',
             title: 'Статьи, обзоры и аналитика криптовалют, бирж, кошельков',
             h1: 'Статьи',
@@ -19,27 +20,27 @@ block page-vars
                 {
                     value: 'portfolio',
                     title: 'Портфолио',
-                    url: '/ru/portfolio'
+                    url: meta.path + '/ru/portfolio'
                 },
                 {
                     value: 'market',
                     title: 'Курс криптовалют',
-                    url: '/ru/market'
+                    url: meta.path + '/ru/market'
                 },
                 {
                     value: 'converter',
                     title: 'Конвертер',
-                    url: '/ru/converter'
+                    url: meta.path + '/ru/converter'
                 },
                 {
                     value: 'blog',
                     title: 'Блог',
-                    url: '/ru/blog'
+                    url: meta.path + '/ru/blog'
                 },
                 {
                     value: 'about',
                     title: 'О нас',
-                    url: '/ru/about'
+                    url: meta.path + '/about'
                 },
             ]
         }
@@ -47,7 +48,7 @@ block page-vars
         var breadcrumbsList = [
             {
                 title: 'Категории',
-                url: '/ru/blog'
+                url: meta.path + '/ru/blog'
             },
             {
                 title: 'Статьи',
@@ -57,21 +58,21 @@ block page-vars
 
         var data = [
             {
-                url: '/ru/articles/apparatnii-koshelek',
+                url: meta.path + '/ru/articles/apparatnii-koshelek',
                 title: 'Аппаратный кошелек',
                 img: {
-                    x1: 'public/images/hardware-wallets/hardware-wallets_sm.jpg',
-                    x2: 'public/images/hardware-wallets/hardware-wallets.jpg'
+                    x1: meta.path + '../public/images/hardware-wallets/hardware-wallets_sm.jpg',
+                    x2: meta.path + '../public/images/hardware-wallets/hardware-wallets.jpg'
                 },
                 alt: 'Аппаратные кошельки',
                 category: 'Статьи'
             },
             {
-                url: '/ru/articles/luchshie-birzhi-kriptovalyut',
+                url: meta.path + '/ru/articles/luchshie-birzhi-kriptovalyut',
                 title: 'Лучшие биржи криптовалют',
                 img: {
-                    x1: 'public/images/exchanges/exchanges-main_sm.jpg',
-                    x2: 'public/images/exchanges/exchanges-main.jpg'
+                    x1: meta.path + '../public/images/exchanges/exchanges-main_sm.jpg',
+                    x2: meta.path + '../public/images/exchanges/exchanges-main.jpg'
                 },
                 alt: 'Криптовалютные биржи',
                 category: 'Статьи'
@@ -83,7 +84,7 @@ block main
         .container
             h1.mb-2.mt-5.display-6= meta.h1
 
-            +breadcrumbs(breadcrumbsList, meta.lang)
+            +breadcrumbs(breadcrumbsList, meta.lang, meta.path)
 
             if (data)
                 .row
