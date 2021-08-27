@@ -4,10 +4,10 @@ mixin breadcrumbs(list, lang)
             li.breadcrumb-item
                 if lang === 'ru'
                     a.breadcrumb-link(href="/ru/index")
-                        img(src="/public/icons/home.svg", alt="Домой", title="На главную страницу", style="width:1em;height:1em")
+                        img(src="public/icons/home.svg", alt="Домой", title="На главную страницу", style="width:1em;height:1em")
                 else
                     a.breadcrumb-link(href="/index")
-                        img(src="/public/icons/home.svg", alt="Home", title="To Home Page", style="width:1em;height:1em")
+                        img(src="public/icons/home.svg", alt="Home", title="To Home Page", style="width:1em;height:1em")
 
             each item in list
                 if item.url === ''

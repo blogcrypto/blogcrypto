@@ -27,7 +27,7 @@ const PATHS = {
 /**
  * Filter and define files
  * @param {string} entry - Entry files
- * @return [{ [key: string]: string} ] An array with list entries [ {index: 'src/index.js'} ]
+ * @return [{ [key: string]: string}] An array with list entries [ {index: 'src/index.js'} ]
  */
 const getFiles = (entry) => {
     const ext = entry.split('.').pop(); // get file extension
@@ -41,7 +41,8 @@ const getFiles = (entry) => {
 };
 
 const getNestedDir = (src, dir) => {
-    const srcArr = src.replace(/\/index.pug/, '').split('/');
+    // const srcArr = src.replace(/\/index.pug/, '').split('/');
+    const srcArr = src.split('/');
     let srcStr;
 
     if (srcArr[srcArr.length - 2] === dir) {

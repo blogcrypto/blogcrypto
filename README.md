@@ -5,7 +5,7 @@
 
 #### Package.json
 
-    "homepage": "https://blogcrypto.info/",
+    "homepage": "https://blogcrypto.github.io/blogcrypto/",
     "config": {
           "projectName": "Blog Crypto"
       },
