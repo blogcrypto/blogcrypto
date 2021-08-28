@@ -3,7 +3,7 @@ mixin breadcrumbs(list, lang)
         ol.breadcrumb.bg-transparent.px-0
             li.breadcrumb-item
                 if lang === 'ru'
-                    a.breadcrumb-link(href="/ru/index")
+                    a.breadcrumb-link(href="./ru/index")
                         img(src="public/icons/home.svg", alt="Домой", title="На главную страницу", style="width:1em;height:1em")
                 else
                     a.breadcrumb-link(href="/index")
