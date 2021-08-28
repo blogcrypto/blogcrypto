@@ -3,7 +3,6 @@ extends ../../pug/layouts/default
 block page-vars
     -
         var meta = {
-            path: '../',
             lang: 'en',
             title: 'Articles and reviews of cryptocurrencies, exchanges, wallets',
             h1: 'Articles',
@@ -20,27 +19,27 @@ block page-vars
                 {
                     value: 'portfolio',
                     title: 'Portfolio',
-                    url: meta.path + '/portfolio'
+                    url: '/portfolio'
                 },
                 {
                     value: 'market',
                     title: 'Market',
-                    url: meta.path + '/market'
+                    url: '/market'
                 },
                 {
                     value: 'converter',
                     title: 'Converter',
-                    url: meta.path + '/converter'
+                    url: '/converter'
                 },
                 {
                     value: 'blog',
                     title: 'Blog',
-                    url: meta.path + '/blog'
+                    url: '/blog'
                 },
                 {
                     value: 'about',
                     title: 'About',
-                    url: meta.path + '/about'
+                    url: '/about'
                 },
             ]
         }
@@ -48,7 +47,7 @@ block page-vars
         var breadcrumbsList = [
             {
                 title: 'Categories',
-                url: meta.path + '/blog'
+                url: '/blog'
             },
             {
                 title: meta.h1,
@@ -58,20 +57,20 @@ block page-vars
 
         var data = [
             {
-                url: meta.path + '/articles/hardware-wallet',
+                url: '/articles/hardware-wallet',
                 title: 'Hardware wallet',
                 img: {
-                    x1: meta.path + 'public/images/hardware-wallets/hardware-wallets_sm.jpg',
-                    x2: meta.path + 'public/images/hardware-wallets/hardware-wallets.jpg'
+                    x1: '/public/images/hardware-wallets/hardware-wallets_sm.jpg',
+                    x2: '/public/images/hardware-wallets/hardware-wallets.jpg'
                 },
                 alt: 'Hardware wallets'
             },
             {
-                url: meta.path + '/articles/best-bitcoin-trading-platform',
+                url: '/articles/best-bitcoin-trading-platform',
                 title: 'Best bitcoin trading platform',
                 img: {
-                    x1: meta.path + 'public/images/exchanges/exchanges-main_sm.jpg',
-                    x2: meta.path + 'public/images/exchanges/exchanges-main.jpg'
+                    x1: '/public/images/exchanges/exchanges-main_sm.jpg',
+                    x2: '/public/images/exchanges/exchanges-main.jpg'
                 },
                 alt: 'Cryptocurrencies Exchanges'
             }
@@ -82,7 +81,7 @@ block main
         .container
             h1.mb-2.mt-5.display-6= meta.h1
 
-            +breadcrumbs(breadcrumbsList, meta.lang, meta.path)
+            +breadcrumbs(breadcrumbsList, meta.lang)
 
             if (data)
                 .row

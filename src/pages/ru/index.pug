@@ -3,7 +3,6 @@ extends ../../pug/layouts/default
 block page-vars
     -
         var meta = {
-            path: '../',
             lang: 'ru',
             title: 'Сколько стоит биткоин | Цена bitcoin',
             h1: '1\u00A0Биткоин в\u00A0рублях',
@@ -19,27 +18,27 @@ block page-vars
                 {
                     value: 'portfolio',
                     title: 'Портфолио',
-                    url: meta.path + '/ru/portfolio'
+                    url: '/ru/portfolio'
                 },
                 {
                     value: 'market',
                     title: 'Курс криптовалют',
-                    url: meta.path + '/ru/market'
+                    url: '/ru/market'
                 },
                 {
                     value: 'converter',
                     title: 'Конвертер',
-                    url: meta.path + '/ru/converter'
+                    url: '/ru/converter'
                 },
                 {
                     value: 'blog',
                     title: 'Блог',
-                    url: meta.path + '/ru/blog'
+                    url: '/ru/blog'
                 },
                 {
                     value: 'about',
                     title: 'О нас',
-                    url: meta.path + '/about'
+                    url: '/ru/about'
                 },
             ]
         }
@@ -62,8 +61,8 @@ block main
             h2.mb-4.display-6= local.marketCap
             .market.table-nowrap.table-responsive-xl.js-market(data-per-page="10", data-currency="rub", data-decimal="2", data-symbol="₽", data-symbol-position="end")
             .mt-4
-                a.btn.btn-primary.btn-lg.active(href= meta.path + "ru/market", role="button", aria-pressed="true")= local.showAll
+                a.btn.btn-primary.btn-lg.active(href="/ru/market", role="button", aria-pressed="true")= local.showAll
 
 
 block scripts
-    script(src= meta.path + "dist/js/market.js")
+    script(src="/dist/js/market.js")
