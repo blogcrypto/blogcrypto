@@ -21,13 +21,13 @@ export class Switcher {
         if (!localStorage.getItem('locale')) {
             const getLocale = this.userLang.toLowerCase().substring(0, 2);
 
-            if (document.location.pathname === '/' && getLocale !== 'en') {
+            if (document.location.pathname === '/blogcrypto/' && getLocale !== 'en') {
                 this.setLocale(getLocale);
             } else {
                 localStorage.setItem('locale', this.el.value);
             }
         } else {
-            if (document.location.pathname === '/') {
+            if (document.location.pathname === '/blogcrypto/') {
                 this.setLocale(localStorage.getItem('locale'))
             } else {
                 localStorage.setItem('locale', this.el.value);
