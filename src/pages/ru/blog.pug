@@ -3,7 +3,6 @@ extends ../../pug/layouts/default
 block page-vars
     -
         var meta = {
-            path: '../',
             lang: 'ru',
             title: 'Блог | Blog Crypto – новости, руководства, обзоры',
             h1: 'Категории',
@@ -20,47 +19,47 @@ block page-vars
                 {
                     value: 'portfolio',
                     title: 'Портфолио',
-                    url: meta.path + '/ru/portfolio'
+                    url: '/ru/portfolio'
                 },
                 {
                     value: 'market',
                     title: 'Курс криптовалют',
-                    url: meta.path + '/ru/market'
+                    url: '/ru/market'
                 },
                 {
                     value: 'converter',
                     title: 'Конвертер',
-                    url: meta.path + '/ru/converter'
+                    url: '/ru/converter'
                 },
                 {
                     value: 'blog',
                     title: 'Блог',
-                    url: meta.path + '/ru/blog'
+                    url: '/ru/blog'
                 },
                 {
                     value: 'about',
                     title: 'О нас',
-                    url: meta.path + '/about'
+                    url: '/ru/about'
                 },
             ]
         }
 
         var categoriesList = [
             {
-                url: meta.path + '/ru/articles',
+                url: '/ru/articles',
                 img: {
-                    x1: meta.path + 'public/images/category/category-2_sm.jpg',
-                    x2: meta.path + 'public/images/category/category-2.jpg'
+                    x1: '/public/images/category/category-2_sm.jpg',
+                    x2: '/public/images/category/category-2.jpg'
                 },
                 alt: '',
                 title: 'Статьи',
                 desc: ''
             },
             {
-                url: meta.path + '/ru/guides',
+                url: '/ru/guides',
                 img: {
-                    x1: meta.path + 'public/images/category/category-1_sm.jpg',
-                    x2: meta.path + 'public/images/category/category-1.jpg'
+                    x1: '/public/images/category/category-1_sm.jpg',
+                    x2: '/public/images/category/category-1.jpg'
                 },
                 alt: '',
                 title: 'Руководства',
@@ -70,21 +69,21 @@ block page-vars
 
         var data = [
             {
-                url: meta.path + '/ru/articles/apparatnii-koshelek',
+                url: '/ru/articles/apparatnii-koshelek',
                 title: 'Аппаратный кошелек',
                 img: {
-                    x1: meta.path + 'public/images/hardware-wallets/hardware-wallets_sm.jpg',
-                    x2: meta.path + 'public/images/hardware-wallets/hardware-wallets.jpg'
+                    x1: '/public/images/hardware-wallets/hardware-wallets_sm.jpg',
+                    x2: '/public/images/hardware-wallets/hardware-wallets.jpg'
                 },
                 alt: 'Аппаратные кошельки',
                 category: 'Статьи'
             },
             {
-                url: meta.path + '/ru/guides/rukovodstvo-polzovatelya-bc-portfolio',
+                url: '/ru/guides/rukovodstvo-polzovatelya-bc-portfolio',
                 title: 'Руководство пользователя Portfolio BC',
                 img: {
-                    x1: meta.path + 'public/images/portfolio/portfolio_sm.jpg',
-                    x2: meta.path + 'public/images/portfolio/portfolio.jpg'
+                    x1: '/public/images/portfolio/portfolio_sm.jpg',
+                    x2: '/public/images/portfolio/portfolio.jpg'
                 },
                 alt: 'Приложение BC Portfolio',
                 category: 'Руководства',
@@ -94,11 +93,11 @@ block page-vars
                 }]*/
             },
             {
-                url: meta.path + '/ru/articles/luchshie-birzhi-kriptovalyut',
+                url: '/ru/articles/luchshie-birzhi-kriptovalyut',
                 title: 'Лучшие биржи криптовалют',
                 img: {
-                    x1: meta.path + 'public/images/exchanges/exchanges-main_sm.jpg',
-                    x2: meta.path + 'public/images/exchanges/exchanges-main.jpg'
+                    x1: '/public/images/exchanges/exchanges-main_sm.jpg',
+                    x2: '/public/images/exchanges/exchanges-main.jpg'
                 },
                 alt: 'Криптовалютные биржи',
                 category: 'Статьи'

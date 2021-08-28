@@ -28,9 +28,9 @@
 <p>
     <a href="https://www.binance.com?ref=26375672" class="img-ext-link" data-link-text="Открыть www.binance.com в новой вкладке" target="_blank" rel="noopener noreferrer">
         <picture class="img-wrap" style="padding-bottom: calc(100/225*100%)">
-            <source data-srcset="public/images/exchanges/binance.jpg 2x, public/images/exchanges/binance_sm.jpg 1x" media="(max-width: 768px)">
-            <source data-srcset="public/images/exchanges/binance@2x.jpg 2x, public/images/exchanges/binance.jpg 1x">
-            <img class="img-embed lazy" data-src="public/images/exchanges/binance.jpg" alt="Binance Exchange">
+            <source data-srcset="/public/images/exchanges/binance.jpg 2x, /public/images/exchanges/binance_sm.jpg 1x" media="(max-width: 768px)">
+            <source data-srcset="/public/images/exchanges/binance@2x.jpg 2x, /public/images/exchanges/binance.jpg 1x">
+            <img class="img-embed lazy" data-src="/public/images/exchanges/binance.jpg" alt="Binance Exchange">
         </picture>
     </a>
 </p>
@@ -59,9 +59,9 @@
 <p>
     <a href="https://www.huobi.com/en-us/register/?invite_code=h8qw6" class="img-ext-link" data-link-text="Открыть www.huobi.com в новой вкладке" target="_blank" rel="noopener noreferrer">
         <picture class="img-wrap" style="padding-bottom: calc(100/225*100%)">
-            <source data-srcset="public/images/exchanges/huobi.jpg 2x, public/images/exchanges/huobi_sm.jpg 1x" media="(max-width: 768px)">
-            <source data-srcset="public/images/exchanges/huobi@2x.jpg 2x, public/images/exchanges/huobi.jpg 1x">
-            <img class="img-embed lazy" data-src="public/images/exchanges/huobi.jpg" alt="Huobi Global Exchange">
+            <source data-srcset="/public/images/exchanges/huobi.jpg 2x, /public/images/exchanges/huobi_sm.jpg 1x" media="(max-width: 768px)">
+            <source data-srcset="/public/images/exchanges/huobi@2x.jpg 2x, /public/images/exchanges/huobi.jpg 1x">
+            <img class="img-embed lazy" data-src="/public/images/exchanges/huobi.jpg" alt="Huobi Global Exchange">
         </picture>
     </a>
 </p>
@@ -88,9 +88,9 @@ OKEx поддерживает безопасную, надежную и стаб
 <p>
     <a href="https://www.okex.com/join/2668346" class="img-ext-link" data-link-text="Открыть www.okex.com в новой вкладке" target="_blank" rel="noopener noreferrer">
         <picture class="img-wrap" style="padding-bottom: calc(100/225*100%)">
-            <source data-srcset="public/images/exchanges/okex.jpg 2x, public/images/exchanges/okex_sm.jpg 1x" media="(max-width: 768px)">
-            <source data-srcset="public/images/exchanges/okex@2x.jpg 2x, public/images/exchanges/okex.jpg 1x">
-            <img class="img-embed lazy" data-src="public/images/exchanges/okex.jpg" alt="OKEx Exchange">
+            <source data-srcset="/public/images/exchanges/okex.jpg 2x, /public/images/exchanges/okex_sm.jpg 1x" media="(max-width: 768px)">
+            <source data-srcset="/public/images/exchanges/okex@2x.jpg 2x, /public/images/exchanges/okex.jpg 1x">
+            <img class="img-embed lazy" data-src="/public/images/exchanges/okex.jpg" alt="OKEx Exchange">
         </picture>
     </a>
 </p>
@@ -119,9 +119,9 @@ Bitcoin.com не является официальным сайтом битко
 <p>
     <a href="https://exchange.bitcoin.com/referral/99755c31b1a089b6" class="img-ext-link" data-link-text="Открыть exchange.bitcoin.com в новой вкладке" target="_blank" rel="noopener noreferrer">
         <picture class="img-wrap" style="padding-bottom: calc(100/225*100%)">
-            <source data-srcset="public/images/exchanges/bitcoin.com.jpg 2x, public/images/exchanges/bitcoin.com_sm.jpg 1x" media="(max-width: 768px)">
-            <source data-srcset="public/images/exchanges/bitcoin.com@2x.jpg 2x, public/images/exchanges/bitcoin.com.jpg 1x">
-            <img class="img-embed lazy" data-src="public/images/exchanges/bitcoin.com.jpg" alt="Bitcoin.com Exchange">
+            <source data-srcset="/public/images/exchanges/bitcoin.com.jpg 2x, /public/images/exchanges/bitcoin.com_sm.jpg 1x" media="(max-width: 768px)">
+            <source data-srcset="/public/images/exchanges/bitcoin.com@2x.jpg 2x, /public/images/exchanges/bitcoin.com.jpg 1x">
+            <img class="img-embed lazy" data-src="/public/images/exchanges/bitcoin.com.jpg" alt="Bitcoin.com Exchange">
         </picture>
     </a>
 </p>
@@ -151,9 +151,9 @@ Bitcoin.com не является официальным сайтом битко
 <p>
     <a href="https://poloniex.com/signup?c=TNPMCDQQ" class="img-ext-link" data-link-text="Открыть poloniex.com в новой вкладке" target="_blank" rel="noopener noreferrer">
         <picture class="img-wrap" style="padding-bottom: calc(100/225*100%)">
-            <source data-srcset="public/images/exchanges/poloniex.jpg 2x, public/images/exchanges/poloniex_sm.jpg 1x" media="(max-width: 768px)">
-            <source data-srcset="public/images/exchanges/poloniex@2x.jpg 2x, public/images/exchanges/poloniex.jpg 1x">
-            <img class="img-embed lazy" data-src="public/images/exchanges/poloniex.jpg" alt="Poloniex Exchange">
+            <source data-srcset="/public/images/exchanges/poloniex.jpg 2x, /public/images/exchanges/poloniex_sm.jpg 1x" media="(max-width: 768px)">
+            <source data-srcset="/public/images/exchanges/poloniex@2x.jpg 2x, /public/images/exchanges/poloniex.jpg 1x">
+            <img class="img-embed lazy" data-src="/public/images/exchanges/poloniex.jpg" alt="Poloniex Exchange">
         </picture>
     </a>
 </p>
@@ -180,9 +180,9 @@ Bitcoin.com не является официальным сайтом битко
 <p>
     <a href="https://www.kucoin.com/?rcode=1sseshc" class="img-ext-link" data-link-text="Открыть www.kucoin.com в новой вкладке" target="_blank" rel="noopener noreferrer">
         <picture class="img-wrap" style="padding-bottom: calc(100/225*100%)">
-            <source data-srcset="public/images/exchanges/kukoin.jpg 2x, public/images/exchanges/kukoin_sm.jpg 1x" media="(max-width: 768px)">
-            <source data-srcset="public/images/exchanges/kukoin@2x.jpg 2x, public/images/exchanges/kukoin.jpg 1x">
-            <img class="img-embed lazy" data-src="public/images/exchanges/kukoin.jpg" alt="KuKoin Exchange">
+            <source data-srcset="/public/images/exchanges/kukoin.jpg 2x, /public/images/exchanges/kukoin_sm.jpg 1x" media="(max-width: 768px)">
+            <source data-srcset="/public/images/exchanges/kukoin@2x.jpg 2x, /public/images/exchanges/kukoin.jpg 1x">
+            <img class="img-embed lazy" data-src="/public/images/exchanges/kukoin.jpg" alt="KuKoin Exchange">
         </picture>
     </a>
 </p>
@@ -210,9 +210,9 @@ Bitcoin.com не является официальным сайтом битко
 <p>
     <a href="https://crypto.com/exch/8z8n472qxv" class="img-ext-link" data-link-text="Открыть crypto.com в новой вкладке" target="_blank" rel="noopener noreferrer">
         <picture class="img-wrap" style="padding-bottom: calc(100/225*100%)">
-            <source data-srcset="public/images/exchanges/crypto.com.jpg 2x, public/images/exchanges/crypto.com_sm.jpg 1x" media="(max-width: 768px)">
-            <source data-srcset="public/images/exchanges/crypto.com@2x.jpg 2x, public/images/exchanges/crypto.com.jpg 1x">
-            <img class="img-embed lazy" data-src="public/images/exchanges/crypto.com.jpg" alt="Crypto.com Exchange">
+            <source data-srcset="/public/images/exchanges/crypto.com.jpg 2x, /public/images/exchanges/crypto.com_sm.jpg 1x" media="(max-width: 768px)">
+            <source data-srcset="/public/images/exchanges/crypto.com@2x.jpg 2x, /public/images/exchanges/crypto.com.jpg 1x">
+            <img class="img-embed lazy" data-src="/public/images/exchanges/crypto.com.jpg" alt="Crypto.com Exchange">
         </picture>
     </a>
 </p>
@@ -242,9 +242,9 @@ Bitcoin.com не является официальным сайтом битко
 <p>
     <a href="https://bitmax.io/register?inviteCode=RMVSIQAL" class="img-ext-link" data-link-text="Открыть bitmax.io в новой вкладке" target="_blank" rel="noopener noreferrer">
         <picture class="img-wrap" style="padding-bottom: calc(100/225*100%)">
-            <source data-srcset="public/images/exchanges/bitmax.jpg 2x, public/images/exchanges/bitmax_sm.jpg 1x" media="(max-width: 768px)">
-            <source data-srcset="public/images/exchanges/bitmax@2x.jpg 2x, public/images/exchanges/bitmax.jpg 1x">
-            <img class="img-embed lazy" data-src="public/images/exchanges/bitmax.jpg" alt="BitMax Exchange">
+            <source data-srcset="/public/images/exchanges/bitmax.jpg 2x, /public/images/exchanges/bitmax_sm.jpg 1x" media="(max-width: 768px)">
+            <source data-srcset="/public/images/exchanges/bitmax@2x.jpg 2x, /public/images/exchanges/bitmax.jpg 1x">
+            <img class="img-embed lazy" data-src="/public/images/exchanges/bitmax.jpg" alt="BitMax Exchange">
         </picture>
     </a>
 </p>
@@ -273,9 +273,9 @@ Bitcoin.com не является официальным сайтом битко
 <p>
     <a href="https://www.cointiger.top/#/register?refCode=UVIdze" class="img-ext-link" data-link-text="Открыть www.cointiger.top в новой вкладке" target="_blank" rel="noopener noreferrer">
         <picture class="img-wrap" style="padding-bottom: calc(100/225*100%)">
-            <source data-srcset="public/images/exchanges/cointiger.jpg 2x, public/images/exchanges/cointiger_sm.jpg 1x" media="(max-width: 768px)">
-            <source data-srcset="public/images/exchanges/cointiger@2x.jpg 2x, public/images/exchanges/cointiger.jpg 1x">
-            <img class="img-embed lazy" data-src="public/images/exchanges/cointiger.jpg" alt="CoinTiger Exchange">
+            <source data-srcset="/public/images/exchanges/cointiger.jpg 2x, /public/images/exchanges/cointiger_sm.jpg 1x" media="(max-width: 768px)">
+            <source data-srcset="/public/images/exchanges/cointiger@2x.jpg 2x, /public/images/exchanges/cointiger.jpg 1x">
+            <img class="img-embed lazy" data-src="/public/images/exchanges/cointiger.jpg" alt="CoinTiger Exchange">
         </picture>
     </a>
 </p>
@@ -306,9 +306,9 @@ Bitcoin.com не является официальным сайтом битко
 <p>
     <a href="https://www.binance.org/" class="img-ext-link" data-link-text="Открыть www.binance.org в новой вкладке" target="_blank" rel="noopener noreferrer">
         <picture class="img-wrap" style="padding-bottom: calc(100/225*100%)">
-            <source data-srcset="public/images/exchanges/binance-dex.jpg 2x, public/images/exchanges/binance-dex_sm.jpg 1x" media="(max-width: 768px)">
-            <source data-srcset="public/images/exchanges/binance-dex@2x.jpg 2x, public/images/exchanges/binance-dex.jpg 1x">
-            <img class="img-embed lazy" data-src="public/images/exchanges/binance-dex.jpg" alt="Binance Dex Exchange">
+            <source data-srcset="/public/images/exchanges/binance-dex.jpg 2x, /public/images/exchanges/binance-dex_sm.jpg 1x" media="(max-width: 768px)">
+            <source data-srcset="/public/images/exchanges/binance-dex@2x.jpg 2x, /public/images/exchanges/binance-dex.jpg 1x">
+            <img class="img-embed lazy" data-src="/public/images/exchanges/binance-dex.jpg" alt="Binance Dex Exchange">
         </picture>
     </a>
 </p>
@@ -325,9 +325,9 @@ Bitcoin.com не является официальным сайтом битко
 <p>
     <a href="https://app.uniswap.org/#/swap" class="img-ext-link" data-link-text="Открыть app.uniswap.org в новой вкладке" target="_blank" rel="noopener noreferrer">
         <picture class="img-wrap" style="padding-bottom: calc(100/225*100%)">
-            <source data-srcset="public/images/exchanges/uniswap.jpg 2x, public/images/exchanges/uniswap_sm.jpg 1x" media="(max-width: 768px)">
-            <source data-srcset="public/images/exchanges/uniswap@2x.jpg 2x, public/images/exchanges/uniswap.jpg 1x">
-            <img class="img-embed lazy" data-src="public/images/exchanges/uniswap.jpg" alt="Uniswap Exchange">
+            <source data-srcset="/public/images/exchanges/uniswap.jpg 2x, /public/images/exchanges/uniswap_sm.jpg 1x" media="(max-width: 768px)">
+            <source data-srcset="/public/images/exchanges/uniswap@2x.jpg 2x, /public/images/exchanges/uniswap.jpg 1x">
+            <img class="img-embed lazy" data-src="/public/images/exchanges/uniswap.jpg" alt="Uniswap Exchange">
         </picture>
     </a>
 </p>
@@ -344,9 +344,9 @@ Bitcoin.com не является официальным сайтом битко
 <p>
     <a href="https://www.curve.fi/" class="img-ext-link" data-link-text="Открыть www.curve.fi в новой вкладке" target="_blank" rel="noopener noreferrer">
         <picture class="img-wrap" style="padding-bottom: calc(100/225*100%)">
-            <source data-srcset="public/images/exchanges/curve.jpg 2x, public/images/exchanges/curve_sm.jpg 1x" media="(max-width: 768px)">
-            <source data-srcset="public/images/exchanges/curve@2x.jpg 2x, public/images/exchanges/curve.jpg 1x">
-            <img class="img-embed lazy" data-src="public/images/exchanges/curve.jpg" alt="Curve Exchange">
+            <source data-srcset="/public/images/exchanges/curve.jpg 2x, /public/images/exchanges/curve_sm.jpg 1x" media="(max-width: 768px)">
+            <source data-srcset="/public/images/exchanges/curve@2x.jpg 2x, /public/images/exchanges/curve.jpg 1x">
+            <img class="img-embed lazy" data-src="/public/images/exchanges/curve.jpg" alt="Curve Exchange">
         </picture>
     </a>
 </p>

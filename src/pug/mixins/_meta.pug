@@ -1,15 +1,4 @@
 mixin meta(meta)
-
-    link(rel="apple-touch-icon", sizes="180x180", href= meta.path + "favicon/apple-touch-icon.png")
-    link(rel="icon", type="image/png", sizes="32x32", href= meta.path + "favicon/favicon-32x32.png")
-    link(rel="icon", type="image/png", sizes="16x16", href= meta.path + "favicon/favicon-16x16.png")
-    link(rel="manifest", href= meta.path + "favicon/site.webmanifest")
-    link(rel="mask-icon", href= meta.path + "favicon/safari-pinned-tab.svg", color="#5bbad5")
-    link(rel="shortcut icon", href= meta.path + "favicon/favicon.ico")
-    meta(name="msapplication-TileColor", content="#2d89ef")
-    meta(name="msapplication-config", content= meta.path + "favicon/browserconfig.xml")
-    meta(name="theme-color", content="#ffffff")
-
     meta(property="og:title", content= meta.title)
     meta(property="og:type", content= meta.type)
     meta(property="og:url", content= meta.url)
@@ -34,6 +23,3 @@ mixin meta(meta)
     if meta.verification
         meta(name="google-site-verification", content="OB6y3CtO_qNFYBxBQm5oNWpTT1TR3svNh-7qlWew0eU")
         meta(name="yandex-verification", content="d869b05c894acadb")
-
-    if !htmlWebpackPlugin.options.isDevelopment
-        link(rel="stylesheet", href= meta.path + "dist/css/main.css")

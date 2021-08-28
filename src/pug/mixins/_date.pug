@@ -1,6 +1,6 @@
-mixin date(lang, path, date)
+mixin date(lang, date)
     .d-flex.align-items-center
-        img.me-1(src= path + "public/icons/calendar.svg", alt="Date", style="width:1em;height:1em")
+        img.me-1(src="/public/icons/calendar.svg", alt="Date", style="width:1em;height:1em")
 
         if lang === 'ru'
             .text-secondary= date

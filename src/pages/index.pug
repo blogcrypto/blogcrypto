@@ -3,7 +3,6 @@ extends ../pug/layouts/default
 block page-vars
     -
         var meta = {
-            path: '',
             lang: 'en',
             title: 'Cryptocurrency price | BTC in usd',
             h1: '1 BTC in\u00A0USD',
@@ -66,4 +65,4 @@ block main
                 a.btn.btn-primary.btn-lg.active(href="/market", role="button", aria-pressed="true")= local.showAll
 
 block scripts
-    script(src="dist/js/market.js")
+    script(src="/dist/js/market.js")

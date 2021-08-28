@@ -3,7 +3,6 @@ extends ../pug/layouts/default
 block page-vars
     -
         var meta = {
-            path: '',
             lang: 'en',
             title: 'Cryptocurrency market capitalization | Bitcoin course',
             h1: 'Cryptocurrency market cap',
@@ -110,4 +109,4 @@ block main
                     .js-market-pagination
 
 block scripts
-    script(src="dist/js/market.js")
+    script(src="/dist/js/market.js")

@@ -3,7 +3,6 @@ extends ../../../pug/layouts/default
 block page-vars
     -
         var meta = {
-            path: '../../',
             lang: 'ru',
             title: 'Аппаратный кошелек для криптовалюты| Trezor | Ledger | Keepkey',
             h1: 'Аппаратный кошелек',
@@ -19,38 +18,38 @@ block page-vars
                 {
                     value: 'portfolio',
                     title: 'Портфолио',
-                    url: meta.path + '/ru/portfolio'
+                    url: '/ru/portfolio'
                 },
                 {
                     value: 'market',
                     title: 'Курс криптовалют',
-                    url: meta.path + '/ru/market'
+                    url: '/ru/market'
                 },
                 {
                     value: 'converter',
                     title: 'Конвертер',
-                    url: meta.path + '/ru/converter'
+                    url: '/ru/converter'
                 },
                 {
                     value: 'blog',
                     title: 'Блог',
-                    url: meta.path + '/ru/blog'
+                    url: '/ru/blog'
                 },
                 {
                     value: 'about',
                     title: 'О нас',
-                    url: meta.path + '/about'
+                    url: '/ru/about'
                 },
             ]
         }
         var breadcrumbsList = [
             {
                 title: 'Категории',
-                url: meta.path + '/ru/blog'
+                url: '/ru/blog'
             },
             {
                 title: 'Статьи',
-                url: meta.path + '/ru/articles'
+                url: '/ru/articles'
             },
             {
                 title: meta.h1,
@@ -63,7 +62,7 @@ block main
         .container
             h1.mb-2.mt-5.display-6= meta.h1
 
-            +breadcrumbs(breadcrumbsList, meta.lang, meta.path)
+            +breadcrumbs(breadcrumbsList, meta.lang)
 
             .row
                 .col-lg-9.col-xl-8.mb-4
@@ -71,7 +70,7 @@ block main
                     .row.align-items-center
                         .col.pb-2
 
-                            +date(meta.lang, meta.path, '19.12.2020')
+                            +date(meta.lang, '19.12.2020')
 
                         .col-auto.pb-2
 
@@ -79,9 +78,9 @@ block main
 
                     .mb-5
                         picture
-                            source(srcset= meta.path + "public/images/hardware-wallets/hardware-wallets.jpg 2x, " + meta.path + "public/images/hardware-wallets/hardware-wallets_sm.jpg 1x", media="(max-width: 768px)")
-                            source(srcset= meta.path + "public/images/hardware-wallets/hardware-wallets@2x.jpg 2x, " + meta.path + "public/images/hardware-wallets/hardware-wallets.jpg 1x")
-                            img(src= meta.path + "public/images/hardware-wallets/hardware-wallets.jpg", alt="Аппаратные кошельки")
+                            source(srcset="/public/images/hardware-wallets/hardware-wallets.jpg 2x, /public/images/hardware-wallets/hardware-wallets_sm.jpg 1x", media="(max-width: 768px)")
+                            source(srcset="/public/images/hardware-wallets/hardware-wallets@2x.jpg 2x, /public/images/hardware-wallets/hardware-wallets.jpg 1x")
+                            img(src="/public/images/hardware-wallets/hardware-wallets.jpg", alt="Аппаратные кошельки")
 
                     div !{require('../../../content/ru/apparatnii-koshelek.md')}
 
