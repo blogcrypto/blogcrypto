@@ -43,9 +43,9 @@ export class Switcher {
 
     setLocale(locale) {
         if (locale !== 'en') {
-            document.location.href = document.location.origin + '/' + locale + '/index';
+            document.location.href = document.location.origin + '/blogcrypto/' + locale + '/index';
         } else {
-            document.location.href = document.location.origin + '/index';
+            document.location.href = document.location.origin + '/blogcrypto/index';
         }
 
         localStorage.setItem('locale', locale);
