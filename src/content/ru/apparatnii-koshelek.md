@@ -17,9 +17,9 @@
 
 <p>
     <picture class="img-wrap" style="padding-bottom: calc(480/960*100%)">
-        <source data-srcset="/public/images/hardware-wallets/ledger-inside.jpg 2x, /public/images/hardware-wallets/ledger-inside_sm.jpg 1x" media="(max-width: 768px)">
-        <source data-srcset="/public/images/hardware-wallets/ledger-inside@2x.jpg 2x, /public/images/hardware-wallets/ledger-inside.jpg 1x">
-        <img class="img-embed lazy" data-src="/public/images/hardware-wallets/ledger-inside.jpg" alt="Ledger Inside">
+        <source data-srcset="public/images/hardware-wallets/ledger-inside.jpg 2x, public/images/hardware-wallets/ledger-inside_sm.jpg 1x" media="(max-width: 768px)">
+        <source data-srcset="public/images/hardware-wallets/ledger-inside@2x.jpg 2x, public/images/hardware-wallets/ledger-inside.jpg 1x">
+        <img class="img-embed lazy" data-src="public/images/hardware-wallets/ledger-inside.jpg" alt="Ledger Inside">
     </picture>
 </p>
 
@@ -33,9 +33,9 @@
 
 <p>
     <picture class="img-wrap" style="padding-bottom: calc(480/960*100%)">
-        <source data-srcset="/public/images/hardware-wallets/hacker.jpg 2x, /public/images/hardware-wallets/hacker_sm.jpg 1x" media="(max-width: 768px)">
-        <source data-srcset="/public/images/hardware-wallets/hacker@2x.jpg 2x, /public/images/hardware-wallets/hacker.jpg 1x">
-        <img class="img-embed lazy" data-src="/public/images/hardware-wallets/hacker.jpg" alt="Hacker">
+        <source data-srcset="public/images/hardware-wallets/hacker.jpg 2x, public/images/hardware-wallets/hacker_sm.jpg 1x" media="(max-width: 768px)">
+        <source data-srcset="public/images/hardware-wallets/hacker@2x.jpg 2x, public/images/hardware-wallets/hacker.jpg 1x">
+        <img class="img-embed lazy" data-src="public/images/hardware-wallets/hacker.jpg" alt="Hacker">
     </picture>
 </p>
 

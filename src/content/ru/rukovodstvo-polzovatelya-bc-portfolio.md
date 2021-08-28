@@ -15,9 +15,9 @@
 
 <p>
     <picture class="img-wrap" style="padding-bottom: calc(480/960*100%)">
-        <source data-srcset="/public/images/portfolio/ru-google.jpg 2x, /public/images/portfolio/ru-google_sm.jpg 1x" media="(max-width: 768px)">
-        <source data-srcset="/public/images/portfolio/ru-google@2x.jpg 2x, /public/images/portfolio/ru-google.jpg 1x">
-        <img class="img-embed lazy" data-src="/public/images/portfolio/ru-google.jpg" alt="Google Apps">
+        <source data-srcset="public/images/portfolio/ru-google.jpg 2x, public/images/portfolio/ru-google_sm.jpg 1x" media="(max-width: 768px)">
+        <source data-srcset="public/images/portfolio/ru-google@2x.jpg 2x, public/images/portfolio/ru-google.jpg 1x">
+        <img class="img-embed lazy" data-src="public/images/portfolio/ru-google.jpg" alt="Google Apps">
     </picture>
 </p>
 
@@ -25,9 +25,9 @@
 
 <p>
     <picture class="img-wrap" style="padding-bottom: calc(240/960*100%)">
-        <source data-srcset="/public/images/portfolio/ru-table-new.jpg 2x, /public/images/portfolio/ru-table-new_sm.jpg 1x" media="(max-width: 768px)">
-        <source data-srcset="/public/images/portfolio/ru-table-new@2x.jpg 2x, /public/images/portfolio/ru-table-new.jpg 1x">
-        <img class="img-embed lazy" data-src="/public/images/portfolio/ru-table-new.jpg" alt="Add new Google Spreadsheet">
+        <source data-srcset="public/images/portfolio/ru-table-new.jpg 2x, public/images/portfolio/ru-table-new_sm.jpg 1x" media="(max-width: 768px)">
+        <source data-srcset="public/images/portfolio/ru-table-new@2x.jpg 2x, public/images/portfolio/ru-table-new.jpg 1x">
+        <img class="img-embed lazy" data-src="public/images/portfolio/ru-table-new.jpg" alt="Add new Google Spreadsheet">
     </picture>
 </p>
 
@@ -45,8 +45,8 @@
 
 <p>
     <picture class="img-wrap" style="padding-bottom: calc(240/960*100%)">
-        <source data-srcset="/public/images/portfolio/ru-table-head.jpg 2x, /public/images/portfolio/ru-table-head_sm.jpg 1x" media="(max-width: 768px)">
-        <source data-srcset="/public/images/portfolio/ru-table-head@2x.jpg 2x, /public/images/portfolio/ru-table-head.jpg 1x">
+        <source data-srcset="public/images/portfolio/ru-table-head.jpg 2x, public/images/portfolio/ru-table-head_sm.jpg 1x" media="(max-width: 768px)">
+        <source data-srcset="public/images/portfolio/ru-table-head@2x.jpg 2x, /public/images/portfolio/ru-table-head.jpg 1x">
         <img class="img-embed lazy" data-src="/public/images/portfolio/ru-table-head.jpg" alt="Google Spreadsheet">
     </picture>
 </p>
