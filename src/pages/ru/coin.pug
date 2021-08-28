@@ -3,7 +3,6 @@ extends ../../pug/layouts/default
 block page-vars
     -
         var meta = {
-            path: '../',
             lang: 'ru',
             title: 'Криптовалюта цена сегодня | График и информация Монеты',
             h1: 'Криптовалюта (Монеты)',
@@ -20,27 +19,27 @@ block page-vars
                 {
                     value: 'portfolio',
                     title: 'Портфолио',
-                    url: meta.path + '/ru/portfolio'
+                    url: '/ru/portfolio'
                 },
                 {
                     value: 'market',
                     title: 'Курс криптовалют',
-                    url: meta.path + '/ru/market'
+                    url: '/ru/market'
                 },
                 {
                     value: 'converter',
                     title: 'Конвертер',
-                    url: meta.path + '/ru/converter'
+                    url: '/ru/converter'
                 },
                 {
                     value: 'blog',
                     title: 'Блог',
-                    url: meta.path + '/ru/blog'
+                    url: '/ru/blog'
                 },
                 {
                     value: 'about',
                     title: 'О нас',
-                    url: meta.path + '/about'
+                    url: '/ru/about'
                 },
             ]
         }
@@ -48,7 +47,7 @@ block page-vars
         var breadcrumbsList = [
             {
                 title: 'Монеты',
-                url: meta.path + '/ru/market'
+                url: '/ru/market'
             },
             {
                 title: 'Загрузка...',
@@ -60,7 +59,7 @@ block main
     section.mb-4
         .container
             .mt-5
-                +breadcrumbs(breadcrumbsList, meta.lang, meta.path)
+                +breadcrumbs(breadcrumbsList, meta.lang)
 
                 .js-coin.coin
                     .row
@@ -106,4 +105,4 @@ block scripts
     script(src="https://unpkg.com/react-dom/umd/react-dom.production.min.js", crossorigin)
     script(src="https://unpkg.com/prop-types/prop-types.min.js", crossorigin)
     script(src="https://unpkg.com/recharts@2.0.8/umd/Recharts.min.js", crossorigin)
-    script(src= meta.path + "dist/js/coin.js")
+    script(src="/dist/js/coin.js")

@@ -3,7 +3,6 @@ extends ../../pug/layouts/default
 block page-vars
     -
         var meta = {
-            path: '../',
             lang: 'ru',
             title: 'Портфолио криптовалют | Трекер криптовалюты со всех кошельков',
             h1: 'Крипто портфолио',
@@ -19,31 +18,32 @@ block page-vars
                 {
                     value: 'portfolio',
                     title: 'Портфолио',
-                    url: meta.path + '/ru/portfolio'
+                    url: '/ru/portfolio'
                 },
                 {
                     value: 'market',
                     title: 'Курс криптовалют',
-                    url: meta.path + '/ru/market'
+                    url: '/ru/market'
                 },
                 {
                     value: 'converter',
                     title: 'Конвертер',
-                    url: meta.path + '/ru/converter'
+                    url: '/ru/converter'
                 },
                 {
                     value: 'blog',
                     title: 'Блог',
-                    url: meta.path + '/ru/blog'
+                    url: '/ru/blog'
                 },
                 {
                     value: 'about',
                     title: 'О нас',
-                    url: meta.path + '/about'
+                    url: '/ru/about'
                 },
             ]
         }
-        var local = {}
+        var local = {
+        }
 
 block main
     section.mb-4

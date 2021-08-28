@@ -3,7 +3,6 @@ extends ../pug/layouts/default
 block page-vars
     -
         var meta = {
-            path: '',
             lang: 'en',
             title: 'About Blog Crypto – our mission and contacts',
             h1: 'About Us',
@@ -56,7 +55,7 @@ block main
                     p The Blog Crypto project was created to accelerate the transition of the world to cryptocurrency, telling in simple language about such concepts as blockchain, mining, smart contracts and other financial information and solutions, thereby trying to reduce the barrier to entry into the world of blockchain and cryptocurrencies.
 
                 .col-md-4.col-lg-3.text-center.mt-4.mt-md-0
-                    img.logo-img(src='public/icons/logo.svg', alt="logo", style="width:12rem;height:12rem")
+                    img.logo-img(src='/public/icons/logo.svg', alt="logo", style="width:12rem;height:12rem")
 
             .row
                 .col-sm-9.col-md-8.col.col-lg-7.col-xl-6

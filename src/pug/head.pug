@@ -1,3 +1,11 @@
+
+-
+    var settings = {
+        paths: {
+            favicon: '/public/favicon/'
+        }
+    }
+
 meta(http-equiv="content-type", content="text/html; charset=utf-8")
 meta(name="viewport", content="width=device-width,initial-scale=1,shrink-to-fit=no")
 meta(http-equiv="x-ua-compatible", content="ie=edge")
@@ -9,6 +17,20 @@ meta(name="format-detection", content="address=no")
 
 link(rel="preconnect", href="https://fonts.gstatic.com")
 link(href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,400;0,500;0,700;1,400&display=swap", rel="stylesheet")
+
+if !htmlWebpackPlugin.options.isDevelopment
+    link(rel="stylesheet", href="/dist/css/main.css")
+    base(href="https://blogcrypto.github.io/blogcrypto/")
+
+link(rel="apple-touch-icon", sizes="180x180", href= settings.paths.favicon + "apple-touch-icon.png")
+link(rel="icon", type="image/png", sizes="32x32", href= settings.paths.favicon + "favicon-32x32.png")
+link(rel="icon", type="image/png", sizes="16x16", href= settings.paths.favicon + "favicon-16x16.png")
+link(rel="manifest", href= settings.paths.favicon + "site.webmanifest")
+link(rel="mask-icon", href= settings.paths.favicon + "safari-pinned-tab.svg", color="#5bbad5")
+link(rel="shortcut icon", href= settings.paths.favicon + "favicon.ico")
+meta(name="msapplication-TileColor", content="#2d89ef")
+meta(name="msapplication-config", content= settings.paths.favicon + "browserconfig.xml")
+meta(name="theme-color", content="#ffffff")
 
 meta(property="og:site_name", content="Blog Crypto")
 //- meta(property="fb:app_id", content="")
